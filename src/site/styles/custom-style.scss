@@ -1,13 +1,140 @@
 body {
+
     /***
-      ADD YOUR CUSTOM STYLIING HERE. (INSIDE THE body {...} section.)
+      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
       IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
    ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+
+
+    /* No border on transcluded content */
+    .internal-embed,
+    .markdown-embed {
+        border-left: none !important;
+    }
+
+    div.transclusion .markdown-embed-link {
+        display: none;
+    }
+
+    /* Change accent color to blue */
+    --accent-h: 211;
+    --accent-s: 100%;
+    --accent-l: 50%;
+
+    /* Do not pad transcluded content */
+
+    --nested-padding: 0em;
+
+    div.transclusion {
+        padding: 0px;
+    }
+
+    /* No icon (arrow coming out box) when linking to off-site content */
+    .external-link {
+        background-image: none !important;
+        background-size: 0px !important;
+        padding-right: 0px !important;
+        background-position-y: 0px !important;
+        cursor: auto !important;
+    }
+
+    /* Slightly indent code blocks */
+    ul.markdown-rendered,
+    ol.markdown-rendered,
+    ul.markdown-preview-view,
+    ol.markdown-preview-view {
+        padding-inline-start: 2em !important;
+    }
+
+    /* I honestly can't remember what this does... */
+    .community-item-screenshot,
+    .markdown-preview-view img,
+    .markdown-rendered img {
+        image-rendering: auto !important;
+    }
+
+    // --callout-title-size: 1.2em;
+
+    /* No shadow for code blocks */
+    code[class*=language-],
+    pre[class*=language-] {
+        text-shadow: none;
+    }
+
+    /* Links must be underlined */
+    a {
+        text-decoration: underline !important;
+    }
+
+    /* Navbar title size and color */
+    div.navbar-inner > a {
+        text-decoration: none !important;
+        color: #6A8695;
+    }
+    div.navbar-inner > a > h1 {
+        font-size: 1.4em !important;
+    }
+
+    /* Set sizes for headings */
+    --h1-size: 2em;
+    --h2-size: 1.8em;
+    --h3-size: 1.6em;
+    --h4-size: 1.4em;
+    --h5-size: 1.2em;
+    --h6-size: 1.1em;
+
+    /* Not sure about this one either... */
+    --radius-s: 1px;
+    --radius-m: 2px;
+    --radius-l: 3px;
+    --radius-xl: 4px;
+    
+    /* Ensure that quotes get indented just a bit */
+    blockquote > p {
+        padding-left: 20px;
+    }
+
+    blockquote {
+        padding-left: 20px;
+    }
+
+    /* Ensure indent is consistent for lists (multiple lines are aligned) */
+    ul > li.task-list-item {
+        list-style: square;
+        list-style-type: "\25A2";
+        padding-left: 0.5em;
+    }
+    
+    li.task-list-item > input {
+        display: none;
+    }
+
+}
+
+/* The remaining sections provide reasonable light/dark mode support */
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-primary: rgb(32, 31, 31);
+        --background-secondary: rgb(57, 56, 56);
+        --text-normal: #dcddde;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html {
+        filter: invert(100%);
+    }
+
+    html body img,
+    html body iframe,
+    html body video {
+        filter: invert(100%);
+        opacity: .75;
+    }
+
+    .callout {
+        background-color: rgba(var(--callout-color), 0.4);
+    }
+
 }
