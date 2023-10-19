@@ -60,6 +60,7 @@
 6. Activity: [[Activities/Name Plate\|Name Plate]]
 ## Things to do before our next class
 - [ ] Be sure that [you have upgraded your computer to macOS Sonoma](https://teaching.russellgordon.ca/software-setup/mac-os-sonoma/).
+- [ ] Make progress on [[Activities/Name Plate\|drawing an initial version of your name using the turtle drawing metaphor]].
 
 </div></div>
 
