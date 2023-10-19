@@ -8,6 +8,7 @@
 2. Tutorial: [[Tutorials/Creating Bookmarks\|Creating Bookmarks]] 
 	- Please be sure you make a bookmark for your Notion portfolio page.
 3. Portfolio: [[Portfolios/First Post\|First Post]]
+	- Learn more about what makes for good evidence of understanding when posting in your portfolio.
 4. Install [[Setup/Xcodes\|Xcodes]]
    > [!NOTE]
    > Check your email for an invitation to join the Apple Developer program via Lakefield College School.
@@ -21,4 +22,4 @@
 	- Please watch the video and respond to the prompts provided.
 ## Things to do before our next class
 - [ ] Be sure that you have installed Xcodes and Xcode, as described above.
-- [ ] Write your [[Activities/Programming with Purpose#Reflection\|Programming with Purpose#Reflection]] after watching Programming with Purpose.
+- [ ] Write your [[Activities/Programming with Purpose#Reflection\|reflection]] after watching Programming with Purpose.
