@@ -46,11 +46,11 @@ body {
         padding-inline-start: 2em !important;
     }
 
-    /* I honestly can't remember what this does... */
+    /* Ensure gives in Safari are not pixelated */
     .community-item-screenshot,
     .markdown-preview-view img,
     .markdown-rendered img {
-        image-rendering: crisp-edges !important;
+        image-rendering: auto !important;
     }
 
     // --callout-title-size: 1.2em;
