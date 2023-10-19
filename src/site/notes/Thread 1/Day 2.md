@@ -22,6 +22,6 @@
 	  > Do not install Xcode via the App Store, as using this method means that it will automatically get upgraded when a new version is released (which is not always ideal).
 6. [[Activities/Programming with Purpose\|Programming with Purpose]]
 	- Please watch the video and respond to the prompts provided.
-## Things to do before our next class
+###### Things to do before our next class
 - [ ] Be sure that you have installed Xcodes and Xcode, as described above.
 - [ ] Write your [[Activities/Programming with Purpose#Reflection\|reflection]] after watching Programming with Purpose.
