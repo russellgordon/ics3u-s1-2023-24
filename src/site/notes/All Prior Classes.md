@@ -20,11 +20,13 @@
 ### Thread 1, Day 2 - Wednesday, October 18, 2023
 #### Agenda
 1. Portfolio: [[Portfolios/Creating a Notion Account\|Creating a Notion Account]]
+	- Get started with using Notion.
 2. Tutorial: [[Tutorials/Creating Bookmarks\|Creating Bookmarks]] 
 	- Please be sure you make a bookmark for your Notion portfolio page.
 3. Portfolio: [[Portfolios/First Post\|First Post]]
 	- Learn more about what makes for good evidence of understanding when posting in your portfolio.
 4. Install [[Setup/Xcodes\|Xcodes]]
+	- Xcodes makes it easy to manage the installation of *Xcode*, which is the programming environment we will use this year.
    > [!NOTE]
    > Check your email for an invitation to join the Apple Developer program via Lakefield College School.
    > 
