@@ -48,7 +48,7 @@ body {
 
     /* Ensure images and GIFs in Safari are not pixelated */
     img {
-        image-rendering: pixelated !important;
+        image-rendering: auto !important;
     }
 
     // --callout-title-size: 1.2em;
