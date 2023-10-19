@@ -7,7 +7,7 @@
 ## Your portfolio page
 
 Once you have logged in to Notion and [[Portfolios/Creating a Notion Account#Opening the teamspace\|opened the Lakefield Computer Studies Program teamspace]], you should see your portfolio page:
-
+ 
 ![Screenshot 2023-10-18 at 7.24.46 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.24.46%E2%80%AFAM.png)
 
 ## Reviewing the example post
