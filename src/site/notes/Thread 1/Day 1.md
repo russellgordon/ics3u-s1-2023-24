@@ -11,6 +11,6 @@
 4. Setup: [[Setup/Installing Playgrounds\|Installing Playgrounds]]
 5. Setup: [[Setup/Subscribe to Turtle Sketches\|Subscribe to Turtle Sketches]]
 6. Activity: [[Activities/Name Plate\|Name Plate]]
-## Things to do before our next class
+###### Things to do before our next class
 - [ ] Be sure that [you have upgraded your computer to macOS Sonoma](https://teaching.russellgordon.ca/software-setup/mac-os-sonoma/).
 - [ ] Make progress on [[Activities/Name Plate\|drawing an initial version of your name using the turtle drawing metaphor]].
