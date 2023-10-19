@@ -18,12 +18,17 @@ Double-click the file to de-compress it, then drag the resulting Xcodes app to y
 
 ![Installing Xcodes 1.gif|undefined](/img/user/Media/Installing%20Xcodes%201.gif)
 
-The most recent version of Xcode available, as of October 17, 2023, is Xcode 15.0. 
+Open Xcodes.
 
-The Xcodes app makes this easy; just be sure to use, from the menu bar, **Xcodes > Settings...**, then select the **Sign-in** button under **Apple ID**:
+Next, log in using your LCS Apple ID information (this is what gives you access to Apple Developer resources).
+
+To do this, choose **Xcodes > Settings...**, then select the **Sign-in** button under **Apple ID**:
 
 ![Screenshot 2023-01-17 at 6.18.40 AM.png|400](/img/user/Media/Screenshot%202023-01-17%20at%206.18.40%20AM.png)
 
-...and then provide your LCS Apple ID information (this is what gives you access to Apple Developer resources).
+Finally, to see what versions of Xcode are available to install, you might need to refresh the list – click the button highlighted in red here:
+
+![Screenshot 2023-10-18 at 8.53.44 PM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%208.53.44%E2%80%AFPM.png)
   
 You can then use Xcodes to remove older versions of Xcode from your computer before or after installing a new version (depending on how much available disk space you have).
+
