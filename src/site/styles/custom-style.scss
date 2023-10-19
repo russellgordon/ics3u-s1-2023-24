@@ -50,7 +50,7 @@ body {
     .community-item-screenshot,
     .markdown-preview-view img,
     .markdown-rendered img {
-        image-rendering: auto !important;
+        image-rendering: crisp-edges !important;
     }
 
     // --callout-title-size: 1.2em;
