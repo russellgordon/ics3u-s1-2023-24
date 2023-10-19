@@ -36,7 +36,7 @@
 	- Please watch the video and respond to the prompts provided.
 ## Things to do before our next class
 - [ ] Be sure that you have installed Xcodes and Xcode, as described above.
-- [ ] Write your [[Activities/Programming with Purpose#Reflection\|reflection]] after watching Programming with Purpose.
+- [ ] Write your [[Activities/Programming with Purpose#Reflection\|Programming with Purpose#Reflection]] after watching Programming with Purpose.
 
 </div></div>
 
