@@ -5,7 +5,7 @@
 # Introducing Notion
 
 ## What is Notion?
-
+ 
 Notion is a combination of traditional note-taking software and something called a database.
 
 ## How will we use Notion?
