@@ -8,7 +8,7 @@
 
 ### Thread 1
 
-- [[All Prior Classes#Thread 1, Day 2 - Wednesday, October 18, 2023\|Day 2 - Wednesday, October 18, 2023]]
+- [[All Prior Classes#Thread 1, Day 2 - Wednesday, October 18, 2023\|Thread 1, Day 2 - Wednesday, October 18, 2023]]
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Thread 1, Day 1 - Tuesday, October 17, 2023]]
 
 
