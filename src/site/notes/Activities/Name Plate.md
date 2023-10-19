@@ -9,7 +9,7 @@ Draw the letters of your name in block letters.
 ## What you'll need to begin
 
 - [ ] The [[Setup/Installing Playgrounds\|Playgrounds app]] installed on your computer
-- [ ] Another copy of the [[Setup/Subscribe to Turtle Sketches\|Sketches Template added to your list of playgrounds]], renamed to be titled *Name Plate* or something similar
+- [ ] A copy of the [[Setup/Subscribe to Turtle Sketches\|Sketches Template added to your list of playgrounds]], renamed to be titled *Name Plate* or something similar
 # Success criteria
 
 - [ ] your name is drawn in block letters or bubble letters – depending on your prior experience with coding
