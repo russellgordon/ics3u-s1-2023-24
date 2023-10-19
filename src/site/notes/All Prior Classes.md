@@ -37,7 +37,7 @@
 	  > Do not install Xcode via the App Store, as using this method means that it will automatically get upgraded when a new version is released (which is not always ideal).
 6. [[Activities/Programming with Purpose\|Programming with Purpose]]
 	- Please watch the video and respond to the prompts provided.
-## Things to do before our next class
+###### Things to do before our next class
 - [ ] Be sure that you have installed Xcodes and Xcode, as described above.
 - [ ] Write your [[Activities/Programming with Purpose#Reflection\|reflection]] after watching Programming with Purpose.
 
@@ -58,7 +58,7 @@
 4. Setup: [[Setup/Installing Playgrounds\|Installing Playgrounds]]
 5. Setup: [[Setup/Subscribe to Turtle Sketches\|Subscribe to Turtle Sketches]]
 6. Activity: [[Activities/Name Plate\|Name Plate]]
-## Things to do before our next class
+###### Things to do before our next class
 - [ ] Be sure that [you have upgraded your computer to macOS Sonoma](https://teaching.russellgordon.ca/software-setup/mac-os-sonoma/).
 - [ ] Make progress on [[Activities/Name Plate\|drawing an initial version of your name using the turtle drawing metaphor]].
 
