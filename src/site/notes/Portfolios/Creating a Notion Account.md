@@ -20,7 +20,7 @@ Please [visit the Notion website and log in](https://www.notion.so/login) – c
 
 Then be sure to select your LCS Google account, and not any personal email address you might be using with Google:
 
-![Screenshot 2023-09-12 at 6.59.07 AM.png|undefined](/img/user/Media/Screenshot%202023-09-12%20at%206.59.07%20AM.png)
+![Screenshot 2023-09-12 at 6.59.07 AM.png|400](/img/user/Media/Screenshot%202023-09-12%20at%206.59.07%20AM.png)
 
 ## Opening the teamspace
 
