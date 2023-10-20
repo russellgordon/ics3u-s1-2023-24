@@ -19,10 +19,10 @@
 	  > 
 	  > When creating your Apple ID, use the school's street address, but your own phone number. The complete address for LCS is:
 	  > 
-	> `4391 County Road 29`
-	> `Lakefield College School`
-	> `Lakefield ON K0L2H0`
-	> `Canada`
+	  >  `4391 County Road 29`
+	  >  `Lakefield College School`
+	  >  `Lakefield ON K0L2H0`
+	  >  `Canada`
 5. Install Xcode 15
 	- Use [[Setup/Xcodes\|Xcodes]] to install Xcode 15.
 	  > [!TIP]
