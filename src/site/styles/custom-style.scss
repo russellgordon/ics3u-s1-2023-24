@@ -149,6 +149,11 @@ body {
         margin-top: 45px;
     }
 
+    /* Shrink sidebar */
+    .sidebar {
+        height: none;
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
