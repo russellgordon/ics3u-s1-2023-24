@@ -126,7 +126,7 @@ $$
 
 ### Exercises
 
-Try doing the following conversions in your graph paper notebook:
+Try doing the following conversions in your graph paper notebook: 
 
 1. $1011_2=\phantom{answer}_{10}$
 2. $0011_2=\phantom{answer}_{10}$
