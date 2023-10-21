@@ -114,6 +114,8 @@ body {
     div.toc-title:after {
         content: 'Navigate within this page:';
         visibility: visible;
+        display: block;
+        position: absolute;
     }
 
 }
