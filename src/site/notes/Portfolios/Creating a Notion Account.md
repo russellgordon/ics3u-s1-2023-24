@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/portfolios/creating-a-notion-account/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/portfolios/creating-a-notion-account/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Introducing Notion
