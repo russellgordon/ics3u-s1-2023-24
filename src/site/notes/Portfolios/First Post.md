@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/portfolios/first-post/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/portfolios/first-post/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # First Post
