@@ -123,6 +123,13 @@ body {
         visibility: visible;
     }
 
+    /* Change bullets for TOC section */
+    .toc-container li::before {
+        content: "• " !important;
+        color: var(--text-accent);
+        font-size: .7rem;
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
