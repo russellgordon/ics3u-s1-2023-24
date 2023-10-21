@@ -136,7 +136,8 @@ body {
     .toc-container {
         max-height: none;
         border-left: none;
-        margin-right: 20px;
+        /* No margin at all */
+        margin: 0px;
     }
 
     /* Remove TOC padding */
