@@ -142,6 +142,9 @@ body {
     /* Remove TOC padding */
     .toc {
         padding: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: var(--background-secondary);
     }
 
     /* Shift TOC down */
