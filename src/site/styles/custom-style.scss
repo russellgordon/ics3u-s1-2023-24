@@ -124,7 +124,7 @@ body {
     .toc-container li::before {
         content: "⏺ " !important;
         color: var(--text-accent);
-        font-size: .7rem;
+        font-size: .6rem;
     }
 
     /* Padding above list and below TOC title */
@@ -138,6 +138,7 @@ body {
         border-left: none;
         /* No margin at all */
         margin: 0px;
+        font-size: 0.9em;
     }
 
     /* Remove TOC padding */
