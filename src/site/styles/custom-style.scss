@@ -111,12 +111,12 @@ body {
     div.toc-title {
         position: absolute;
         visibility: hidden;
-    }
-
-    div.toc-title:before {
         padding: 5px;
         padding-top: 60px;
         padding-bottom: 30px;
+    }
+
+    div.toc-title:before {
         font-size: 0.95rem !important;
         font-weight: bold;
         content: 'Navigate within this page:';
