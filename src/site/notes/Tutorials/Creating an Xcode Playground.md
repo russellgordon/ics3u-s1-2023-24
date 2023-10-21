@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tutorials/creating-an-xcode-playground/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/tutorials/creating-an-xcode-playground/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Creating an Xcode Playground
