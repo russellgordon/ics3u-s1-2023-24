@@ -143,6 +143,11 @@ body {
         border-left: none;
     }
 
+    /* Remove TOC padding */
+    .toc {
+        padding: 0px;
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
