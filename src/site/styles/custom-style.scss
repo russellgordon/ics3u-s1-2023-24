@@ -107,6 +107,14 @@ body {
         display: none;
     }
 
+    .toc-title span {
+        display: none
+    }
+
+    .toc-title:after {
+        content: 'Navigate within this page:';
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
