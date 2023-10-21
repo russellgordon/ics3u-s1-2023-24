@@ -158,6 +158,11 @@ body {
         height: auto !important;
     }
 
+    /* Less of an indent for TOC items */
+    nav.toc > ol {
+        padding-inline-start: 5px;
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
