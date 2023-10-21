@@ -109,12 +109,12 @@ body {
 
     /* Change header for Table of Contents section */
     div.toc-title {
-        font-size: 0.9rem !important;
         position: absolute;
         visibility: hidden;
     }
 
     div.toc-title:before {
+        font-size: 0.9rem !important;
         content: 'Navigate within this page:';
         visibility: visible;
     }
