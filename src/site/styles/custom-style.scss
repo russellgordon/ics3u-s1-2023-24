@@ -107,12 +107,13 @@ body {
         display: none;
     }
 
-    toc-title div {
-        display: none
+    div.toc-title {
+        visibility: hidden;
     }
 
-    .toc-title:after {
+    div.toc-title:after {
         content: 'Navigate within this page:';
+        visibility: visible;
     }
 
 }
