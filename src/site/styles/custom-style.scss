@@ -125,7 +125,7 @@ body {
 
     /* Change bullets for TOC section */
     .toc-container li::before {
-        content: "• " !important;
+        content: "⏺ " !important;
         color: var(--text-accent);
         font-size: .7rem;
     }
