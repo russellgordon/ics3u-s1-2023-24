@@ -111,9 +111,6 @@ body {
     div.toc-title {
         position: absolute;
         visibility: hidden;
-        padding: 5px;
-        padding-top: 60px;
-        padding-bottom: 30px;
     }
 
     div.toc-title:before {
@@ -129,6 +126,12 @@ body {
         color: var(--text-accent);
         font-size: .7rem;
     }
+
+    /* Change padding for TOC section */
+    div.toc {
+        padding-top: 25px;
+    }
+    
 
 }
 
