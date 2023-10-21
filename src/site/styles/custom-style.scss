@@ -137,6 +137,12 @@ body {
         padding-top: 20px;
     }
 
+    /* No scrolling or side border */
+    .toc-container {
+        max-height: none;
+        border-left: none;
+    }
+
 }
 
 /* The remaining sections provide reasonable light/dark mode support */
