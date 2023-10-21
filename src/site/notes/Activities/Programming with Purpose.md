@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/activities/programming-with-purpose/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/activities/programming-with-purpose/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Programming with Purpose
