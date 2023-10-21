@@ -129,9 +129,13 @@ body {
 
     /* Change padding for TOC section */
     div.toc {
-        padding-top: 25px;
+        padding-top: 40px;
     }
-    
+
+    /* Padding above list and below TOC title */
+    div.toc-container > nav.toc > ol > li {
+        padding-top: 20px;
+    }
 
 }
 
