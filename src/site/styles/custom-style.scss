@@ -150,8 +150,8 @@ body {
     }
 
     /* Shrink sidebar */
-    div.sidebar {
-        height: none !important;
+    div.sidebar, div.sidebar-container {
+        height: auto !important;
     }
 
 }
