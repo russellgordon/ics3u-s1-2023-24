@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/activities/name-plate/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/activities/name-plate/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Name Plate
