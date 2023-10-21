@@ -160,8 +160,13 @@ body {
 
     /* Less of an indent for TOC items */
     nav.toc ol {
-        padding-inline-start: 15px;
+        padding-inline-start: 20px;
     }
+
+    nav.toc > ol {
+        padding-inline-start: 5px;
+    }
+
 
 }
 
