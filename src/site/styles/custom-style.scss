@@ -159,7 +159,7 @@ body {
     }
 
     /* Less of an indent for TOC items */
-    nav.toc > ol {
+    nav.toc > * {
         padding-inline-start: 5px;
     }
 
