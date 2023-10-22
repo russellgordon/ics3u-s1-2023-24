@@ -56,7 +56,7 @@ $$
 
 So, $1111_2=15_{10}$
 
-## Variables, Constants, and Data Types
+## Variables, Constants, Data Types
 
 In your playground, the default code provided is:
 
