@@ -23,6 +23,7 @@
 #### Agenda
 1. Discussion: Don't Repeat Yourself
 	- Reviewing various solutions to the exercise from yesterday's class.
+	- How to keep your code tidy.
 2. Portfolio: [[Portfolios/Sharing Long Blocks of Code\|Sharing Long Blocks of Code]]
 	- Share code, not screenshots of code.
 	- Please continue to use screenshots to show the *results* of code being run.
