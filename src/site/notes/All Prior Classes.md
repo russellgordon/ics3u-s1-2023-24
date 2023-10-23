@@ -29,10 +29,12 @@
 2. Portfolio: [[Portfolios/Sharing Long Blocks of Code\|Sharing Long Blocks of Code]]
 	- Share code, not screenshots of code.
 	- Please continue to use screenshots to show the *results* of code being run.
-3. Portfolio: [[Portfolios/Handing Comments on Posts\|Handing Comments on Posts]]
+3. Portfolio: [[Handing Comments on Posts\|Handing Comments on Posts]]
 	- Do not mark comments as resolved in Notion so that the record of our conversation is preserved and easy to see at a glance.
 4. Concept: Computed Properties
 	- Structures can do more than just store values - they can calculate values as well.
+		- Here is [the code we developed and discussed](https://gist.github.com/russellgordon/df50e7fadd13aec68c5e30a840c9796f) in class.
+		- Here is a [[Media/Computed Properties Example\|screenshot showing the results]] when the code is run.
 5. Exercise: Describing 2D and 3D Figures
 	- You have been randomly assigned [a 2D or 3D figure to work with](https://www.eqao.com/wp-content/uploads/g9-formula-sheet-academic.pdf).
 	- Create a [[Tutorials/Creating an Xcode Playground\|new Xcode playground]] named **Computed Properties Exercise**.
