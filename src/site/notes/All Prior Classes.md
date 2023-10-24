@@ -24,7 +24,7 @@
 #### Agenda
 1. Activity: Modelling a Report Card
 	- Create a [[Tutorials/Creating an Xcode Playground\|new Xcode playground]] named **Report Card Exercise**.
-	- Work with your partner to author a structure that could efficiently store the data shown in this report card.
+	- Work with your partner to author a structure that could efficiently store the data shown [[Media/Report Card Example\|in this report card]].
 	- Then create an instance of the report card shown.
 	- Remember: <span style="color:green">**D**on't **R**epeat **Y**ourself</span>
 		- Use [strategies we have discussed](https://gist.github.com/russellgordon/a9be1f533e43085c184428bce46d947b) to avoid repeatedly defining similar fields.
