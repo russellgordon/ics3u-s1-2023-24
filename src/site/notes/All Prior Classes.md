@@ -61,7 +61,8 @@
 	- In recent years, Apple has used "Bento-Box" graphics to do so.
 	- Try to [[Media/Bento Box Example\|reproduce this image]] using SwiftUI, or use it as inspiration to design a bento-box themed view related to something you care about.
 	- Mr. Gordon will demonstrate how to add images into your project.
-	- Use SwiftUI Views Mastery as a reference.
+	- Use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference.
+	- Here is the [starter code discussed in class](https://gist.github.com/lcs-rgordon/3e9812b1dfd2a776137a807bed860db4) and a [[Media/Bento Box Starter Code\|screenshot of what it looks like]].
 	  > [!HINT]
 	  > Some keywords to look for examples of:
 	  > - foregroundStyle
