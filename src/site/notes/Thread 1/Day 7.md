@@ -32,7 +32,7 @@
 	- Xcode automatically saves your code as you type.
 	- However, it is additionally useful to have "save points" while you author code.
 	- Mr. Gordon will explain how to *stage* and *commit* your work to save revisions locally.
-	> [!IMPORTANT]
+	  > [!IMPORTANT]
 	> As you go forward in this course, *always* commit your work frequently with descriptive messages.
 	> 
 	> This serves as a form of note-taking, makes it easier to debug problems, and if necessary, makes it possible for you to return to a prior version of your code.
