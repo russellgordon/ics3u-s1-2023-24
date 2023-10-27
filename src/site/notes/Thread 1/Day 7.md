@@ -8,7 +8,7 @@
 	- Dark mode makes using most parts of our computers comfortable after sundown.
 	- PDFs have long been a problem – they still show with a white background.
 	- Negative solves this – optionally, try it out.
-1. [Rubber Duck Debugging](https://rubberduckdebugging.com)
+1. Discussion: [Rubber Duck Debugging](https://rubberduckdebugging.com)
 	- Solving logical errors and syntax errors can be frustrating, but everyone deals with it, even experienced programmers.
 	- Pairing with a friend to describe what you are trying to do with your code, line by line, can be helpful.
 		- Often during this process, you will realize the source of the problem you are having.
