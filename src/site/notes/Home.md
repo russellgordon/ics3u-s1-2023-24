@@ -40,9 +40,9 @@
 	- However, it is additionally useful to have "save points" while you author code.
 	- Mr. Gordon will explain how to *stage* and *commit* your work to save revisions locally.
 	  > [!IMPORTANT]
-	> As you go forward in this course, *always* commit your work frequently with descriptive messages.
-	> 
-	> This serves as a form of note-taking, makes it easier to debug problems, and if necessary, makes it possible for you to return to a prior version of your code.
+	  >  As you go forward in this course, *always* commit your work frequently with descriptive messages.
+	  >  
+	  >  This serves as a form of note-taking, makes it easier to debug problems, and if necessary, makes it possible for you to return to a prior version of your code.
 1. Exercise: Create a "Bento-Box" Design
 	- Marketing teams must be able to convey new features in a concise manner to an audience.
 	- In recent years, Apple has used "Bento-Box" graphics to do so.
