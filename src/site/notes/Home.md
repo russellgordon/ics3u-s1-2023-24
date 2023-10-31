@@ -4,16 +4,14 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-1/day-8/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-1/day-9/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 1, Day 8 - Monday, October 30, 2023
+### Thread 1, Day 9 - Tuesday, October 31, 2023
 #### Agenda
-1. Discussion: Create a "Bento-Box" Design
-	- Reviewing some strategies to help complete the exercise assigned in our last class.
-	- Time to work on this task in class, as needed.
+1. Setup: [Create a GitHub Account](https://github.com/signup)
 1. Activity: [[Tutorials/Reproducing the Stopwatch\|Reproducing the Stopwatch]]
 	- Learn how to reproduce the interface of a real iOS app.
 1. Portfolios: Mid-module Portfolio Reviews
@@ -22,7 +20,7 @@
 		- creating user interfaces
 	- Meet privately with Mr. Gordon to review your portfolio and propose a current level of achievement for the skills list above, based on the evidence currently in your portfolio.
 ###### Things to do before our next class
-- [ ] Take half an hour to make further progress on either the Bento Box task or the [[Tutorials/Reproducing the Stopwatch\|Stopwatch activity]].
+- [ ] Take half an hour to make further progress on the [[Tutorials/Reproducing the Stopwatch\|Stopwatch activity]].
 
 
 </div></div>
