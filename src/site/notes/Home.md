@@ -20,7 +20,7 @@
 		- creating user interfaces
 	- Meet privately with Mr. Gordon to review your portfolio and propose a current level of achievement for the skills list above, based on the evidence currently in your portfolio.
 ###### Things to do before our next class
-- [ ] Take half an hour to make further progress on the [[Tutorials/Reproducing the Stopwatch\|Stopwatch activity]].
+- [ ] No new homework. Enjoy the spooky evening! 👻 🎃
 
 
 </div></div>
