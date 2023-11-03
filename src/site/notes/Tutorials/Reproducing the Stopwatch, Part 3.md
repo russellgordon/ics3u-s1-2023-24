@@ -7,7 +7,7 @@
 > [!NOTE]
 > Before you begin following the instructions shown here, be sure you have completed [[Tutorials/Reproducing the Stopwatch, Part 2\|part 2 of this tutorial]].
 
-## Adding the List
+## Adding the list
 
 We're almost done! 😎
 
@@ -98,7 +98,7 @@ So, save your work now by committing and pushing with this message:
 Made list style better match our goal; also adjusted list item insets.
 ```
 
-### Mini-Exercise: Complete the list
+## Mini-Exercise: Complete the list
 
 The list in the current version of our app:
 
