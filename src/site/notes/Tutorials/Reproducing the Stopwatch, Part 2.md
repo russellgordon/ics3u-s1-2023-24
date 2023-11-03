@@ -7,7 +7,7 @@
 > [!NOTE]
 > Before you begin following the instructions shown here, be sure you have completed [[Tutorials/Reproducing the Stopwatch\|part 1 of this tutorial]].
 
-## Fixing the Colors
+## Fixing the colors
 
 We've made great progress:
 
@@ -65,7 +65,7 @@ So, we are going to:
 2. Create a *custom color set* in Xcode to duplicate that color.
 3. Use the custom color in our own version of the Stopwatch app.
 
-### Finding a Color
+### Finding a color
 
 To find a color:
 
@@ -81,7 +81,7 @@ That's a lot of steps, so here's what that looks like in a short animation:
 
 Now you know that the RGB color code for the dark grey of the button of our goal is: 51, 51, 51.
 
-### Creating a Custom Color Set
+### Creating a custom color set
 
 Your Xcode interface probably looks like this right now:
 
@@ -129,7 +129,7 @@ And do the same for the buttom from our goal, at right:
 
 ![Screen Shot 2022-11-08 at 6.36.34 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.36.34%20AM.png)
 
-#### Mini-Exercise: Fix the other button
+### Mini-Exercise: Fix the other button
 
 Now it's your turn!
 
@@ -148,7 +148,7 @@ Commit and push your work with this message:
 ```
 Created and used new color sets to match buttons to our goal.
 ```
-## Adding the Tab Bar
+## Adding the tab bar
 
 The next section we'll tackle is adding the tabs at the bottom of the interface:
 
