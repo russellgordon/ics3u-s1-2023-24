@@ -82,7 +82,7 @@ If you see this, all is well:
 
 ### Create a remote, if necessary
 
-If you don't see a local repository named `StopwatchApp` you can create it using the menu sequence **Source Control** → **New Git Repositories**. In the dialog box that appears, accept the default suggestion for the repository name and press the **Create** button.
+If you don't see a local repository named `StopwatchApp` you can create it using the menu sequence **Integrate** → **New Git Repository**. In the dialog box that appears, accept the default suggestion for the repository name and press the **Create** button.
 
 Finally, we want to be able to push our commits to a remote.
 
