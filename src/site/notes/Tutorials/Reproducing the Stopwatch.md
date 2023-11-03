@@ -245,7 +245,7 @@ This is good work, so let's commit and push with this message:
 Got the basic structure of the first circular button completed.
 ```
 
-## Creating a custom Structure
+## Creating a custom structure
 
 At this point the code within `ContentView` is getting somewhat long:
 
