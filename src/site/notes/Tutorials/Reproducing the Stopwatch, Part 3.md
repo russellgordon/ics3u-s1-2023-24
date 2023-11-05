@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tutorials/reproducing-the-stopwatch-part-3/","dgShowToc":true}
+{"dg-publish":true,"permalink":"/tutorials/reproducing-the-stopwatch-part-3/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Reproducing the Stopwatch, Part 3
