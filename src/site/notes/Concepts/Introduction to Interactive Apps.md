@@ -76,7 +76,7 @@ struct ListItem: View {
 
 Each of the structures shown above have *two* stored properties and *one* computed property.
 
-As a convention, in a structure, we will always list *stored properties* first and and then *computed properties*.
+As a convention, in a structure, we will always list *stored properties* first and then *computed properties*.
 
 Going forward, it is a good idea to *mark* which properties are stored properties and which properties are computed properties, using short comments.
 
@@ -267,7 +267,9 @@ struct ContentView: View {
 
 After adding that code, go ahead and commit your work with this message:
 
-	Created the initial static layout.
+```
+Created the initial static layout.
+```
 
 As you can see, there are currently no stored properties, and just one computed property, `body`, which describes the user interface.
 
@@ -315,7 +317,9 @@ Of course, this now means that our user interface presents incorrect information
 
 Go ahead and commit your work with this message:
 
-	Added a stored property to hold the base of the power selected by the user.
+```
+Added a stored property to hold the base of the power selected by the user.
+```
 
 ### Bindings to a control
 
@@ -379,7 +383,9 @@ If you try the app now, as the stepper is tapped, the text view that shows the b
 
 At this point, we should commit our work with the following message:
 
-	Added a stepper control that is bound to the "base" stored property. The user can now click to change the base in the app's interface.
+```
+Added a stepper control that is bound to the "base" stored property. The user can now click to change the base in the app's interface.
+```
 
 ### String interpolation
 
@@ -405,7 +411,7 @@ The new computed property is called `squared` and it will update whenever the va
 
 Finally, we need to show the output from the `squared` computed property.
 
-You might think that we could just do waht is shown below – note that old code is in grey – new code is in light blue:
+You might think that we could just do what is shown below – note that old code is in grey – new code is in light blue:
 
 ![Screenshot 2023-11-14 at 1.39.31 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.39.31%E2%80%AFPM.png)
 
@@ -452,10 +458,50 @@ Now, if you try the app – it works!
 
 Commit and push your work with this message:
 
-	Finished the app by adding a computed property and using string interpolation.
+```
+Finished the app by adding a computed property and using string interpolation.
+```
 
-## Exercise
+## Exercises
+
+### Fix the presentation
+
+In the program at this point in time, a logical error of sorts exists.
+
+If you use the stepper to reduce the base of the power to a value that is less than zero , it presents a mathematically incorrect statement:
+
+![RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.29.43.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.29.43.png)
+
+Of course, $2^2=4$ but $-2^2\neq4$ since the base in the latter expression is only $2$.
+
+That is:
+
+$$
+\begin{align}
+&=-2^2  \\
+&=-1\times2^2 \\
+&=-1\times4 \\
+&=-4 \\
+\end{align}
+$$
+
+Fix the user interface in this app so that it presents mathematically correct statements at all times, like this:
+
+![RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.35.20.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.35.20.png)
+
+
+### Finding sums
 
 Using your newfound knowledge, write an app that calculates the sum of two numbers, like this:
 
 ![Screenshot 2023-11-06 at 7.21.12 PM.png|300](/img/user/Media/Screenshot%202023-11-06%20at%207.21.12%E2%80%AFPM.png)
+
+### Finding differences, products, and quotients
+
+If you wish to demonstrate even greater understanding of the concepts at hand, add additional views to your app to allow for subtraction, multiplication, and division of two numbers:
+
+![Screenshot 2023-11-06 at 7.21.57 PM.png|300](/img/user/Media/Screenshot%202023-11-06%20at%207.21.57%E2%80%AFPM.png)
+
+![Screenshot 2023-11-06 at 7.22.16 PM.png|300](/img/user/Media/Screenshot%202023-11-06%20at%207.22.16%E2%80%AFPM.png)
+
+![Screenshot 2023-11-06 at 7.22.35 PM.png|300](/img/user/Media/Screenshot%202023-11-06%20at%207.22.35%E2%80%AFPM.png)
