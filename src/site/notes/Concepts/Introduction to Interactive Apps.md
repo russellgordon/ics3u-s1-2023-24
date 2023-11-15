@@ -468,7 +468,7 @@ Finished the app by adding a computed property and using string interpolation.
 
 In the program at this point in time, a logical error of sorts exists.
 
-If you use the stepper to reduce the base of the power to a value that is less than zero , it presents a mathematically incorrect statement:
+If you use the stepper to reduce the base of the power to a value that is less than zero, it presents a mathematically incorrect statement:
 
 ![RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.29.43.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_2023-11-14_20.29.43.png)
 
