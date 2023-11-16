@@ -439,7 +439,7 @@ However, the syntax `\( )` is where how we tell Swift to take whatever we put be
 
 That is called *string interpolation*.
 
-So when say: `\(squared)` we are asking Swift to convert the `squared` computed property that is an `Int` into a `String`.
+So when we say: `\(squared)` we are asking Swift to convert the `squared` computed property that is an `Int` into a `String`.
 
 > [!NOTE]
 > Changing an `Int` into a `String` in this manner only works inside a string literal – that is – in between `" "` marks.
