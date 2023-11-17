@@ -25,3 +25,5 @@ If you have written longer portfolio entries, it's very helpful to [link directl
 When authoring your portfolio review, set up two Notion windows side-by-side.
 
 This will make it easier to link to evidence already within your portfolio.
+
+![Screenshot 2023-11-17 at 7.54.36 AM (2).png|undefined](/img/user/Media/Screenshot%202023-11-17%20at%207.54.36%E2%80%AFAM%20(2).png)
