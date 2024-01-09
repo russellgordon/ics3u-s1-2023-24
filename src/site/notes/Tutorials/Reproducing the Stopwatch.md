@@ -60,7 +60,7 @@ Create a [[Tutorials/Creating a New iOS Project\|new iOS project in Xcode]] name
 
 When you're done, this is what you should have:
 
-![Screen Shot 2022-11-07 at 5.56.16 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%205.56.16%20AM.png)
+![Screen Shot 2022-11-07 at 5.56.16 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%205.56.16%20AM.png)
 
 Make sure that have selected **iPhone 14 Pro** as the device to preview upon:
 
@@ -70,7 +70,7 @@ In a future lesson you'll learn how to make layouts that work on devices of all 
 
 You can close the Inspector panel at right using `Option-Command-0` and resize the code editor a bit:
 
-![Screen Shot 2022-11-07 at 5.59.58 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%205.59.58%20AM.png)
+![Screen Shot 2022-11-07 at 5.59.58 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%205.59.58%20AM.png)
 
 ## Check source control
 
@@ -78,7 +78,7 @@ Double-check that you enabled source control by opening the Source Control navig
 
 If you see this, all is well:
 
-![Screen Shot 2022-11-07 at 6.00.14 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.00.14%20AM.png)
+![Screen Shot 2022-11-07 at 6.00.14 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.00.14%20AM.png)
 
 ### Create a remote, if necessary
 
@@ -96,7 +96,7 @@ Accept the default options presented in the dialog box that appears, and press t
 
 Then press `Command-1` to open the Project navigator again:
 
-![Screen Shot 2022-11-07 at 6.08.30 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.08.30%20AM.png)
+![Screen Shot 2022-11-07 at 6.08.30 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.08.30%20AM.png)
 
 ## Background colour
 
@@ -114,7 +114,7 @@ From the menu that appears, choose **Embed in ZStack**:
 
 Then, within the `ZStack`, after line 12, add the comments and code shown from lines 13 to 17 in this screenshot:
 
-![Screen Shot 2022-11-07 at 6.26.20 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.26.20%20AM.png)
+![Screen Shot 2022-11-07 at 6.26.20 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.26.20%20AM.png)
 
 Of course, the interface won't remain yellow forever, but for now, that color allows us to easily see the rest of the interface that sits on top, in the second layer of the `ZStack`.
 
@@ -128,7 +128,7 @@ In this case, we just want a background color to extend into the safe area – 
 
 To extend the background color into the safe area, add the view modifier `.ignoresSafeArea()` to line 16:
 
-![Screen Shot 2022-11-07 at 6.28.37 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.28.37%20AM.png)
+![Screen Shot 2022-11-07 at 6.28.37 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.28.37%20AM.png)
 
 The first step of this lesson is complete.
 
@@ -146,7 +146,7 @@ Let's create that now.
 
 Change the contents of the `VStack` as follows:
 
-![Screen Shot 2022-11-07 at 6.32.52 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.32.52%20AM.png)
+![Screen Shot 2022-11-07 at 6.32.52 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.32.52%20AM.png)
 
 > [!TIP]
 > If necessary, you can restart the preview window by using the keyboard shortcut `Option-Command-P`.
@@ -157,7 +157,7 @@ However, in the **Stopwatch** pane of the **Clock** app the time is shown using 
 
 Begin by adding the `.font` view modifier on line 21, and you'll notice that the placeholder indicates a structure of type `Font` is expected:
 
-![Screen Shot 2022-11-07 at 6.36.20 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.36.20%20AM.png)
+![Screen Shot 2022-11-07 at 6.36.20 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.36.20%20AM.png)
 
 With the placeholder highlighted, press the **Return** key on your keyboard, remove the question mark that appears, press the `.` key, and then choose the following option in the autocomplete:
 
@@ -165,21 +165,21 @@ With the placeholder highlighted, press the **Return** key on your keyboard, rem
 
 Indicate a size of 90 and we are close to our goal:
 
-![Screen Shot 2022-11-07 at 6.39.42 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.39.42%20AM.png)
+![Screen Shot 2022-11-07 at 6.39.42 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.39.42%20AM.png)
 
 Add the weight parameter and provide an argument of `.thin`:
 
-![Screen Shot 2022-11-07 at 6.42.11 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.42.11%20AM.png)
+![Screen Shot 2022-11-07 at 6.42.11 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.42.11%20AM.png)
 
 Better!
 
 Let's adjust the colours – first, change the foreground color of the time to white on line 22:
 
-![Screen Shot 2022-11-07 at 6.43.05 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.43.05%20AM.png)
+![Screen Shot 2022-11-07 at 6.43.05 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.43.05%20AM.png)
 
 Finally, change the background color on line 15 to black:
 
-![Screen Shot 2022-11-07 at 6.43.38 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.43.38%20AM.png)
+![Screen Shot 2022-11-07 at 6.43.38 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.43.38%20AM.png)
 
 This is good progress, so commit and push your work using `Option-Command-C` with this commit message:
 
@@ -209,7 +209,7 @@ If you guessed that this will require a depth stack or `ZStack`, you are correct
 
 Within the VStack, add a `Circle` structure, with the view modifiers, as shown on lines 23 to 26:
 
-![Screen Shot 2022-11-07 at 6.50.37 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.50.37%20AM.png)
+![Screen Shot 2022-11-07 at 6.50.37 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.50.37%20AM.png)
 
 The shade of grey is not quite dark enough, but we'll fix that later. The size looks good!
 
@@ -219,11 +219,11 @@ Now we need to embed that first circle in a `ZStack`, so `Command`-click the `Ci
 
 Then add comments, shown here on lines 24 and 27, to keep track of what's happening:
 
-![Screen Shot 2022-11-07 at 6.55.13 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.55.13%20AM.png)
+![Screen Shot 2022-11-07 at 6.55.13 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.55.13%20AM.png)
 
 Now, let's add the second circle, this time in black, a bit smaller than the first – see lines 31 to 35:
 
-![Screen Shot 2022-11-07 at 6.56.53 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.56.53%20AM.png)
+![Screen Shot 2022-11-07 at 6.56.53 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.56.53%20AM.png)
 
 It's a good idea to add the blank line on line 31 as it keeps the code describing our user interface from running together and becoming hard to read.
 
@@ -231,11 +231,11 @@ As you can see, the `ZStack` is doing it's job – the second, smaller black cir
 
 Add the third circle, shown here on lines 36 to 40:
 
-![Screen Shot 2022-11-07 at 6.58.48 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.58.48%20AM.png)
+![Screen Shot 2022-11-07 at 6.58.48 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%206.58.48%20AM.png)
 
 Finally, we can add the text as the fourth layer of the `ZStack`:
 
-![Screen Shot 2022-11-07 at 7.05.37 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.05.37%20AM.png)
+![Screen Shot 2022-11-07 at 7.05.37 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.05.37%20AM.png)
 
 We have successfully described the form of the button!
 
@@ -249,7 +249,7 @@ Got the basic structure of the first circular button completed.
 
 At this point the code within `ContentView` is getting somewhat long:
 
-![Untitled.png|undefined](/img/user/Media/Untitled.png)
+![Untitled.png](/img/user/Media/Untitled.png)
 
 And looking at our goal, we know that we need to essentially draw the same button again, just with different colors and text:
 
@@ -261,31 +261,31 @@ We can then just use our new structure from within `ContentView` whenever we nee
 
 Set up a split screen in Xcode, and create a new file named `CircleButtonView`, like this:
 
-![Creating CircleButtonView.gif|undefined](/img/user/Media/Creating%20CircleButtonView.gif)
+![Creating CircleButtonView.gif](/img/user/Media/Creating%20CircleButtonView.gif)
 
 Then, highlight lines 25 to 46 in `ContentView` on the right:
 
-![Screen Shot 2022-11-07 at 7.15.12 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.15.12%20AM.png)
+![Screen Shot 2022-11-07 at 7.15.12 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.15.12%20AM.png)
 
 Press `Command-X` to cut those lines of code into your computer's clipboard:
 
-![Screen Shot 2022-11-07 at 7.15.41 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.15.41%20AM.png)
+![Screen Shot 2022-11-07 at 7.15.41 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.15.41%20AM.png)
 
 Next highlight line 12 in `CircleButtonView` on the left:
 
-![Screen Shot 2022-11-07 at 7.16.15 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.16.15%20AM.png)
+![Screen Shot 2022-11-07 at 7.16.15 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.16.15%20AM.png)
 
 And press `Command-V` to paste the code into the file on the left:
 
-![Screen Shot 2022-11-07 at 7.16.49 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.16.49%20AM.png)
+![Screen Shot 2022-11-07 at 7.16.49 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.16.49%20AM.png)
 
 Finally, after the comment on line 24 in `ContentView` on the right, on line 25, create an instance of the `CircleButtonView` structure:
 
-![Screen Shot 2022-11-07 at 7.17.59 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.17.59%20AM.png)
+![Screen Shot 2022-11-07 at 7.17.59 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.17.59%20AM.png)
 
 If all goes well, after hiding the Project Navigator on the left, and showing the **Canvas** on the right, the preview of the user interface should look identical, except the code in `ContentView` is a lot shorter than it was before:
 
-![Showing the Preview Window Again.gif|undefined](/img/user/Media/Showing%20the%20Preview%20Window%20Again.gif)
+![Showing the Preview Window Again.gif](/img/user/Media/Showing%20the%20Preview%20Window%20Again.gif)
 
 It may not feel like this accomplished much, but it has – let's commit and save this progress, using the message:
 
@@ -309,11 +309,11 @@ Setting this up in `ContentView` is pretty quick. `Command`-click `CircleButtonV
 
 This is the result:
 
-![Screen Shot 2022-11-07 at 7.41.27 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.41.27%20AM.png)
+![Screen Shot 2022-11-07 at 7.41.27 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.41.27%20AM.png)
 
 Then, as shown on lines 27 to 30, add a `Spacer` view and another instance of the button:
 
-![Screen Shot 2022-11-07 at 7.40.54 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.40.54%20AM.png)
+![Screen Shot 2022-11-07 at 7.40.54 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.40.54%20AM.png)
 
 Progress!
 
@@ -341,11 +341,11 @@ What varies is the:
 
 So, add these stored properties to `CircleButtonView` along with the comments shown:
 
-![Screen Shot 2022-11-07 at 7.47.57 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.47.57%20AM.png)
+![Screen Shot 2022-11-07 at 7.47.57 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.47.57%20AM.png)
 
 Now that we have added those stored properties, they must be populated with some information – that is why Xcode tells us that we are missing arguments in each location where an instance of `CircleButtonView` is created:
 
-![Screen Shot 2022-11-07 at 7.49.23 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.49.23%20AM.png)
+![Screen Shot 2022-11-07 at 7.49.23 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.49.23%20AM.png)
 
 Go ahead now and add the missing arguments:
 
@@ -354,7 +354,7 @@ Go ahead now and add the missing arguments:
 
 ... as shown here:
 
-![Screen Shot 2022-11-07 at 7.54.24 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.54.24%20AM.png)
+![Screen Shot 2022-11-07 at 7.54.24 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%207.54.24%20AM.png)
 
 Note that we are now passing different arguments for the second instance of `CircleButtonView` – on lines 32 to 34 in `ContentView`.
 
@@ -378,7 +378,7 @@ So, currently, the `body` property returns the same user interface, regardless o
 
 Make the edits marked by the red rectangle in this screenshot to correct the issue:
 
-![Screen Shot 2022-11-07 at 8.02.27 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-07%20at%208.02.27%20AM.png)
+![Screen Shot 2022-11-07 at 8.02.27 AM.png](/img/user/Media/Screen%20Shot%202022-11-07%20at%208.02.27%20AM.png)
 
 > [!NOTE]
 > In that screenshot, **Show Changes** was enabled, so the old code is highlighted in grey, and the new code is highlighted in blue.
