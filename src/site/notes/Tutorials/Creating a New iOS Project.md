@@ -39,7 +39,7 @@ On the following screen, give your project:
 
 On the following screen, choose where to save your project – be sure that source control is enabled:
 
-![Screenshot 2023-10-30 at 10.34.25 AM.png|undefined](/img/user/Media/Screenshot%202023-10-30%20at%2010.34.25%E2%80%AFAM.png)
+![Screenshot 2023-10-30 at 10.34.25 AM.png](/img/user/Media/Screenshot%202023-10-30%20at%2010.34.25%E2%80%AFAM.png)
 
 ## Begin coding
 
