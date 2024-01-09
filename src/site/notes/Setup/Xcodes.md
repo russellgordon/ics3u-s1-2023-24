@@ -12,11 +12,11 @@ You can directly [download Xcodes](https://github.com/XcodesOrg/XcodesApp/releas
 
 Once downloaded, you will have a compressed file:
 
-![Screenshot 2023-01-19 at 6.11.46 AM.png|undefined](/img/user/Media/Screenshot%202023-01-19%20at%206.11.46%20AM.png)
+![Screenshot 2023-01-19 at 6.11.46 AM.png](/img/user/Media/Screenshot%202023-01-19%20at%206.11.46%20AM.png)
 
 Double-click the file to de-compress it, then drag the resulting Xcodes app to your Applications folder:
 
-![Installing Xcodes 1.gif|undefined](/img/user/Media/Installing%20Xcodes%201.gif)
+![Installing Xcodes 1.gif](/img/user/Media/Installing%20Xcodes%201.gif)
 
 Open Xcodes.
 
@@ -28,7 +28,7 @@ To do this, choose **Xcodes > Settings...**, then select the **Sign-in** button 
 
 Finally, to see what versions of Xcode are available to install, you might need to refresh the list – click the button highlighted in red here:
 
-![Screenshot 2023-10-18 at 8.53.44 PM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%208.53.44%E2%80%AFPM.png)
+![Screenshot 2023-10-18 at 8.53.44 PM.png](/img/user/Media/Screenshot%202023-10-18%20at%208.53.44%E2%80%AFPM.png)
   
 You can then use Xcodes to remove older versions of Xcode from your computer before or after installing a new version (depending on how much available disk space you have).
 
