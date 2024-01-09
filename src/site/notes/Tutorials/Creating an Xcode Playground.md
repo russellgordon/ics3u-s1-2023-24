@@ -47,7 +47,7 @@ Finally, save your playground using a descriptive name.
 
 What name you select will depend on what concept or idea you are exploring:
 
-![Screenshot 2023-10-21 at 7.37.10 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%207.37.10%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 7.37.10 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%207.37.10%E2%80%AFAM.png)
 
 
 
