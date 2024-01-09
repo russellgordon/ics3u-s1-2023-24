@@ -8,7 +8,7 @@
 
 Once you have logged in to Notion and [[Portfolios/Creating a Notion Account#Opening the teamspace\|opened the Lakefield Computer Studies Program teamspace]], you should see your portfolio page:
 
-![Screenshot 2023-10-18 at 7.24.46 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.24.46%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.24.46 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.24.46%E2%80%AFAM.png)
 
 ## Reviewing the example post
 
@@ -16,7 +16,7 @@ The purpose of your portfolio is to share evidence of understanding of our [[Lea
 
 Click on the example post provided:
 
-![Screenshot 2023-10-18 at 7.26.13 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.26.13%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.26.13 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.26.13%E2%80%AFAM.png)
 
 ### Sharing progress
 
@@ -26,7 +26,7 @@ A few sentences might be enough sometimes, but the more you expand on what you a
 
 Note how the author of this example post included at least one screenshot to support what they described accomplishing:
 
-![Screenshot 2023-10-18 at 7.27.25 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.27.25%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.27.25 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.27.25%E2%80%AFAM.png)
 
 ### Identify what you now understand
 
@@ -34,17 +34,17 @@ What do you better understand now?
 
 Select a [[Learning Goals\|learning goal]] that this post provides evidence for:
 
-![Screenshot 2023-10-18 at 7.29.34 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.29.34%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.29.34 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.29.34%E2%80%AFAM.png)
 
 Be sure to tag the post:
 
-![Screenshot 2023-10-18 at 7.30.05 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.30.05%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.30.05 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.30.05%E2%80%AFAM.png)
 
 ### Asking questions
 
 In the **Questions** section, describe anything you are wondering about or stuck on:
 
-![Screenshot 2023-10-18 at 7.31.34 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.31.34%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.31.34 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.31.34%E2%80%AFAM.png)
 
 Be sure to tag Mr. Gordon using `@Russell Gordon`. He will then reply and answer your questions prior to the start of our next class.
 
@@ -56,7 +56,7 @@ If you have no questions, please indicate that, so Mr. Gordon knows you did not 
 
 To actually make your own first post, click the blue **New** button:
 
-![Screenshot 2023-10-18 at 7.32.39 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.32.39%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.32.39 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.32.39%E2%80%AFAM.png)
 
 > [!NOTE]
 > It may take a moment for the body of the new post to load.
@@ -67,7 +67,7 @@ Describing the current day of the course, and the topic of the post, is one appr
 
 For example: "Thread 1, Day 1: Drawing my name":
 
-![Screenshot 2023-10-18 at 7.35.15 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%207.35.15%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 7.35.15 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%207.35.15%E2%80%AFAM.png)
 
 Go ahead and write within the sections provied.
 
