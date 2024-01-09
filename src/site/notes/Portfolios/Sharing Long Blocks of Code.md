@@ -20,7 +20,7 @@ To create a code block in Notion, just type `/code` at the start of a new block:
 
 After doing so, you will see an empty code block:
 
-![Screenshot 2023-09-21 at 8.23.30 AM.png|undefined](/img/user/Media/Screenshot%202023-09-21%20at%208.23.30%20AM.png)
+![Screenshot 2023-09-21 at 8.23.30 AM.png](/img/user/Media/Screenshot%202023-09-21%20at%208.23.30%20AM.png)
 
 ## Copy code into the block
 
@@ -28,7 +28,7 @@ Copy code from Xcode by placing your mouse cursor in the code editor, pressing *
 
 Switch to the code block in Notion, and then press **Command-V** to paste the code:
 
-![Screenshot 2023-09-21 at 8.25.14 AM.png|undefined](/img/user/Media/Screenshot%202023-09-21%20at%208.25.14%20AM.png)
+![Screenshot 2023-09-21 at 8.25.14 AM.png](/img/user/Media/Screenshot%202023-09-21%20at%208.25.14%20AM.png)
 
 ## Select the correct language
 
