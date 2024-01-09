@@ -85,7 +85,7 @@ If you do not see the **Preview** section at right, sometimes called the **Canva
 
 The **Preview** or **Canvas** area will appear and disappear:
 
-![Toggling the Preview Area 1.gif|undefined](/img/user/Media/Toggling%20the%20Preview%20Area%201.gif)
+![Toggling the Preview Area 1.gif](/img/user/Media/Toggling%20the%20Preview%20Area%201.gif)
 
 ## Starting the Preview
 
@@ -169,7 +169,7 @@ Here is an illustration of the flow:
 
 If we click through the different views of the app, we can see each file in turn appear in the Previews area:
 
-![Previewing Multiple Files.gif|undefined](/img/user/Media/Previewing%20Multiple%20Files.gif)
+![Previewing Multiple Files.gif](/img/user/Media/Previewing%20Multiple%20Files.gif)
 
 This is fine if we really do just want to see each view on it's own.
 
@@ -207,7 +207,7 @@ Why is that? Let's investigate...
 
 In the **Project navigator** select the **PhonePrototypeApp** file:
 
-![Screenshot 2023-11-05 at 11.55.55 AM.png|undefined](/img/user/Media/Screenshot%202023-11-05%20at%2011.55.55%E2%80%AFAM.png)
+![Screenshot 2023-11-05 at 11.55.55 AM.png](/img/user/Media/Screenshot%202023-11-05%20at%2011.55.55%E2%80%AFAM.png)
 
 On line 10, you'll note the following code:
 
@@ -243,11 +243,11 @@ Then we when run the app again in the Simulator by pressing **Command-R**, we se
 
 For this particular app, what we want to do is create an instance of `LandingView` because that is what (in turn) creates a `TabView` – that much is clear when we preview the `LandingView` file:
 
-![Screenshot 2023-11-05 at 12.08.01 PM.png|undefined](/img/user/Media/Screenshot%202023-11-05%20at%2012.08.01%E2%80%AFPM.png)
+![Screenshot 2023-11-05 at 12.08.01 PM.png](/img/user/Media/Screenshot%202023-11-05%20at%2012.08.01%E2%80%AFPM.png)
 
 So if we want to see this same content when the app opens in the full simulator, this is the change should make at the app entry point:
 
-![Changing What Structure Shows When App Runs.gif|undefined](/img/user/Media/Changing%20What%20Structure%20Shows%20When%20App%20Runs.gif)
+![Changing What Structure Shows When App Runs.gif](/img/user/Media/Changing%20What%20Structure%20Shows%20When%20App%20Runs.gif)
 
 Conceptually, this is what we now have:
 
