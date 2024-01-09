@@ -60,7 +60,7 @@ So, $1111_2=15_{10}$
 
 In your playground, the default code provided is:
 
-![Screenshot 2023-10-21 at 8.47.37 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%208.47.37%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 8.47.37 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%208.47.37%E2%80%AFAM.png)
 
 Run your playground by clicking the button in the lower left corner, or by pressing **Command-Shift-Return** on your keyboard.
 
@@ -68,7 +68,7 @@ Run your playground by clicking the button in the lower left corner, or by press
 
 After a few seconds – it takes a bit longer the first time you run a playground – you will see results appear in the sidebar:
 
-![Screenshot 2023-10-21 at 8.45.45 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%208.45.45%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 8.45.45 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%208.45.45%E2%80%AFAM.png)
 
 This code creates a *variable* named `greeting`.
 
@@ -86,7 +86,7 @@ Click the trackpad or your mouse button.
 
 Xcode will tell you the *data type* of the `greeting` variable is a *string*:
 
-![Screenshot 2023-10-21 at 8.55.39 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%208.55.39%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 8.55.39 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%208.55.39%E2%80%AFAM.png)
 
 A *string* is a programming term for a data type that holds text.
 
@@ -104,7 +104,7 @@ This creates a *constant* named `age`.
 
 Swift reports the data type as an integer, or `Int`:
 
-![Screenshot 2023-10-21 at 8.59.35 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%208.59.35%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 8.59.35 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%208.59.35%E2%80%AFAM.png)
 
 In Swift, on modern computers, an `Int` is [stored using *sixty-four* bits](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Int)!
 
@@ -123,7 +123,7 @@ age += 1
 
 Does this work? It does not, because we cannot change a constant value:
 
-![Screenshot 2023-10-21 at 9.09.23 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%209.09.23%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 9.09.23 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%209.09.23%E2%80%AFAM.png)
 
 You can comment out the code that tries to change the age like this:
 
@@ -142,7 +142,7 @@ var balance = 1_000_000.49
 
 Run your code and **Option**-click it to find it's data type:
 
-![Screenshot 2023-10-21 at 9.11.10 AM.png|undefined](/img/user/Media/Screenshot%202023-10-21%20at%209.11.10%E2%80%AFAM.png)
+![Screenshot 2023-10-21 at 9.11.10 AM.png](/img/user/Media/Screenshot%202023-10-21%20at%209.11.10%E2%80%AFAM.png)
 
 The `Double` data type stores numeric values that contain decimals. More on [how this works later in the course](https://wizardzines.com/zines/integers-floats/).
 
