@@ -15,7 +15,7 @@ A *view* is anything the user sees within our apps or interacts with.
 
 For example, in the [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]] activity you considered this view – a structure designed to show a single item within a list – displaying a title and a subtitle:
 
-![Screenshot 2023-11-14 at 11.54.10 AM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2011.54.10%E2%80%AFAM.png)
+![Screenshot 2023-11-14 at 11.54.10 AM.png](/img/user/Media/Screenshot%202023-11-14%20at%2011.54.10%E2%80%AFAM.png)
 
 You have already written many views while learning about layout and designing interfaces with SwiftUI. 🤩
 
@@ -84,21 +84,21 @@ Output includes the:
 
 To get started, create a [[Tutorials/Creating a New iOS Project\|new iOS project named *GeometryHelper*]]:
 
-![Screenshot 2023-11-16 at 6.33.45 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.33.45%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.33.45 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.33.45%E2%80%AFAM.png)
 
 ### Source control
 
 After creating the project:
 
-![Screenshot 2023-11-16 at 6.40.50 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.40.50%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.40.50 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.40.50%E2%80%AFAM.png)
 
 ... switch to the **Source Control** navigator using the **Command-2** keyboard shortcut, then select **Repositories**:
 
-![Screenshot 2023-11-16 at 6.41.32 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.41.32%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.41.32 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.41.32%E2%80%AFAM.png)
 
 Select the **GeometryHelper** entry and you will see the list of commits, which has only one since the project was just created:
 
-![Screenshot 2023-11-16 at 6.42.24 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.42.24%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.42.24 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.42.24%E2%80%AFAM.png)
 
 Now two-finger tap on the **GeometryHelper** entry and create a remote:
 
@@ -106,11 +106,11 @@ Now two-finger tap on the **GeometryHelper** entry and create a remote:
 
 Press **Create** on this dialog:
 
-![Screenshot 2023-11-16 at 6.42.52 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.42.52%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.42.52 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.42.52%E2%80%AFAM.png)
 
 After creating the remote, you will see two small badges in the list of commits:
 
-![Screenshot 2023-11-16 at 6.43.32 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.43.32%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.43.32 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.43.32%E2%80%AFAM.png)
 
 Right now, both the local copy of our code, and the remote copy of our code, are at the same position (have the same commits).
 
@@ -121,27 +121,27 @@ If the remote repository `origin/main` ever falls behind the local repository `o
 
 Press **Command-1** to return to the project navigator:
 
-![Screenshot 2023-11-16 at 6.47.46 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%206.47.46%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 6.47.46 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%206.47.46%E2%80%AFAM.png)
 
 To keep things organized, we will create *groups* – essentially folders – to keep our view code and model code separated.
 
 Create a group named **Views** now:
 
-![Creating a Group.gif|undefined](/img/user/Media/Creating%20a%20Group.gif)
+![Creating a Group.gif](/img/user/Media/Creating%20a%20Group.gif)
 
 Then create a second group named **Model**:
 
-![Create the Model Group.gif|undefined](/img/user/Media/Create%20the%20Model%20Group.gif)
+![Create the Model Group.gif](/img/user/Media/Create%20the%20Model%20Group.gif)
 
 We want to be deliberate with naming choices when we write software, so that code is as readable as possible.
 
 So, we are now going to delete `ContentView`:
 
-![Deleting ContentView.gif|undefined](/img/user/Media/Deleting%20ContentView.gif)
+![Deleting ContentView.gif](/img/user/Media/Deleting%20ContentView.gif)
 
 And create a new view, inside the **Views** group, named `CircleView`:
 
-![Creating CircleView.gif|undefined](/img/user/Media/Creating%20CircleView.gif)
+![Creating CircleView.gif](/img/user/Media/Creating%20CircleView.gif)
 
 Finally, as you learned in the [[Tutorials/Running Your Code\|Running Your Code]] tutorial, the app entry point file controls what view is shown when the app is run in the **Simulator** or on a physical device.
 
@@ -149,13 +149,13 @@ We need to update this file so that it creates an instance of `CircleView`, rath
 
 Let's do that now:
 
-![Update the App Entry Point.gif|undefined](/img/user/Media/Update%20the%20App%20Entry%20Point.gif)
+![Update the App Entry Point.gif](/img/user/Media/Update%20the%20App%20Entry%20Point.gif)
 
 Finally, by convention, the app entry point file should be the first file listed in our project.
 
 Drag and drop that file so that it is above the **Model** group:
 
-![Drag App Entry Point to Top.gif|undefined](/img/user/Media/Drag%20App%20Entry%20Point%20to%20Top.gif)
+![Drag App Entry Point to Top.gif](/img/user/Media/Drag%20App%20Entry%20Point%20to%20Top.gif)
 
 After completing all of this organization, please commit and push your work using this message:
 
@@ -165,28 +165,28 @@ Organized project by adding Views and Model groups and a new view file named Cir
 
 Here is a quick recap of how to commit and push your work:
 
-![Committing and Pushing.gif|undefined](/img/user/Media/Committing%20and%20Pushing.gif)
+![Committing and Pushing.gif](/img/user/Media/Committing%20and%20Pushing.gif)
 
 ### Build the interface
 
 Open the **Model** and **Views** groups and click on the `CircleView` file:
 
-![Opening Groups.gif|undefined](/img/user/Media/Opening%20Groups.gif)
+![Opening Groups.gif](/img/user/Media/Opening%20Groups.gif)
 
 Inside `CircleView` add comments to mark stored and computed properties:
 
-![Screenshot 2023-11-16 at 7.18.05 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.18.05%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.18.05 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.18.05%E2%80%AFAM.png)
 
 First we will create a stored property to keep track of the radius for a circle – make the following addition to your code:
 
-![Screenshot 2023-11-16 at 7.19.29 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.19.29%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.19.29 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.19.29%E2%80%AFAM.png)
 
 > [!NOTE]
 > As you learned in the [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]], we mark the property with the `@State` property wrapper. This means that when the stored property changes, SwiftUI will update the user interface for us.
 
 Next we will add a `Text` view to show the contents of the `radius` property:
 
-![Screenshot 2023-11-16 at 7.21.16 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.21.16%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.21.16 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.21.16%E2%80%AFAM.png)
 
 > [!NOTE]
 > As you learned in [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]], the syntax `\( )` represents *string interpolation* and in this case:
@@ -203,23 +203,23 @@ Added a stored property and a Text view to show the radius.
 
 Finally, we will add a  `Slider` control that has a binding to the stored property, inside of a `VStack`:
 
-![Screenshot 2023-11-16 at 7.24.56 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.24.56%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.24.56 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.24.56%E2%80%AFAM.png)
 
 We use `$radius` bind the `Slider` to the `radius` stored property:
 
-![Screenshot 2023-11-16 at 7.25.43 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.25.43%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.25.43 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.25.43%E2%80%AFAM.png)
 
 And we provide an argument of `0...100` for the **in** parameter so that the slider can move only between the values of zero to 100:
 
-![Screenshot 2023-11-16 at 7.26.41 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.26.41%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.26.41 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.26.41%E2%80%AFAM.png)
 
 Finally, a bit of padding keeps the interface from touching the edges of the device:
 
-![Screenshot 2023-11-16 at 7.27.11 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.27.11%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.27.11 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.27.11%E2%80%AFAM.png)
 
 You can now drag the slider, and see the radius change on screen:
 
-![Screenshot 2023-11-16 at 7.28.10 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.28.10%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.28.10 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.28.10%E2%80%AFAM.png)
 
 This is great progress, so commit and push your work now with this message:
 
@@ -233,7 +233,7 @@ What we will do next is add the model code.
 
 First, create a new file in the **Model** group named `Circle`:
 
-![Create a Model for a Circle.gif|undefined](/img/user/Media/Create%20a%20Model%20for%20a%20Circle.gif)
+![Create a Model for a Circle.gif](/img/user/Media/Create%20a%20Model%20for%20a%20Circle.gif)
 
 Then, you can copy and paste this code:
 
@@ -260,7 +260,7 @@ struct Circle {
 
 ... into the new `Circle` file:
 
-![Screenshot 2023-11-16 at 7.32.47 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.32.47%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.32.47 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.32.47%E2%80%AFAM.png)
 
 Please commit and push you work with this message:
 
@@ -276,7 +276,7 @@ Rather than re-create individual properties *within our view* for the radius of 
 
 Replace the old code on line 13 (in grey) with the new code (in blue):
 
-![Screenshot 2023-11-16 at 7.37.31 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.37.31%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.37.31 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.37.31%E2%80%AFAM.png)
 
 Above, we make a stored property in our *view* that is simply an instance of our `Circle` structure.
 
@@ -285,19 +285,19 @@ The instance of our `Circle` structure is called `currentCircle`.
 > [!NOTE]
 > Creating an instance of the `Circle` structure on line 13 is the same thing we did earlier in this course within a simple playground file, shown below on line 23:
 > 
-> ![Screenshot 2023-11-16 at 7.39.51 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.39.51%E2%80%AFAM.png)
+> ![Screenshot 2023-11-16 at 7.39.51 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.39.51%E2%80%AFAM.png)
 
 Next, in our `CircleView` file on line 22, we change the slider so that it has a binding to the `radius` property that is inside the `currentCircle` instance of `Circle` structure:
 
-![Screenshot 2023-11-16 at 7.41.22 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.41.22%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.41.22 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.41.22%E2%80%AFAM.png)
 
 Finally, on line 19, we adjust the `Text` view so that it shows the value being stored in the `radius` property of the `currentCircle` instance:
 
-![Screenshot 2023-11-16 at 7.42.54 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.42.54%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.42.54 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.42.54%E2%80%AFAM.png)
 
 Let's break down what is happening in detail:
 
-![Screenshot 2023-11-16 at 7.45.38 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.45.38%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.45.38 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.45.38%E2%80%AFAM.png)
 
 > [!DISCUSSION]
 > 1. We create an instance of the `Circle` structure named `currentCircle`.
@@ -322,7 +322,7 @@ Now that we are using the `Circle` structure from our model, without much additi
 
 For example, make this addition to your code, so that the diameter of the circle is shown in the view:
 
-![Screenshot 2023-11-16 at 7.54.48 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.54.48%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.54.48 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.54.48%E2%80%AFAM.png)
 
 Commit and push your work with this message:
 
@@ -348,11 +348,11 @@ For example, say your task earlier in this module was to create a structure that
 
 You would copy your existing code that describes a cone into a new file named `Cone` within the **Model** group:
 
-![Screenshot 2023-11-16 at 7.59.40 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%207.59.40%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 7.59.40 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%207.59.40%E2%80%AFAM.png)
 
 Then you would create a new file named `ConeView` within the **View** group:
 
-![Screenshot 2023-11-16 at 8.02.36 AM.png|undefined](/img/user/Media/Screenshot%202023-11-16%20at%208.02.36%E2%80%AFAM.png)
+![Screenshot 2023-11-16 at 8.02.36 AM.png](/img/user/Media/Screenshot%202023-11-16%20at%208.02.36%E2%80%AFAM.png)
 
 Then, apply the skills you've learned in this activity to make an interface that allows the user to provide all necessary inputs for your figure. 
 
