@@ -26,11 +26,11 @@ Lists can adopt many appearances on iOS. This article by Peter Freise [provides 
 
 Let's get started on our list. Scroll up to the top of `ContentView`:
 
-![Screen Shot 2022-11-09 at 8.12.15 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.12.15%20AM.png)
+![Screen Shot 2022-11-09 at 8.12.15 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.12.15%20AM.png)
 
 Then add the basic structure of a list with five entries, like this:
 
-![Screen Shot 2022-11-09 at 8.14.20 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.14.20%20AM.png)
+![Screen Shot 2022-11-09 at 8.14.20 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.14.20%20AM.png)
 
 You will notice that the list immediately pushs the rest of the content up to the top of the screen.
 
@@ -38,7 +38,7 @@ That is because a list naturally expands, vertically, to take up all available s
 
 We want the list to take up only a portion of the space available, so, add a `.frame` view modifier, like this, on lines 45 and 46:
 
-![Screen Shot 2022-11-09 at 8.16.15 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.16.15%20AM.png)
+![Screen Shot 2022-11-09 at 8.16.15 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.16.15%20AM.png)
 
 That helps a bit, but the interface still does not quite match our goal:
 
@@ -46,7 +46,7 @@ That helps a bit, but the interface still does not quite match our goal:
 
 This is a case where a `Spacer` structure is helpful. Add one above the `Text` view, inside the `VStack`:
 
-![Screen Shot 2022-11-09 at 8.18.18 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.18.18%20AM.png)
+![Screen Shot 2022-11-09 at 8.18.18 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.18.18%20AM.png)
 
 This is pretty good – we still have some work to do – but let's commit and push at this point, with the following message:
 
@@ -62,7 +62,7 @@ Now, compared to the goal:
 
 If you consult [Peter Friese's article on formatting list views](https://peterfriese.dev/posts/swiftui-listview-part3/), you might see what we need to do:
 
-![Screen Shot 2022-11-09 at 8.21.40 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.21.40%20AM.png)
+![Screen Shot 2022-11-09 at 8.21.40 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%208.21.40%20AM.png)
 
 Add the `.listStyle` modifier as shown above on lines 50 and 51. This is progress.
 
@@ -80,11 +80,11 @@ We need to apply a view modifier to all the list *items*, but not to the `List` 
 
 To do this, we can add a `Group` structure around the list items:
 
-![Adding a Group Structure.gif|undefined](/img/user/Media/Adding%20a%20Group%20Structure.gif)
+![Adding a Group Structure.gif](/img/user/Media/Adding%20a%20Group%20Structure.gif)
 
 Now we can attach a view modifier to the `Group` structure, as shown here on lines 50 and 51:
 
-![Screen Shot 2022-11-09 at 9.57.50 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%209.57.50%20AM.png)
+![Screen Shot 2022-11-09 at 9.57.50 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%209.57.50%20AM.png)
 
 The view modifier will be applied to all the structures that are part of the group – all five `Text` views in this case.
 
