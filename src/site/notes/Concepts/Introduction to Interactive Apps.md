@@ -187,11 +187,11 @@ This results in different visual output from the computed property named `body`.
 
 Here is the output from the first instance of `ListItem`, shown in the first preview:
 
-![Screenshot 2023-11-14 at 11.53.39 AM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2011.53.39%E2%80%AFAM.png)
+![Screenshot 2023-11-14 at 11.53.39 AM.png](/img/user/Media/Screenshot%202023-11-14%20at%2011.53.39%E2%80%AFAM.png)
 
 Here is the output from the second instance of `ListItem`, shown in the second preview:
 
-![Screenshot 2023-11-14 at 11.54.10 AM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2011.54.10%E2%80%AFAM.png)
+![Screenshot 2023-11-14 at 11.54.10 AM.png](/img/user/Media/Screenshot%202023-11-14%20at%2011.54.10%E2%80%AFAM.png)
 
 ### Property wrappers
 
@@ -211,7 +211,7 @@ Let's build this app step by step.
 
 First, we'll make a static layout, with a specific example of a number being squared:
 
-![Screenshot 2023-11-14 at 12.13.06 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2012.13.06%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 12.13.06 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%2012.13.06%E2%80%AFPM.png)
 
 Here we have several text views, stacks, and spacers to express the general layout we want to build.
 
@@ -277,7 +277,7 @@ We need to store some information – some *state* – to allow the user to con
 
 Add this stored property to your view now:
 
-![Screenshot 2023-11-14 at 12.17.38 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2012.17.38%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 12.17.38 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%2012.17.38%E2%80%AFPM.png)
 
 Note that since we provide a default value of `1` for that stored property, we do not need to provide an argument to populate the stored property, when creating the instance of `ContentView` from within the `#Preview` section of our code:
 
@@ -307,11 +307,11 @@ What does `@State` do?
 
 So, please add the property wrapper to your code now:
 
-![Screenshot 2023-11-14 at 12.20.59 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2012.20.59%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 12.20.59 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%2012.20.59%E2%80%AFPM.png)
 
 Finally, let's make a change to our code, so the value of the `base` stored property is actually used in our layout. Remember – old code is shown in grey – new code is shown in light blue:
 
-![Screenshot 2023-11-14 at 12.24.59 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%2012.24.59%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 12.24.59 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%2012.24.59%E2%80%AFPM.png)
 
 Of course, this now means that our user interface presents incorrect information, since $1^2\neq25$, but we will fix that soon.
 
@@ -333,13 +333,13 @@ We will add a *stepper* control to our project. A stepper is useful for allowing
 
 Use the auto-complete to begin adding a stepper below the `HStack`:
 
-![Screenshot 2023-11-14 at 1.17.14 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.17.14%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.17.14 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.17.14%E2%80%AFPM.png)
 
 There are many ways to make a stepper, but choose the option shown.
 
 You will end up with this code:
 
-![Screenshot 2023-11-14 at 1.18.03 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.18.03%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.18.03 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.18.03%E2%80%AFPM.png)
 
 Errors appear because we have not replaced the placeholders.
 
@@ -347,19 +347,19 @@ Let's do that now.
 
 For the first placeholder, replace it with `$base`:
 
-![Screenshot 2023-11-14 at 1.19.09 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.19.09%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.19.09 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.19.09%E2%80%AFPM.png)
 
 For the second placeholder, begin by typing a `{` and then press the **Return** key on your keyboard so you get this:
 
-![Screenshot 2023-11-14 at 1.19.50 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.19.50%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.19.50 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.19.50%E2%80%AFPM.png)
 
 Finally, inside the `{ }` brackets, add a `Text` view – this will be a label for the stepper, telling the user what value is being adjusted when they press the `+` or `-` buttons:
 
-![Screenshot 2023-11-14 at 1.25.53 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.25.53%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.25.53 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.25.53%E2%80%AFPM.png)
 
 Now, let's break down in detail what is happening there:
 
-![Screenshot 2023-11-14 at 1.23.44 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.23.44%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.23.44 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.23.44%E2%80%AFPM.png)
 
 > [!DISCUSSION]
 > 1. In the `Stepper`, for the `value` parameter, we pass an argument of `$base`.
@@ -405,7 +405,7 @@ This is a great place to use a *computed property* for the processing part, and 
 
 First, add the following computed property to your structure:
 
-![Screenshot 2023-11-14 at 1.37.01 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.37.01%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.37.01 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.37.01%E2%80%AFPM.png)
 
 The new computed property is called `squared` and it will update whenever the value of `base` changes – again, thanks to the `@State` property wrapper.
 
@@ -413,7 +413,7 @@ Finally, we need to show the output from the `squared` computed property.
 
 You might think that we could just do what is shown below – note that old code is in grey – new code is in light blue:
 
-![Screenshot 2023-11-14 at 1.39.31 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.39.31%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.39.31 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.39.31%E2%80%AFPM.png)
 
 However, that generates an error message.
 
@@ -425,7 +425,7 @@ This is where string interpolation helps us.
 
 Make the following change – note that old code is in grey – new code is in light blue:
 
-![Screenshot 2023-11-14 at 1.40.57 PM.png|undefined](/img/user/Media/Screenshot%202023-11-14%20at%201.40.57%E2%80%AFPM.png)
+![Screenshot 2023-11-14 at 1.40.57 PM.png](/img/user/Media/Screenshot%202023-11-14%20at%201.40.57%E2%80%AFPM.png)
 
 By adding this code:
 
