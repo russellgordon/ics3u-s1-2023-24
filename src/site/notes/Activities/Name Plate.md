@@ -18,7 +18,7 @@ Draw the letters of your name in block letters.
 
 If you have had prior experience with coding, here is an exemplar of what you might aim for:
 
-![Screenshot 2023-10-18 at 6.21.36 AM.png|undefined](/img/user/Media/Screenshot%202023-10-18%20at%206.21.36%E2%80%AFAM.png)
+![Screenshot 2023-10-18 at 6.21.36 AM.png](/img/user/Media/Screenshot%202023-10-18%20at%206.21.36%E2%80%AFAM.png)
 
 If you've had no prior experience with coding, draw your name using block or stick letters first. 
 
