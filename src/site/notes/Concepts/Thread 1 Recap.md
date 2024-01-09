@@ -3,6 +3,7 @@
 ---
 
 # Thread 1 Recap
+
 As you work through this recap, you may wish to take notes in your black graph paper notebook.
 
 Aim to understand and recall rather than rush to complete this recap as soon as you can.
