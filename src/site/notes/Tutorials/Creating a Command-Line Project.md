@@ -34,19 +34,19 @@ On the next screen, choose where to save your project – and whether you want 
 
 You will see the following when your project first opens:
 
-![Screenshot 2023-10-23 at 6.16.13 AM.png|undefined](/img/user/Media/Screenshot%202023-10-23%20at%206.16.13%E2%80%AFAM.png)
+![Screenshot 2023-10-23 at 6.16.13 AM.png](/img/user/Media/Screenshot%202023-10-23%20at%206.16.13%E2%80%AFAM.png)
 
 This is the screen where you can configure how the command-line project will be compiled into an actual executable application on your computer.
 
 Normally, no changes are required here. So, switch to the **main.swift** file using the Project Navigator at left:
 
-![Screenshot 2023-10-23 at 6.19.23 AM.png|undefined](/img/user/Media/Screenshot%202023-10-23%20at%206.19.23%E2%80%AFAM.png)
+![Screenshot 2023-10-23 at 6.19.23 AM.png](/img/user/Media/Screenshot%202023-10-23%20at%206.19.23%E2%80%AFAM.png)
 
 You can then run your command line program using **Command-R**.
 
 Output will appear below the code window:
 
-![Screenshot 2023-10-23 at 6.17.51 AM.png|undefined](/img/user/Media/Screenshot%202023-10-23%20at%206.17.51%E2%80%AFAM.png)
+![Screenshot 2023-10-23 at 6.17.51 AM.png](/img/user/Media/Screenshot%202023-10-23%20at%206.17.51%E2%80%AFAM.png)
 
 > [!NOTE]
 > Do not be alarmed by the message:
