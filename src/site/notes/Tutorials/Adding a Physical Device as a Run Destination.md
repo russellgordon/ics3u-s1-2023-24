@@ -18,7 +18,7 @@ Then, connect your iPhone or iPad to your Mac using a cable.
 
 The first time you do this, you will see an image something like this:
 
-![Screen Shot 2022-10-31 at 7.09.22 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.09.22%20AM.png)
+![Screen Shot 2022-10-31 at 7.09.22 AM.png](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.09.22%20AM.png)
 
 To test applications you write on a physical device the device must be in *developer mode*. 
 
@@ -51,7 +51,7 @@ You will need to provide your device passcode:
 
 Now that you have enabled developer mode on your phone, back in Xcode in the **Devices and Simulators** dialog, you will see a yellow banner message telling you that certain required files are being copied to and from your device:
 
-![Screen Shot 2022-10-31 at 7.14.04 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.14.04%20AM.png)
+![Screen Shot 2022-10-31 at 7.14.04 AM.png](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.14.04%20AM.png)
 
 That process may take a few minutes to complete; be patient. When it is finished, the yellow banner will disappear.
 
@@ -59,11 +59,11 @@ Next, you can select the device you've connected as a run destination.
 
 At the top of the primary Xcode window, click the list of devices (1), then select your device from the list (2):
 
-![Screen Shot 2022-10-31 at 7.35.54 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.35.54%20AM.png)
+![Screen Shot 2022-10-31 at 7.35.54 AM.png](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.35.54%20AM.png)
 
 Now build the application:
 
-![Screen Shot 2022-10-31 at 7.37.00 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.37.00%20AM.png)
+![Screen Shot 2022-10-31 at 7.37.00 AM.png](/img/user/Media/Screen%20Shot%202022-10-31%20at%207.37.00%20AM.png)
 
 Next, will likely see a message indicating that Xcode cannot run the application on the device, because, essentially, your iPhone or iPad currently does not "trust" the Mac that you are developing on to install applications upon it:
 
