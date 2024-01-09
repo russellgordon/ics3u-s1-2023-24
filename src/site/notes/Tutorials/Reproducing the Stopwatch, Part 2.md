@@ -77,7 +77,7 @@ To find a color:
 
 That's a lot of steps, so here's what that looks like in a short animation:
 
-![Using Digital Color Meter.gif|undefined](/img/user/Media/Using%20Digital%20Color%20Meter.gif)
+![Using Digital Color Meter.gif](/img/user/Media/Using%20Digital%20Color%20Meter.gif)
 
 Now you know that the RGB color code for the dark grey of the button of our goal is: 51, 51, 51.
 
@@ -85,15 +85,15 @@ Now you know that the RGB color code for the dark grey of the button of our goal
 
 Your Xcode interface probably looks like this right now:
 
-![Screen Shot 2022-11-08 at 6.09.49 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.09.49%20AM.png)
+![Screen Shot 2022-11-08 at 6.09.49 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.09.49%20AM.png)
 
 We're going to re-arrange things so that it looks like this instead – `ContentView` on the left, and the **Assets** folder for our project on the right:
 
-![Screen Shot 2022-11-08 at 6.10.51 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.10.51%20AM.png)
+![Screen Shot 2022-11-08 at 6.10.51 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.10.51%20AM.png)
 
 Here's how to do that:
 
-![Opening the Assets Folder Next to ContentView 1.gif|undefined](/img/user/Media/Opening%20the%20Assets%20Folder%20Next%20to%20ContentView%201.gif)
+![Opening the Assets Folder Next to ContentView 1.gif](/img/user/Media/Opening%20the%20Assets%20Folder%20Next%20to%20ContentView%201.gif)
 
 Next, we will:
 - Create the new color set named `Dark Grey` in the **Assets** folder
@@ -103,13 +103,13 @@ Next, we will:
 
 Here is what that looks like:
 
-![Creating a Color Set.gif|undefined](/img/user/Media/Creating%20a%20Color%20Set.gif)
+![Creating a Color Set.gif](/img/user/Media/Creating%20a%20Color%20Set.gif)
 
 Finally, we can use the new color set that we have just defined within our project's code.
 
 Make the following edit to ContentView – changing the argument for `buttonColor` from the built-in system `.gray` color to `Color("Dark Grey")`:
 
-![Screen Shot 2022-11-08 at 6.29.29 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.29.29%20AM.png)
+![Screen Shot 2022-11-08 at 6.29.29 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.29.29%20AM.png)
 
 It's quite likely that the preview window will stop working when you change the argument to it's new value.
 
@@ -117,17 +117,17 @@ After making certain that the argument is `Color("Dark Grey")` – check for ty
 
 You will see the lefthand button now has a darker grey – that should perfectly match the dark grey of the our goal:
 
-![Screen Shot 2022-11-08 at 6.50.34 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.50.34%20AM.png)
+![Screen Shot 2022-11-08 at 6.50.34 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.50.34%20AM.png)
 
 How can you check? Use the **Digital Color Meter** app, of course!
 
 Press `Command-L` to unlock the value showed by **Digital Color Meter** and then check the RGB values for the button from our app at left:
 
-![Screen Shot 2022-11-08 at 6.36.19 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.36.19%20AM.png)
+![Screen Shot 2022-11-08 at 6.36.19 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.36.19%20AM.png)
 
 And do the same for the buttom from our goal, at right:
 
-![Screen Shot 2022-11-08 at 6.36.34 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.36.34%20AM.png)
+![Screen Shot 2022-11-08 at 6.36.34 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.36.34%20AM.png)
 
 ### Mini-Exercise: Fix the other button
 
@@ -137,7 +137,7 @@ Use the steps shown in the most recent section of this lesson to create another 
 
 When you are done, things should look like this:
 
-![Screen Shot 2022-11-08 at 6.55.18 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.55.18%20AM.png)
+![Screen Shot 2022-11-08 at 6.55.18 AM.png](/img/user/Media/Screen%20Shot%202022-11-08%20at%206.55.18%20AM.png)
 
 This is *huge* progress, and you've learned a lot about how to use Xcode to represent precise colors.
 
@@ -177,14 +177,14 @@ id1 --> id6["Timer\n(.tabItem)"]
 
 This is generally how a `TabView` is used when authoring a finished app – you would place the `TabView` in the app entry point file:
 
-![Screen Shot 2022-11-09 at 6.20.56 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.20.56%20AM.png)
+![Screen Shot 2022-11-09 at 6.20.56 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.20.56%20AM.png)
 
 > [!TIP]
 > Don't actually make this edit in your project yet – we're going to put the `TabView` somewhere else in a moment.
 
 After modifying the code in the app entry point file, when you launch your program in the **Simulator**:
 
-![Screen Shot 2022-11-09 at 6.24.15 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.24.15%20AM.png)
+![Screen Shot 2022-11-09 at 6.24.15 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.24.15%20AM.png)
 
 ... you would see a tab bar that allows for movement between four screens, only one of which is actually implemented – the other three simply show a `Text` view as a placeholder:
 
@@ -199,11 +199,11 @@ Those issues are easily fixed.
 
 As well, for this lesson, we'll stick to using the **Xcode Previews** window to see the tab bar:
 
-![Screen Shot 2022-11-09 at 6.35.06 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.35.06%20AM.png)
+![Screen Shot 2022-11-09 at 6.35.06 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.35.06%20AM.png)
 
 So, now, please make these edits to the `ContentView_Previews` structure – remember, old code is highlighted in grey, and new code is highlighted in blue:
 
-![Screen Shot 2022-11-09 at 6.37.46 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.37.46%20AM.png)
+![Screen Shot 2022-11-09 at 6.37.46 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.37.46%20AM.png)
 
 > [!NOTE]
 > 
@@ -251,7 +251,7 @@ Next, let's fix the colour of the tab items, so the accent colour is orange.
 
 Make this edit and note the change in color for the currently active tab item:
 
-![Screen Shot 2022-11-09 at 6.44.31 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.44.31%20AM.png)
+![Screen Shot 2022-11-09 at 6.44.31 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.44.31%20AM.png)
 
 You can ignore the deprecation warning that might appear:
 
@@ -271,7 +271,7 @@ As a result, the other tab items, when not active, adopt a shade of dark grey th
 
 This, too, is easily fixed – make this edit to add the `.preferredColorScheme` view modifier:
 
-![Screen Shot 2022-11-09 at 6.55.31 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.55.31%20AM.png)
+![Screen Shot 2022-11-09 at 6.55.31 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%206.55.31%20AM.png)
 
 Now, the preview window shows each screen in **Dark** mode, and the SwiftUI framework automatically uses a lighter shade of grey for inactive tab items, which makes them visible against a black background.
 
@@ -291,7 +291,7 @@ We can fix this too – by giving each tab item a *tag* and telling **SwiftUI** 
 
 Make these edits – remember, old code is highlighted in dark grey, new code is highlighted in blue:
 
-![Screen Shot 2022-11-09 at 7.00.12 AM.png|undefined](/img/user/Media/Screen%20Shot%202022-11-09%20at%207.00.12%20AM.png)
+![Screen Shot 2022-11-09 at 7.00.12 AM.png](/img/user/Media/Screen%20Shot%202022-11-09%20at%207.00.12%20AM.png)
 
 Now, we are all done adding the `TabView`.
 
