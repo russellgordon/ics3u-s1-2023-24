@@ -19,8 +19,9 @@
 	- Understand how the Swift programming language handles cases where a value may not exist for a variable or constant.
 3. Recap: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
 	- A further opportunity to consolidate concepts learned in module 1, and to learn a few new ways to write apps using the features of Xcode.
-		- Chapters 1, 2, and 3 are all good choices to try.
-	- Mr. Gordon was an unpaid technical reviewer for these tutorials; they were authored by a team at Apple.
+	- Chapters 1, 2, and 3 are all good choices to try this week.
+		> [!NOTE]
+		> Mr. Gordon was an unpaid technical reviewer for these tutorials; they were authored by a team at Apple.
 
 ###### Things to do before our next class
 - [ ] Be certain to complete at least task #2, asking questions of Mr. Gordon as needed.
