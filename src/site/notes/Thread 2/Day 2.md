@@ -17,5 +17,5 @@
 		> Mr. Gordon was an unpaid technical reviewer for these tutorials; they were authored by a team at Apple.
 
 ###### Things to do before our next class
-- [ ] Be certain to complete at least task `#2`, asking questions of Mr. Gordon as needed.
-- [ ] Optionally, get started on task `#3` to further your understanding.
+- [ ] Be certain to complete at least task &#35;2, asking questions of Mr. Gordon as needed.
+- [ ] Optionally, get started on task &#35;3 to further your understanding.
