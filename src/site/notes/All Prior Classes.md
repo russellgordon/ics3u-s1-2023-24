@@ -43,7 +43,7 @@
 	- This allows you to pause, rewind, or fast-forward an animated GIF.
 2. Activity: [[Activities/Optionals\|Optionals]]
 	- Understand how the Swift programming language handles cases where a value may not exist for a variable or constant.
-3. Recap: [[Develop in Swift Tutorials\|Develop in Swift Tutorials]]
+3. Recap: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
 	- A further opportunity to consolidate concepts learned in module 1, and to learn a few new ways to write apps using the features of Xcode.
 		- Chapters 1, 2, and 3 are all good choices to try.
 	- Mr. Gordon was an unpaid technical reviewer for these tutorials; they were authored by a team at Apple.
