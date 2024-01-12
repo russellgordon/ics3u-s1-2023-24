@@ -5,8 +5,10 @@
 ### Thread 2, Day 3 - Thursday, January 11, 2024
 #### Agenda
 
-1. Discussion: Gradients
+1. Discussion: [Gradients](https://www.youtube.com/watch?v=Cxn_IUwO1mo)
 	- A brief look at how to create interesting gradients.
+	> [!TIP]
+	> [Here is a video](https://www.youtube.com/watch?v=Cxn_IUwO1mo) (made with students in the other section of this course) where the same topics we discussed are shown – useful for review, or if you were absent on this day.
 2. Activity: [[Activities/Optionals\|Optionals]]
 	- Understand how the Swift programming language handles cases where a value may not exist for a variable or constant.
 3. Recap: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
