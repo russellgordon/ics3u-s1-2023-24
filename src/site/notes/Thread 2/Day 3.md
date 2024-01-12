@@ -17,4 +17,4 @@
 
 ###### Things to do before our next class
 - [ ] Be certain to complete at least task &#35;2, asking questions of Mr. Gordon as needed.
-- [ ] Optionally, get started on task &#35;3 to further your understanding.
+- [ ] Get started on task &#35;3 to further your understanding.
