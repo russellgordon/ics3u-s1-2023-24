@@ -8,6 +8,7 @@
 
 ### Thread 2
 
+- [[All Prior Classes#Thread 2, Day 4 - Monday, January 15, 2024\|Day 4 - Monday, January 15, 2024]]
 - [[All Prior Classes#Thread 2, Day 3 - Thursday, January 11, 2024\|Day 3 - Thursday, January 11, 2024]]
 - [[All Prior Classes#Thread 2, Day 2 - Wednesday, January 10, 2024\|Day 2 - Wednesday, January 10, 2024]]
 - [[All Prior Classes#Thread 2, Day 1 - Tuesday, January 9, 2024\|Day 1 - Tuesday, January 9, 2024]]
@@ -30,6 +31,37 @@
 - [[All Prior Classes#Thread 1, Day 2 - Wednesday, October 18, 2023\|Day 2 - Wednesday, October 18, 2023]]
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 2, Day 4 - Monday, January 15, 2024
+#### Agenda
+
+1. Concept: [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]]
+2. Concept: [[Concepts/Separation of Concerns\|Separation of Concerns]]
+	- Learn how to leverage existing code you have already written to write an interactive app.
+	- Learn how to keep user interface code (the view) separate from data and logic (the model).
+3. Recap: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
+	- Chapters 1, 2, and 3 cover concepts that are largely review but still good practice.
+	- Chapters 4 and 5 get into topics that we will learn about in this module, and can be completed as a preview of topics that Mr. Gordon will author separate lessons for.
+
+> [!IMPORTANT]
+> There is far too much content listed today to complete in a single class.
+> 
+> While Mr. Gordon is away with illness, use each class to make progress based on where *you* are, personally, with your learning. Some students have already completed items 1 and 2 above, so they should work on item 3. Some students have not completed any of these items, so they should begin with item 1.
+
+###### For Evening Study
+- [ ] Take a maximum of 30 minutes and make progress on one of the items listed above.
+- [ ] Be sure to continue posting on Notion to share progress and ask questions.
+	- Mr. Gordon is not well enough to be at school but will make an effort to send some replies and feedback through Notion.
+
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 2\|Back to top of thread 2 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-3/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
