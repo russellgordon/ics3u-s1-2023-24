@@ -46,7 +46,7 @@
 	- Learn how to keep user interface code (the view) separate from data and logic (the model).
 3. Tutorial: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
 	- Chapters 1, 2, and 3 cover concepts that are largely review but still good practice.
-	- Chapters 4 and 5 get into topics that we will learn about in this module, and can be completed as a preview of topics that Mr. Gordon will author separate lessons for.
+	- Chapters 4 and 5 get into topics that we will learn about in this module, and can be completed as a preview of topics that Mr. Gordon will author separate lessons for later in this module.
 
 > [!IMPORTANT]
 > There is far too much content listed today to complete in a single class.
