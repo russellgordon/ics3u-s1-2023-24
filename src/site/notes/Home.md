@@ -4,12 +4,12 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-5/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 2, Day 4 - Monday, January 15, 2024
+### Thread 2, Day 5 - Tuesday, January 16, 2024
 #### Agenda
 
 1. Concept: [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]]
@@ -23,12 +23,12 @@
 > [!IMPORTANT]
 > There is far too much content listed today to complete in a single class.
 > 
-> While Mr. Gordon is away with illness, use each class to make progress based on where *you* are, personally, with your learning. Some students have already completed items 1 and 2 above, so they should work on item 3. Some students have not completed any of these items, so they should begin with item 1.
+> Continue with the items listed in order, where you left off from yesterday's class.
 
 ###### For Evening Study
 - [ ] Take a maximum of 30 minutes and make progress on one of the items listed above.
 - [ ] Be sure to continue posting on Notion to share progress and ask questions.
-	- Mr. Gordon is not well enough to be at school but will make an effort to send some replies and feedback through Notion.
+	- Mr. Gordon is still not well enough to be at school but will make an effort to send some replies and feedback through Notion.
 
 
 </div></div>
