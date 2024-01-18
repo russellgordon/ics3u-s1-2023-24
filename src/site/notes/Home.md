@@ -4,31 +4,20 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-5/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 2, Day 5 - Tuesday, January 16, 2024
+### Thread 2, Day 6 - Thursday, January 18, 2024
 #### Agenda
 
-1. Concept: [[Concepts/Introduction to Interactive Apps\|Introduction to Interactive Apps]]
-2. Concept: [[Concepts/Separation of Concerns\|Separation of Concerns]]
-	- Learn how to leverage existing code you have already written to write an interactive app.
-	- Learn how to keep user interface code (the view) separate from data and logic (the model).
-3. Tutorial: [Develop in Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift-tutorials)
-	- Chapters 1, 2, and 3 cover concepts that are largely review but still good practice.
-	- Chapters 4 and 5 get into topics that we will learn about in this module, and can be completed as a preview of topics that Mr. Gordon will author separate lessons for later in this module.
+1. Task: [[Tasks/Trading Cards\|Trading Cards]]
+	- Carefully review the expecatations for this task.
+	- Don't fall in to [[Tasks/Trading Cards#Progress and due date\|the trap]]...
 
-> [!IMPORTANT]
-> There is far too much content listed today to complete in a single class.
-> 
-> Continue with the items listed in order, where you left off from yesterday's class.
-
-###### For Evening Study
-- [ ] Take a maximum of 30 minutes and make progress on one of the items listed above.
-- [ ] Be sure to continue posting on Notion to share progress and ask questions.
-	- Mr. Gordon is still not well enough to be at school but will make an effort to send some replies and feedback through Notion.
+###### For Evening Study and The Weekend
+- [ ] Make significant progress on your [[Tasks/Trading Cards\|Trading Cards]] task, sharing progress on Notion.
 
 
 </div></div>
