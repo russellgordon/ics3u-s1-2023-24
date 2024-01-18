@@ -8,7 +8,7 @@ To run applications you write in Xcode on your iPhone or iPad, a few *one-time-o
 
 > [!NOTE]
 > 
-> These instructions were written a year ago for iOS 16 and Xcode 14, however... the steps are idential for iOS17 and Xcode 15. Minor details in some of the screenshots may differ.
+> These instructions were written a year ago for iOS 16 and Xcode 14, however... the steps are identical for iOS17 and Xcode 15. Minor details in some of the screenshots may differ.
 
 First, be sure Xcode is open.
 
