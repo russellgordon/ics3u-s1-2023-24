@@ -5,7 +5,7 @@
 # Trading Cards
 ## Objective
 
-Create the look and feel of trading cards for sports, board games, video games, or other areas of interest.
+Create your own *unique* trading card that has the look and feel of the broader examples of trading cards for [sports](https://duckduckgo.com/?q=baseball+trading+cards&iax=images&ia=images#), [board games](https://duckduckgo.com/?q=board+game+trading+cards&t=osx&ia=images&iax=images), [video games](https://duckduckgo.com/?q=video+games+trading+cards&t=osx&ia=images&iax=images), or other areas of interest.
 
 ![Screenshot 2023-01-12 at 10.07.50 AM.png](/img/user/Media/Screenshot%202023-01-12%20at%2010.07.50%20AM.png)
 
@@ -29,7 +29,7 @@ A second opportunity to demonstrate your understanding of key concepts from the 
    
 2. Created a static layout where the look and feel of a trading card is reproduced.
    
-   ![Screenshot 2023-01-12 at 10.24.42 AM.png](/img/user/Media/Screenshot%202023-01-12%20at%2010.24.42%20AM.png)
+   ![Screenshot 2024-01-22 at 5.48.12 PM.png](/img/user/Media/Screenshot%202024-01-22%20at%205.48.12%E2%80%AFPM.png)
    
 3. Created a structure named `TradingCard` (or similar) using appropriate property names, capitalization, and selection of data types that will allow you to store the data shown on your card's static layout.
    
@@ -45,13 +45,14 @@ A second opportunity to demonstrate your understanding of key concepts from the 
    
    To demonstrate even more mastery of abstraction, use *helper views* to make the layout more concise and easier to understand:
    
-   ![Screenshot 2024-01-18 at 8.13.09 AM.png](/img/user/Media/Screenshot%202024-01-18%20at%208.13.09%E2%80%AFAM.png)
+   ![Screenshot 2024-01-22 at 5.51.05 PM.png](/img/user/Media/Screenshot%202024-01-22%20at%205.51.05%E2%80%AFPM.png)
    
    ==NOTE==: You used helper views to [[Tutorials/Reproducing the Stopwatch#Creating the buttons\|draw the buttons on the Stopwatch app]] interface in thread 1.
    
+
 6. Made use of a SwiftUI `List` structure to allow for navigation down to several different cards:
    
-   ![Screenshot 2024-01-18 at 8.15.11 AM 1.png](/img/user/Media/Screenshot%202024-01-18%20at%208.15.11%E2%80%AFAM%201.png)
+   ![Screenshot 2024-01-22 at 5.52.25 PM.png](/img/user/Media/Screenshot%202024-01-22%20at%205.52.25%E2%80%AFPM.png)
    
 7. Written code that is well-formatted and easy to read.
    
@@ -102,11 +103,11 @@ Prior to the final deadline, [on Notion](https://notion.so):
 
 > [!TIP]
 > 
-> Yes, you have a second working period on Monday, but...
+> Yes, you have multiple working periods, but...
 > 
 > ![star-wars-its-a-trap-3944237924.gif](/img/user/Media/star-wars-its-a-trap-3944237924.gif)
 > 
-> ... don't fall for it. Get a solid plan in place during the first working period. Get [[Tutorials/Creating a New iOS Project\|your project created]] and get started. Make *significant* progress over the weekend. Then... put the finishing touches on your assignment on Monday.
+> ... don't fall for it. Get a solid plan in place during the first working period. Get [[Tutorials/Creating a New iOS Project\|your project created]] and get started. Make *significant* progress over the weekend. Then... put the finishing touches on your assignment on Monday. Tuesday's class can be for challenging yourself to make an even more impressive trading card.
 
 ## Further examples
 
@@ -137,6 +138,16 @@ You can use other typefaces in iOS applications.
 Consult [iOS Font List](https://iosfontlist.com/#availability=10.0&preinstalled) for a quick reference.
 
 ![Screenshot 2024-01-18 at 8.35.40 AM.png](/img/user/Media/Screenshot%202024-01-18%20at%208.35.40%E2%80%AFAM.png)
+
+## Techniques
+
+You can [clone this repository](https://github.com/lcs-rgordon/TradingCardTechniques) to see some useful examples and tips.
+
+Choose **Integrate > Clone...** in Xcode, paste in the repository address, then choose a location to store the project on your computer.
+
+![Screenshot 2024-01-22 at 5.57.51 PM.png](/img/user/Media/Screenshot%202024-01-22%20at%205.57.51%E2%80%AFPM.png)
+
+![Screenshot 2024-01-22 at 5.58.09 PM.png](/img/user/Media/Screenshot%202024-01-22%20at%205.58.09%E2%80%AFPM.png)
 
 ## Final advice
 
