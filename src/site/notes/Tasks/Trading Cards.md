@@ -90,7 +90,7 @@ A second opportunity to demonstrate your understanding of key concepts from the 
 
 ## Progress and due date
 
-The task is due by 11 PM this Monday, January 22, 2023.
+The task is due by 11 PM this Wednesday, January 24, 2023.
 
 Prior to the final deadline, [on Notion](https://notion.so):
 - [ ] Share progress regularly
