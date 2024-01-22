@@ -8,6 +8,7 @@
 
 ### Thread 2
 
+- [[All Prior Classes#Thread 2, Day 7 - Monday, January 22, 2024\|Day 7 - Monday, January 22, 2024]]
 - [[All Prior Classes#Thread 2, Day 6 - Thursday, January 18, 2024\|Day 6 - Thursday, January 18, 2024]]
 - [[All Prior Classes#Thread 2, Day 5 - Tuesday, January 16, 2024\|Day 5 - Tuesday, January 16, 2024]]
 - [[All Prior Classes#Thread 2, Day 4 - Monday, January 15, 2024\|Day 4 - Monday, January 15, 2024]]
@@ -33,6 +34,26 @@
 - [[All Prior Classes#Thread 1, Day 2 - Wednesday, October 18, 2023\|Day 2 - Wednesday, October 18, 2023]]
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-7/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 2, Day 7 - Monday, January 22, 2024
+
+#### Agenda
+
+1. Task: [[Tasks/Trading Cards\|Trading Cards]]
+	- You can [clone this repository](https://github.com/lcs-rgordon/TradingCardTechniques) to see some useful examples and tips.
+		- Choose **Integrate > Clone...** in Xcode and paste the repository address, then choose a location to store the project on your computer.
+###### For Evening Study and The Weekend
+- [ ] Make significant progress on your [[Tasks/Trading Cards\|Trading Cards]] task, sharing progress on Notion.
+
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 2\|Back to top of thread 2 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
