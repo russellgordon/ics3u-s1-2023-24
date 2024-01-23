@@ -18,7 +18,7 @@
 	  
 	> [!TIP]
 	> 
-	> Mr. Gordon has "dog-fooded" this suggestion and here is what he came up with to improve his own Trading Cards:
+	> Mr. Gordon has "dog-fooded" this suggestion already and here is what he came up with to improve his own Trading Cards:
 	> 
 	> ![Screenshot 2024-01-23 at 10.43.26 AM.png|600](/img/user/Media/Screenshot%202024-01-23%20at%2010.43.26%E2%80%AFAM.png)
 
