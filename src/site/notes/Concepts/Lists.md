@@ -74,7 +74,7 @@ Recall:
 
 Look at the code in the final screenshot above, of `PlayerListView`.
 
-It sure looks like we are repeating ourselves – five navigation links – otherwise identical, except for what page they lead to.
+It sure looks like we are repeating ourselves – five navigation links – otherwise identical, except for what player card they lead to.
 
 The solution to this repetition is another way to store values – that is something called an *array* or *list*.
 
