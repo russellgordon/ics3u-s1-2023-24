@@ -207,7 +207,7 @@ print(blackPinkBand[4])
 
 > [!EXERCISE]
 > 
-> 1. Create a new [[Creating a Command Line macOS Project\|command-line macOS app]] named `TopTenList` and create a list that has ten elements.
+> 1. Create a new [[Tutorials/Creating a Command-Line Project\|command-line macOS app]] named `TopTenList` and create a list that has ten elements.
 >    
 >    For example, you might create a list of ten cities that you would like to visit someday, or your ten favourite ice cream flavours.
 >    
