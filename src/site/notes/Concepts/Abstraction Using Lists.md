@@ -25,7 +25,7 @@ Additionally, to spruce the app up a bit, you will learn how to use a `LazyVGrid
 
 ## Create the project
 
-Let's get started by creating a new [[Tutorials/Creating a New iOS Project\|creating a new iOS project]] named *Landmarks*.
+Let's get started by [[Tutorials/Creating a New iOS Project\|creating a new iOS project]] named *Landmarks*.
 
 As soon as you have created the project, remember to create a remote:
 
