@@ -432,10 +432,13 @@ module.exports = function (eleventyConfig) {
 
 
   eleventyConfig.addTransform("picture", function (str) {
+    if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
+      return str;
+    }
     const parsed = parse(str);
     for (const imageTag of parsed.querySelectorAll(".cm-s-obsidian img")) {
       const src = imageTag.getAttribute("src");
-      if (src && src.startsWith("/") && !src.endsWith(".svg") && !src.endsWith(".png") && !src.endsWith(".gif")) {
+      if (src && src.startsWith("/") && !src.endsWith(".svg")) {
         const cls = imageTag.classList.value;
         const alt = imageTag.getAttribute("alt");
         const width = imageTag.getAttribute("width") || '';
