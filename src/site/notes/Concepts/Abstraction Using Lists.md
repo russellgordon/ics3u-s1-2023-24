@@ -625,7 +625,7 @@ Try commenting out the `.frame` modifiers. You will see the preview then looks a
 
 ![Screenshot 2024-01-27 at 8.41.40 AM.png|700](/img/user/Media/Screenshot%202024-01-27%20at%208.41.40%E2%80%AFAM.png)
 
-That is because of the `Spacer` view on line 30. That `Spacer` exists to push align the thumbs up/down images.
+That is because of the `Spacer` view on line 30. That `Spacer` exists to  align the thumbs up/down images.
 
 Try commenting out the `Spacer` as well:
 
