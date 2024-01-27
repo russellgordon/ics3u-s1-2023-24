@@ -326,9 +326,9 @@ Image(systemName: item.isRecommended == true ? "hand.thumbsup.fill" : "hand.thum
 
 We are evaluating the expression  `item.isRecommended == true` .
 
-When the item has been recommended, we show the `hands.thumbsup.fill` symbol.
+When the item has been recommended, we show the `hand.thumbsup.fill` symbol.
 
-Otherwise, we show the `hands.thumbsdown` symbol.
+Otherwise, we show the `hand.thumbsdown` symbol.
 
 We can test this out by scrolling down to the previews section of this view:
 
