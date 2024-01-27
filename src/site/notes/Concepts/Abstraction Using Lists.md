@@ -647,7 +647,7 @@ Added a gallery item view to use later inside a scrolling grid.
 
 Now, let's create the scrolling grid, or gallery, of landmarks.
 
-Please add a new **SwiftUI View** file to the `Views` group, like this:
+Please add a new **SwiftUI View** file named `GalleryView` to the `Views` group, like this:
 
 ![Screenshot 2024-01-27 at 8.45.53 AM.png|700](/img/user/Media/Screenshot%202024-01-27%20at%208.45.53%E2%80%AFAM.png)
 
