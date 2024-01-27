@@ -665,7 +665,7 @@ Although our work is not finished, it will be easier to see remaining edits if y
 Using the new gallery item view inside a scrolling list, temporarily.
 ```
 
-We are going to use it inside of a layout structure that we have not formally examined before – the `LazyVGrid`.
+We are going to use the gallery item view inside of a layout structure that we have not formally examined before – the `LazyVGrid`.
 
 Here is how Mark Moeykens describes this structure, which you can find on or near page 137 in **SwiftUI Views Mastery**:
 
