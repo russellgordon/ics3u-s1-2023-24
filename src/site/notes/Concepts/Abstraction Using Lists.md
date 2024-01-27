@@ -659,7 +659,7 @@ If you look closely at the code, you will notice it's identical to the code in t
 
 This does not look good, because `GalleryItemView` is not designed to be used in a `List`.
 
-Although our work is not finish, it will be easier to see remaining edits if you commit your work now, with this message: 
+Although our work is not finished, it will be easier to see remaining edits if you commit your work now, with this message: 
 
 ```
 Using the new gallery item view inside a scrolling list, temporarily.
