@@ -550,7 +550,11 @@ You can [copy this code](https://gist.githubusercontent.com/lcs-rgordon/a7301e4f
 Now we have a nicer way to see the name, image, and recommendation status of a landmark.
 
 > [!IMPORTANT]
-> Note how `ListItemView` accepts an instance of `Landmark` on line 11. We then make use of that instance's properties on lines 16, 25, and 31. This is abstraction in action!
+> Note how `ListItemView` accepts an instance of `Landmark` on line 11.
+> 
+> We then make use of that instance's properties on lines 16, 25, and 31. 
+> 
+> This is abstraction in action!
 
 ### Use the list item view
 
