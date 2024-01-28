@@ -394,7 +394,7 @@ For this next part of the tutorial to work, you will need to download the follow
 
 Now again, the purpose of this lesson is not to practice typing.
 
-So, fee free to [copy this code](https://gist.githubusercontent.com/lcs-rgordon/96f7be6184af3820035d95f5a83885f8/raw/b2aa7d7eb964f532bdae10b4b0e4ca8ccf9c5ac0/ListView.swift) into your `ListView` file, like this:
+So, feel free to [copy this code](https://gist.githubusercontent.com/lcs-rgordon/96f7be6184af3820035d95f5a83885f8/raw/b2aa7d7eb964f532bdae10b4b0e4ca8ccf9c5ac0/ListView.swift) into your `ListView` file, like this:
 
 ![Screenshot 2024-01-26 at 10.41.56 PM 1.png|700](/img/user/Media/Screenshot%202024-01-26%20at%2010.41.56%E2%80%AFPM%201.png)
 
@@ -458,7 +458,7 @@ Importantly, if we now add more instances of `Landmark` to the `allLandmarks` ar
 
 Let's do that now to illustrate the point. 
 
-Download the following image to your computer and then add it to the **Assets** in Xcode:
+Download the following image to your computer and then add it to the **Assets** catalog in Xcode:
 
 ![BlueMountain.png|700](/img/user/Media/BlueMountain.png)
 
@@ -545,14 +545,14 @@ Add a new **SwiftUI View** named `ListItemView` to the `Views` group:
 
 You can [copy this code](https://gist.githubusercontent.com/lcs-rgordon/a7301e4f1a2d3d9eb715f73b318bdc67/raw/8973beee2d74b6450e1275f6849f7ec4cda01613/ListItemView.swift) into `ListItemView`, so the file looks like this:
 
-![Screenshot 2024-01-27 at 8.17.22 AM.png|700](/img/user/Media/Screenshot%202024-01-27%20at%208.17.22%E2%80%AFAM.png)
+![Screenshot 2024-01-28 at 8.58.31 AM.png|700](/img/user/Media/Screenshot%202024-01-28%20at%208.58.31%E2%80%AFAM.png)
 
 Now we have a nicer way to see the name, image, and recommendation status of a landmark.
 
 > [!IMPORTANT]
-> Note how `ListItemView` accepts an instance of `Landmark` on line 11.
+> Note how `ListItemView` accepts an instance of `Landmark` on line 12.
 > 
-> We then make use of that instance's properties on lines 16, 25, and 31. 
+> We then make use of that instance's properties on lines 18, 27, and 33. 
 > 
 > This is abstraction in action!
 
@@ -590,7 +590,7 @@ Our new scrollable list that serves as our landing view is *nice*, but it could 
 
 If you cast a critical eye at the interface:
 
-![Screenshot 2024-01-27 at 8.18.48 AM 1.png|700](/img/user/Media/Screenshot%202024-01-27%20at%208.18.48%E2%80%AFAM%201.png)
+![Screenshot 2024-01-28 at 9.01.07 AM.png|700](/img/user/Media/Screenshot%202024-01-28%20at%209.01.07%E2%80%AFAM.png)
 
 ... notice how much empty space there is in each list item view.
 
