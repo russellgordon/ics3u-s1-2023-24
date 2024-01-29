@@ -119,7 +119,7 @@ In the `Views`  group, create a new SwiftUI view named `LottieView`:
 
 ![Screenshot 2023-01-27 at 1.24.11 PM.png](/img/user/Media/Screenshot%202023-01-27%20at%201.24.11%20PM.png)
 
-Now [visit this web page](https://gist.githubusercontent.com/lcs-rgordon/347c403814015b248a166b7008582735/raw/54cbbfa86e67580d8b1cc6f42737036fbb81c3e1/LottieView.swift), select all the text using **Command-A**, then switch to Xcode, select all the text in `LottieView` using **Command-A**, and paste Mr. Gordon's code in using **Command-V**. When that is done, it should look like this:
+Now [visit this web page](https://gist.githubusercontent.com/lcs-rgordon/347c403814015b248a166b7008582735/raw/54cbbfa86e67580d8b1cc6f42737036fbb81c3e1/LottieView.swift), select all the text using **Command-A**, copy it using **Command-C**, then switch to Xcode, select all the text in `LottieView` using **Command-A**, and paste in Mr. Gordon's code using **Command-V**. When that is done, it should look like this:
 
 ![Screenshot 2023-01-27 at 1.26.03 PM.png](/img/user/Media/Screenshot%202023-01-27%20at%201.26.03%20PM.png)
 
