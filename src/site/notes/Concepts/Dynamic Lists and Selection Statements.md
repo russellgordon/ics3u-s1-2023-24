@@ -222,9 +222,9 @@ We have shown that we can place elements in an array:
 
 > [!TIP]
 > 
-> Try running the command line program we just wrote again.
+> Run the command line program we just wrote again.
 > 
-> Typing something other than a number in when prompted.
+> Try typing something other than a number in when prompted.
 > 
 > For example, type `five` rather than `5`.
 > 
@@ -342,7 +342,7 @@ In this example, there would be different conditions in the first and second bra
 
 So... what is a condition?
 
-A condition is a comparison of two values. Here are all the ways two numeric values can be compared:
+A condition is often a comparison of two values. Here are all the ways two numeric values can be compared:
 
 ![Pasted image 20221216090240 1.png|400](/img/user/Media/Pasted%20image%2020221216090240%201.png)
 
@@ -366,7 +366,7 @@ Add logic to the Guessing Game app, beginning on line 100, to guide the player t
 
 ![Screenshot 2024-01-29 at 7.09.22 PM.png](/img/user/Media/Screenshot%202024-01-29%20at%207.09.22%E2%80%AFPM.png)
 
-You can do that by changing the value of the `feedback` property.
+You can do that by selectively changing the value of the `feedback` property.
 
 When the user does make a correct guess, be sure to let them know they have won the game.
 
