@@ -4,20 +4,21 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-11/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-12/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 2, Day 11 - Monday, January 29, 2024
+### Thread 2, Day 12 - Tuesday, January 30, 2024
 
 #### Agenda
 
-1. Tutorial: [[Tutorials/AirBnB Lottie Animations Library\|Animations]]
-	- Learn how to add animations to your apps.
+1. Concept: [[Concepts/Dynamic Lists and Selection Statements\|Dynamic Lists and Selection Statements]]
+	- Learn how to change the contents of an array while a program is being run.
+	- Understand how selection statements can be used to add logic to an app so that it accomplishes a desired goal.
 
 ###### For Evening Study
-- [ ] Make a post [on Notion](https://notion.so) with screenshots or a short video showing that you were able to complete [[Tutorials/AirBnB Lottie Animations Library\|today's tutorial]].
+- [ ] Make a post [on Notion](https://notion.so) with screenshots or a short video showing that you were able to complete [[Concepts/Dynamic Lists and Selection Statements#Exercise\|today's lesson and exercises]].
 
 </div></div>
 
