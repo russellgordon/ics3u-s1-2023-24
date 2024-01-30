@@ -360,8 +360,6 @@ if a > b {
 
 Since `a` has a value of `20` in that example, the first branch of the `if` statement is run, and second branch is ignored. `a is greater` will be printed on the screen.
 
-## Exercise
-
 ### Complete the game
 
 Add logic to the Guessing Game app, beginning on line 100, to guide the player toward making a correct guess:
