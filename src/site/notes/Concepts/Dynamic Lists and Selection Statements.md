@@ -362,6 +362,8 @@ Since `a` has a value of `20` in that example, the first branch of the `if` stat
 
 ## Exercise
 
+### Complete the game
+
 Add logic to the Guessing Game app, beginning on line 100, to guide the player toward making a correct guess:
 
 ![Screenshot 2024-01-29 at 7.09.22 PM.png](/img/user/Media/Screenshot%202024-01-29%20at%207.09.22%E2%80%AFPM.png)
@@ -375,3 +377,9 @@ When you have finished this exercise, commit and push your work using this messa
 ```
 Finished Guessing Game logic by guiding the user toward a correct answer.
 ```
+
+### Identify an efficient algorithm
+
+How can you win the Guessing Game in the fewest number of guesses?
+
+Describe your strategy for doing so in your portfolio post for today in Notion.
