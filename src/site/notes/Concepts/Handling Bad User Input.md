@@ -6,13 +6,13 @@
 
 There is an obvious downside to the current interface of the [[Concepts/Dynamic Lists and Selection Statements#Exercise\|Guessing Game]] app created in our most recent class:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.04.56.gif|300](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.04.56.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.04.56.gif|301](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.04.56.gif)
 
 It is inconvenient to have to repeatedly press the **+** or **-** signs.
 
 It would be easier for the user to be able to type in values using the keyboard, like this:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.00.20 - 01.gif|300](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.00.20%20-%2001.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.00.20 - 01.gif|301](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-30_13.00.20%20-%2001.gif)
 
 How can we accept user input in this way?
 
@@ -36,11 +36,11 @@ Right now, please create a new [[Tutorials/Creating a Command-Line Project\|comm
 
 When input is received in a text field in an app, the data type is always `String`:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.13.22.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.13.22.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.13.22.png|301](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.13.22.png)
 
 Let's simulate the following user input:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.15.36.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.15.36.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.15.36.png|301](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-01-30_13.15.36.png)
 
 In the command-line app you have just created, copy paste this code in:
 
