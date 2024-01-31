@@ -451,5 +451,5 @@ Be sure that the app does not crash when unexpected input is provided!
 
 When all is said and done, your app might work something like this:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-31_07.08.05.gif|300](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-31_07.08.05.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-31_07.08.05.gif|301](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-01-31_07.08.05.gif)
 
