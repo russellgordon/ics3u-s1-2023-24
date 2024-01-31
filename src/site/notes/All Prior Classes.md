@@ -8,7 +8,7 @@
 
 ### Thread 2
 
-- [[All Prior Classes#Thread 1, Day 13 - Tuesday, November 14, 2023\|Day 13 - Tuesday, November 14, 2023]]
+- [[All Prior Classes#Thread 2, Day 13 - Wednesday, January 31, 2024\|Day 13 - Wednesday, January 31, 2024]]
 - [[All Prior Classes#Thread 2, Day 12 - Tuesday, January 30, 2024\|Day 12 - Tuesday, January 30, 2024]]
 - [[All Prior Classes#Thread 2, Day 11 - Monday, January 29, 2024\|Day 11 - Monday, January 29, 2024]]
 - [[All Prior Classes#Thread 2, Day 10 - Saturday, January 27, 2024\|Day 10 - Saturday, January 27, 2024]]
@@ -40,6 +40,30 @@
 - [[All Prior Classes#Thread 1, Day 2 - Wednesday, October 18, 2023\|Day 2 - Wednesday, October 18, 2023]]
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-13/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 2, Day 13 - Wednesday, January 31, 2024
+
+#### Agenda
+
+1. Concept: [[Concepts/Handling Bad User Input\|Handling Bad User Input]]
+	- Learn how to apply your understanding of optionals to handle situations where the user provides unexpected input.
+
+> [!REMINDER]
+> Today is the last day of the current module.
+> 
+> You may work on your portfolio up until Saturday at 11 PM to fill in any gaps that currently exist.
+
+###### For Evening Study
+- [ ] Make a post [on Notion](https://notion.so) with screenshots or a short video showing that you were able to complete [[Concepts/Handling Bad User Input\|today's lesson]] and [[Concepts/Handling Bad User Input#Exercise\|exercise]].
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 2\|Back to top of thread 2 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-12/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
