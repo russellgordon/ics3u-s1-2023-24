@@ -239,7 +239,7 @@ The user is shown a clear error message – and then the program quits gracefull
 
 Here is an animation showing the flow of the program when bad input is provided:
 
-![Guard Statement Example.gif](/img/user/Media/Guard%20Statement%20Example.gif)
+![Guard Statement Example.gif|700](/img/user/Media/Guard%20Statement%20Example.gif)
 
 On the other hand, if the conversion of `givenInput` into an integer value succeeds, our program continues on.
 
@@ -265,7 +265,7 @@ It works as expected, telling us that the simulated input, `50`, is more than th
 
 Here is an animation of how the program flows through a `guard` statement when reasonable input is provided, and the conversion to an `Int` works:
 
-![Guard Statement Example – Conversion Works 2.gif](/img/user/Media/Guard%20Statement%20Example%20%E2%80%93%20Conversion%20Works%202.gif)
+![Guard Statement Example – Conversion Works 2.gif|700](/img/user/Media/Guard%20Statement%20Example%20%E2%80%93%20Conversion%20Works%202.gif)
 
 ## Summary so far
 
@@ -280,6 +280,14 @@ Instead, we should safely unwrap the `givenInput` into an `Int` using a `guard` 
 ![Screenshot 2024-01-30 at 8.19.14 PM.png](/img/user/Media/Screenshot%202024-01-30%20at%208.19.14%E2%80%AFPM.png)
 
 Then, when bad input is provided, we can gracefully stop the conversion, and show an appropriate error message.
+
+> [!IMPORTANT]
+> 
+> The core purpose of the `guard` statement is provide a graceful early exit from a section of logic that has received bad input.
+> 
+> When a `guard` statement is in a command-line program we can use the `exit` command to stop program execution.
+> 
+> When a `guard` statement is inside a function we use the `return` statement to  stop running the function.
 
 ## Apply to Guessing Game
 
