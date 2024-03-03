@@ -36,13 +36,9 @@ ___
 
 
 
-Day|Time|Location
--|-|-
-Tuesday|1:30 PM to 2 PM|Room 36
-Friday|12:30 PM to 1 PM|Room 36
 
-Grove Time is a drop-in, no appointment needed.
-If you have a question, **don't hesitate**, come on by!
+
+**NOTE:** No grove
 
 </div></div>
 
@@ -63,10 +59,10 @@ Here is this week's schedule:
 
 Day|Time|SIC|Location
 -|-|-|-
-Monday, February 5|12:30 PM to 1:30 PM|Lawrence|Room 36
-Tuesday, February 6|12:30 PM to 1:30 PM|Griffin|Room 36
-Thursday, February 8|12:30 PM to 1:30 PM|Morgan|Room 36
-Friday, February 9|1:00 PM to 1:30 PM|Justin|Room 36
+Monday, February 26|12:30 PM to 1:30 PM|Quin|Room 36
+Tuesday, February 27|12:30 PM to 1:30 PM|Lawrence|Room 36
+Thursday, February 29|12:30 PM to 1:30 PM|Griffin|Room 36
+Friday, March 1|1:00 PM to 1:30 PM|Morgan|Room 36
 
 If you have a question about your work in a Computer Studies Program course, please come by!
 
@@ -84,6 +80,7 @@ If you have a question about your work in a Computer Studies Program course, ple
 - [Ministry of Education Course of Study](https://bit.ly/lcscs23-g11-mco)
 - [[Learning Goals\|Learning Goals]]
 - [[Ontario Curriculum\|Ontario Curriculum]]
+- [[College Board Curriculum\|College Board Curriculum]]
 
 
 </div></div>
