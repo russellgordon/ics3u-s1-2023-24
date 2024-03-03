@@ -413,7 +413,7 @@ Now try providing incorrect input, and you will see that appropriate feedback is
 
 ## Exercise
 
-## Setup
+### Setup
 
 Create a [[Tutorials/Creating a New iOS Project\|new iOS project]] **Arithmetic Buddy**.
 
@@ -445,7 +445,7 @@ Press the **Option-Command-P** keyboard shortcut a few times to see what happens
 
 Note how the two numbers to be added change each time – that is because they are randomly generated.
 
-## Task
+### Task
 
 Complete this simple addition practice app.
 
