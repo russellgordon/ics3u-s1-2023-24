@@ -7,3 +7,4 @@
 - [Ministry of Education Course of Study](https://bit.ly/lcscs23-g11-mco)
 - [[Learning Goals\|Learning Goals]]
 - [[Ontario Curriculum\|Ontario Curriculum]]
+- [[College Board Curriculum\|College Board Curriculum]]
