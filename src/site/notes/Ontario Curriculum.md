@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ontario-curriculum/","dgHomeLink":true}
+{"dg-publish":true,"permalink":"/ontario-curriculum/","dgHomeLink":true,"dgShowToc":true}
 ---
 
 # Introduction to Computer Science, Grade 11
