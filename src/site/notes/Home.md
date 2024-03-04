@@ -4,25 +4,33 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-2/day-13/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-1/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 2, Day 13 - Wednesday, January 31, 2024
-
+### Thread 3, Day 1 - Monday, March 4, 2024
 #### Agenda
 
-1. Concept: [[Concepts/Handling Bad User Input\|Handling Bad User Input]]
-	- Learn how to apply your understanding of optionals to handle situations where the user provides unexpected input.
+1. Video: [Source Code](https://www.youtube-nocookie.com/embed/7Fd-Af1MvJ4)
+	- What makes a developer a developer?
+		- A video where developer's families describe what they see.
+	- Please look past the cringe stereotypes at the start of the video...
+		- In fact, *not* all developers want to stay inside at the holidays
+		- "Weird eyes?!"
+	- What do *you* hear that's notable in this video?
 
-> [!REMINDER]
-> Today is the last day of the current module.
-> 
-> You may work on your portfolio up until Saturday at 11 PM to fill in any gaps that currently exist.
+1. Activity: [App Design Journal](https://docs.google.com/presentation/d/1rHHJDzpL5ggf2Wy1OaUx2evWlTEAsTknsElhzbNZAfA/copy)
+	- Your learning path through the course is about to go like this: ⑃
+	- That is, when we come back from March Break, it's definitely the case that each of you will be learning different things to *bring the app **you** want to make* to life.
+	- What do *you* want to make? Let's discuss...
+	- The goal is to *really think* about ideas, opportunities, problems, or challenges... **please engage with and complete slides two through five**.
+	> [!TIP]
+	> There will be lots of conversation in this class! Feel free to bounce ideas off of peers, Mr. Gordon... you took this course to learn how to build something, right? Let's dive in to your ideas...
 
-###### For Evening Study
-- [ ] Make a post [on Notion](https://notion.so) with screenshots or a short video showing that you were able to complete [[Concepts/Handling Bad User Input\|today's lesson]] and [[Concepts/Handling Bad User Input#Exercise\|exercise]].
+###### Things to do before our next class
+- [ ] Complete assigned tasks as described above, asking questions of Mr. Gordon as needed.
+
 
 </div></div>
 
