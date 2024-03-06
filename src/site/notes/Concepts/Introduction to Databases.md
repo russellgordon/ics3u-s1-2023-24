@@ -3,7 +3,7 @@
 ---
 
 
-# Databases
+# Introduction to Databases
 
 There are many ways to store, or *persist*, data within an app.
 
