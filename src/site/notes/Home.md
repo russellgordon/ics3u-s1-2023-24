@@ -27,7 +27,7 @@
 ###### Things to do before the end of class
 - [ ] Be sure item 1 is completed, and hopefully at least get a start on item 2.
 
-> [!TIP]
+> [!VACATION]
 > 
 > Have a restful, fun, and safe March Break! 😎 See you in April! 🌷
 
