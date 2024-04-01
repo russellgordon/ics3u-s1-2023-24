@@ -4,26 +4,33 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-3/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 3, Day 4 - Tuesday, April 2, 2024
+### Thread 3, Day 3 - Wednesday, March 6, 2024
 #### Agenda
 
-1. Databases: Check Your Understanding
-	- If you have not yet, first, please make a post [on Notion](https://notion.so) regarding your progress on the [[Concepts/Introduction to Databases\|Introduction to Databases]] task.
-		- Almost every application you will write will have a database in use behind the scenes.
-	- Once Mr. Gordon has your post, you can check your work against the solutions – all of which include commentary to explain how they work.
+1. Activity: App Design Journal
+	- If you have not yet, finish the Brainstorm (green) section.
+1. Concept: [[Concepts/Introduction to Databases\|Introduction to Databases]]
+	- How can information be organized within an app, beyond a simple [[Concepts/Lists\|list]]?
+	- Almost every application you use has a database behind it.
+	- Read on to learn what a database is and how to query it (obtain information) from it.
 	> [!NOTE]
-	> Please do not hesitate to ask Mr. Gordon clarifying questions when checking your solutions.
-2. [[Concepts/Joining Tables in a Database\|Joining Tables in a Database]]
-	- What happens when we want to write a query that needs columns from multiple tables in a database?
-	- Learn how to join tables, and complete the [[Concepts/Joining Tables in a Database#Exercise\|provided exercises]].
+	> 
+	> If you have finished the App Design Journal, start on, or continue with, this activity.
+	> 
+	> When you are finished (or have gotten as far as you can) share your progress [on Notion](https://notion.so). Once you have done so, Mr. Gordon will send you a link to the solutions, and you can check your work.
 
-###### Things to do before our next class
-- [ ] Complete the agenda items above.
+###### Things to do before the end of class
+- [ ] Be sure item 1 is completed, and hopefully at least get a start on item 2.
+
+> [!VACATION]
+> 
+> Have a restful, fun, and safe March Break! 😎 See you in April! 🌷
+
 
 </div></div>
 
@@ -38,11 +45,13 @@ ___
 
 
 
-> [!NOTE]
-> 
-> No Grove Time sessions this week.
-> 
-> Please try an [[SIC Drop-In Sessions\|SIC Drop-In Session]], if you'd like some one-on-one help outside of class time.
+Day|Time|Location
+-|-|-
+Friday|1:30 PM to 2 PM|Room 36
+
+Grove Time is a drop-in, no appointment needed.
+
+If you have a question, **don't hesitate**, come on by!
 
 </div></div>
 
@@ -63,9 +72,9 @@ Here is this week's schedule:
 
 Day|Time|SIC|Location
 -|-|-|-
-Monday, March 4|1:00 PM to 1:30 PM|Justin|Room 36
-Tuesday, March 5|12:30 PM to 1:30 PM|Quin|Room 36
-Wednesday, March 6|12:30 PM to 1:30 PM|Lawrence|Room 36
+Tuesday, April 2|12:30 PM to 1:30 PM|Griffin|Room 36
+Thursday, April 4|12:30 PM to 1:30 PM|Morgan|Room 36
+Friday, April 5|12:30 PM to 1:30 PM|Justi|Room 36
 
 If you have a question about your work in a Computer Studies Program course, please come by!
 
