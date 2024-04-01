@@ -3,8 +3,10 @@
 ---
 
 
-> [!NOTE]
-> 
-> No Grove Time sessions this week.
-> 
-> Please try an [[SIC Drop-In Sessions\|SIC Drop-In Session]], if you'd like some one-on-one help outside of class time.
+Day|Time|Location
+-|-|-
+Friday|1:30 PM to 2 PM|Room 36
+
+Grove Time is a drop-in, no appointment needed.
+
+If you have a question, **don't hesitate**, come on by!
