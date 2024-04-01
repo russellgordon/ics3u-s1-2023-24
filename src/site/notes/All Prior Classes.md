@@ -8,7 +8,6 @@
 
 ### Thread 3
 
-- [[All Prior Classes#Thread 3, Day 4 - Tuesday, April 2, 2024\|Day 4 - Tuesday, April 2, 2024]]
 - [[All Prior Classes#Thread 3, Day 3 - Wednesday, March 6, 2024\|Day 3 - Wednesday, March 6, 2024]]
 - [[All Prior Classes#Thread 3, Day 2 - Tuesday, March 5, 2024\|Day 2 - Tuesday, March 5, 2024]]
 - [[All Prior Classes#Thread 3, Day 1 - Monday, March 4, 2024\|Day 1 - Monday, March 4, 2024]]
@@ -48,31 +47,6 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
-
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
-
-
-
-
-### Thread 3, Day 4 - Tuesday, April 2, 2024
-#### Agenda
-
-1. Databases: Check Your Understanding
-	- If you have not yet, first, please make a post [on Notion](https://notion.so) regarding your progress on the [[Concepts/Introduction to Databases\|Introduction to Databases]] task.
-		- Almost every application you will write will have a database in use behind the scenes.
-	- Once Mr. Gordon has your post, you can check your work against the solutions – all of which include commentary to explain how they work.
-	> [!NOTE]
-	> Please do not hesitate to ask Mr. Gordon clarifying questions when checking your solutions.
-2. [[Concepts/Joining Tables in a Database\|Joining Tables in a Database]]
-	- What happens when we want to write a query that needs columns from multiple tables in a database?
-	- Learn how to join tables, and complete the [[Concepts/Joining Tables in a Database#Exercise\|provided exercises]].
-
-###### Things to do before our next class
-- [ ] Complete the agenda items above.
-
-</div></div>
-
-<small>[[All Prior Classes#Thread 3\|Back to top of thread 3 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-3/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
