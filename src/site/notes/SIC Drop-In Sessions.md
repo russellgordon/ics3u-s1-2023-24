@@ -12,8 +12,8 @@ Here is this week's schedule:
 
 Day|Time|SIC|Location
 -|-|-|-
-Monday, March 4|1:00 PM to 1:30 PM|Justin|Room 36
-Tuesday, March 5|12:30 PM to 1:30 PM|Quin|Room 36
-Wednesday, March 6|12:30 PM to 1:30 PM|Lawrence|Room 36
+Tuesday, April 2|12:30 PM to 1:30 PM|Griffin|Room 36
+Thursday, April 4|12:30 PM to 1:30 PM|Morgan|Room 36
+Friday, April 5|12:30 PM to 1:30 PM|Justi|Room 36
 
 If you have a question about your work in a Computer Studies Program course, please come by!
