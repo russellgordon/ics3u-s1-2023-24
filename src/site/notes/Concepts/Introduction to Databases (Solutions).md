@@ -85,6 +85,8 @@ Find a list of employee IDs where the salary paid is greater than $60000.
 > ![Pasted image 20230329201553.png](/img/user/Media/Pasted%20image%2020230329201553.png)
 
 ## 11
+{ #bad187}
+
 
  _How many_ employee IDs have been tied to a salary that is greater than $60000?  
 ![Pasted image 20230329201914.png](/img/user/Media/Pasted%20image%2020230329201914.png)
