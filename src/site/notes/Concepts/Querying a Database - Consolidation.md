@@ -139,7 +139,7 @@ For reference when working through these exercises, here again is the database s
 22. Find the first and last name of male employees *currently* paid between $80,000 and $90,000.
 23. What are the names of the 3 oldest employees?
 24. Who are the ten most recent hires at the company?
-25. Among the 10 most recent hires, which employee has has the highest salary?
+25. Among the 10 most recent hires, which employee has the highest salary?
 26. Who is the youngest employee at the company, and when were they hired?
 27. How many employees have birthdays in January and were born in 1999?
 28. Who has had the most job titles?
