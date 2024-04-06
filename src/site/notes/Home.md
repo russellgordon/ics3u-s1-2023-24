@@ -4,25 +4,28 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-5/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 3, Day 5 - Thursday, April 4, 2024
+### Thread 3, Day 6 - Saturday, April 6, 2024
 #### Agenda
 
-1. [[Concepts/Querying a Database - Consolidation\|Querying a Database - Consolidation]]
-	- Review key concepts for querying databases.
-	- Check your understanding by completing at least some of the [[Concepts/Querying a Database - Consolidation\|exercises provided]].
-	> [!NOTE]
-	> 
-	> Here is a [video from today's discussion](https://youtu.be/W8s2mx3F2ug) in class. 
-	> 
-	> If you were absent today, this is definitely worth watching.
+1. Concept: [[Concepts/Structures vs. Classes\|Structures vs. Classes]]
+	- Take your time reading through this lesson.
+	- Make notes regarding your observations.
+	- Then draw conclusions when prompted to understand how classes are handled differently from structures in the Swift programming language.
+	- You are welcome to work through the playground and discuss ideas with a partner, but you *please make your own notes* – the process of thinking about what you are seeing, and then considering how to explain that in writing, is a big part of building your long-term memories.
+	> [!IMPORTANT]
+	> Share your notes in a portfolio post on Notion; Mr. Gordon will provide feedback.
+	
+1. Tutorial: [[Tutorials/Creating a To-do List App\|Creating a To-do List App]]
+	- Create a static user interface for a to-do list app.
 
 ###### Things to do before our next class
 - [ ] Complete the agenda item described above.
+	- Then share your progress in one or more updates [on Notion](https://notion.so).
 
 </div></div>
 
