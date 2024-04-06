@@ -112,6 +112,10 @@ Please place screenshots of your responses in a portfolio post [on Notion](https
 > [!NOTE]
 > Be aware that some of these are pretty challenging! Completing most (not necessarily all) of these exercises would be a great example of exceeding expectations.
 
+For reference when working through these exercises, here again is the database structure:
+
+![Pasted image 20230328060245.png](/img/user/Media/Pasted%20image%2020230328060245.png)
+
 1. The number of employees with first name starting with 'A' and last name starting with 'A'.
 2. The number of female employees paid more than $100,000.
 3. The name and salary of the lowest paid employee *ever* employed by the company.
