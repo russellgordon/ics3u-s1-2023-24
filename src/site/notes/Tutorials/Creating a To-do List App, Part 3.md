@@ -723,12 +723,87 @@ This is clearly huge progress, so please commit and push your work with this mes
 Adjusted the view to work with the model context instead of an in-memory array.
 ```
 
+## Inspecting the database file
+
+As explained above, behind the scenes, SwiftData uses a SQLite database to persist data.
+
+You have had [[Concepts/Introduction to Databases\|plenty]] [[Concepts/Joining Tables in a Database\|of]] [[Concepts/Querying a Database - Consolidation\|experience]] querying a database by now.
+
+Let's open the database file created by SwiftData within your app so you can poke around inside it.
+
+Navigate to the `Helpers` group in your app, and add a file named `Functions.swift`.
+
+Then, copy and paste this function into the file:
+
+```swift
+func printCommandToOpenDatabaseFile() {
+    let urls = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)
+    let documentsDirectory = urls[0].absoluteString.trimmingPrefix("file://").replacing("%20", with: " ")
+    let command = "open \"\(documentsDirectory)default.store\" -a \"/Applications/DB Browser for SQLite.app\""
+    print(command)
+}
+```
+
+...like this:
+
+![Screenshot 2024-04-09 at 11.39.14 AM.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.39.14%E2%80%AFAM.png)
+
+Next, navigate to the `Views` group, open `LandingView`, and fold up the `VStack` using code folding.
+
+Add the `.onAppear` view modifier, with the following code:
+
+```swift
+.onAppear {
+	printCommandToOpenDatabaseFile()
+}
+```
+
+... like this:
+
+![Screenshot 2024-04-09 at 11.41.36 AM.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.41.36%E2%80%AFAM.png)
+
+That code will cause the `printCommandToOpenDatabaseFile` function to run when the `LandingView` screen appears.
+
+Now run the app in the full simulator, using **Command-R**.
+
+When the app runs, a command that will let you access the database file will be placed in the debug console in Xcode:
+
+![Screenshot 2024-04-09 at 11.45.38 AM 1.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.45.38%E2%80%AFAM%201.png)
+
+Highlight, then copy that command into your computer's clipboard using **Command-C**.
+
+Then, use Spotlight on your Mac to search for and open the **Terminal** app:
+
+![Screenshot 2024-04-09 at 11.47.30 AM.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.47.30%E2%80%AFAM.png)
+
+Once Terminal opens, paste the entire command on the command prompt, and press the **Return** key:
+
+![Screenshot 2024-04-09 at 11.49.46 AM.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.49.46%E2%80%AFAM.png)
+
+After you press the **Return** key, you should hopefully see the database created by SwiftData opened in the **DB Browser** app:
+
+![Screenshot 2024-04-09 at 11.50.55 AM.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.50.55%E2%80%AFAM.png)
+
+Finally, you can browse the data in the `ZTODOITEM` table, which corresponds to the `TodoItem` structure that we created for our model:
+
+![Screenshot 2024-04-09 at 11.51.57 AM 1.png](/img/user/Media/Screenshot%202024-04-09%20at%2011.51.57%E2%80%AFAM%201.png)
+
+Any to-do items you have entered within your app should be present in the database table shown.
+
+Normally there is no reason to poke around in the database file that SwiftData creates.
+
+Definitely don't manually change any of the data shown there, as that will likely confuse the SwiftData framework the next time you run your app.
+
+However, it's useful to see that behind the scenes, SwiftData creates this database file – and to realize that it is nothing that you are not already familiar with.
+
 ## Discussion and Exercise
 
-In the next part of this tutorial, you will learn how to re-enable Xcode Previews when using SwiftData.
+In the next part of this tutorial, for our next class, you will learn how to re-enable Xcode Previews when using SwiftData.
 
-When using the app, notice how the text of a to-do item remains after a to-do item is added.
+For now, when using the app, notice how the text of a to-do item remains after a to-do item is added:
 
-Look at the code in the `createToDo` and consider the stored properties that are defined for `LandingView`.
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-04-09_11.58.13.png|300](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-04-09_11.58.13.png)
 
-How could you add a single line of code to ensure that the text field when adding a to-do item is emptied after a to-do item has been added?
+Look at the code in the `createToDo` function and consider the stored properties that are defined for `LandingView`.
+
+How could you add a single line of code to ensure that the text field, when adding a to-do item, is emptied after a to-do item has been added?
