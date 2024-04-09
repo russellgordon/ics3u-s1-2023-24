@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/tutorials/creating-a-to-do-list-app-part-2/","dgHomeLink":true,"dgShowToc":true}
 ---
 
-# Creating a To-do List App
+# Creating a To-do List App, Part 2
 
 In [[Tutorials/Creating a To-do List App\|part one]] of this task, you worked to activate prior knowledge by building a static interface for the To-do List app.
 
