@@ -29,3 +29,7 @@ As a hint, here is *part* of the code needed to get started:
 ![Screenshot 2024-04-04 at 8.56.28 PM.png](/img/user/Media/Screenshot%202024-04-04%20at%208.56.28%E2%80%AFPM.png)
 
 And remember... **D.R.Y.!**
+
+> [!TIP]
+> 
+> When you have finished this part of the tutorial, in your next class, you can continue on to [[Tutorials/Creating a To-do List App, Part 2\|part 2]].
