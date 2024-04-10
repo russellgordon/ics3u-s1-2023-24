@@ -796,6 +796,12 @@ Definitely don't manually change any of the data shown there, as that will likel
 
 However, it's useful to see that behind the scenes, SwiftData creates this database file – and to realize that it is nothing that you are not already familiar with.
 
+Commit and push this final code change with the following message:
+
+```
+Added a command to show the location of the database created by the SwiftData framework.
+```
+
 ## Discussion and Exercise
 
 In the next part of this tutorial, for our next class, you will learn how to re-enable Xcode Previews when using SwiftData.
