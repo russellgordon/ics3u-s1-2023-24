@@ -242,3 +242,7 @@ Right now, two immediate issues exist:
 2. If we quit the app, the to-do items we created are lost.
 
 In the next part of this tutorial, you will learn how fix these issues, making more use of bindings, and the **SwiftData** framework to persist the to-do items within a database.
+
+> [!TIP]
+> 
+> When you have finished this part of the tutorial, in your next class, you can continue on to [[Tutorials/Creating a To-do List App, Part 3\|part 3]].
