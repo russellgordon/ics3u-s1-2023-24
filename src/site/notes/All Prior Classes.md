@@ -8,6 +8,7 @@
 
 ### Thread 3
 
+- [[All Prior Classes#Thread 3, Day 10 - Thursday, April 11, 2024\|Day 10 - Thursday, April 11, 2024]]
 - [[All Prior Classes#Thread 3, Day 9 - Wednesday, April 10, 2024\|Day 9 - Wednesday, April 10, 2024]]
 - [[All Prior Classes#Thread 3, Day 8 - Tuesday, April 9, 2024\|Day 8 - Tuesday, April 9, 2024]]
 - [[All Prior Classes#Thread 3, Day 7 - Monday, April 8, 2024\|Day 7 - Monday, April 8, 2024]]
@@ -53,6 +54,35 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-10/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 3, Day 9 - Wednesday, April 10, 2024
+#### Agenda
+
+1. Demo: Source of Truth for Data in an App
+	- Understand the difference between a non-mutable copy of a data structure instance and a mutable reference.
+	- Know when to each use type of property wrapper to use to obtain a mutable reference to your data.
+2. Activity: Making a Prototype of Your App
+	- Review this [completed prototype file in Keynote](https://education-static.apple.com/coding-club-kit/xcode-prototype.key).
+	- Using these [iOS Design elements](https://devimages-cdn.apple.com/design/resources/download/iOS-16-Keynote.dmg), adapt the completed prototype file to instead be a prototype for your app.
+3. Portfolios: Mid-module Portfolio Reviews
+	- Significant areas we have addressed:
+		- Brainstorm app ideas and audiences
+		- How to query a database
+		- How to persist data within an app
+	- Meet privately with Mr. Gordon informally review your portfolio and propose a current level of achievement.
+
+###### Things to do before our next class
+- [ ] Make progress on your app prototype in Keynote.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 3\|Back to top of thread 3 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-9/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
