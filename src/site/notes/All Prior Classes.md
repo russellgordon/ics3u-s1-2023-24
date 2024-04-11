@@ -8,6 +8,7 @@
 
 ### Thread 3
 
+- [[All Prior Classes#Thread 3, Day 9 - Wednesday, April 10, 2024\|Day 9 - Wednesday, April 10, 2024]]
 - [[All Prior Classes#Thread 3, Day 8 - Tuesday, April 9, 2024\|Day 8 - Tuesday, April 9, 2024]]
 - [[All Prior Classes#Thread 3, Day 7 - Monday, April 8, 2024\|Day 7 - Monday, April 8, 2024]]
 - [[All Prior Classes#Thread 3, Day 6 - Saturday, April 6, 2024\|Day 6 - Saturday, April 6, 2024]]
@@ -52,6 +53,35 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-9/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 3, Day 9 - Wednesday, April 10, 2024
+#### Agenda
+
+1. Tutorial: [[Tutorials/Creating a To-do List App, Part 4\|Creating a To-do List App, Part 4]]
+	- Learn how to use in-memory containers for Xcode Previews when working with the SwiftData framework.
+2. Activity: [60 Second Prototyping](https://developer.apple.com/wwdc17/818)
+	- Watch this 10-minute video to get a better understanding of how building quick prototypes can save you time when refining plans for an app.
+3. Setup: [Keynote](https://apps.apple.com/ca/app/keynote/id409183694?mt=12)
+	- Install the latest version of Keynote on your computer.
+	- You may first need to delete any existing copy of Keynote on your computer – please check your **Applications** folder.
+	- In our next class, Mr. Gordon will show you how to get started with using Keynote to build an interactive prototype of your app.
+
+> [!NOTE]
+> 
+> The tutorial on how to build a version of the to-do list app that uses a cloud-hosted database has been deferred to a future class. The instructions were just a bit too much to try to complete in this short Wednesday period.
+
+###### Things to do before our next class
+- [ ] Complete the agenda item described above.
+	- Then share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 3\|Back to top of thread 3 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-8/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
