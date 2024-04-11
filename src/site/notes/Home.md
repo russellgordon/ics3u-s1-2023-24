@@ -9,7 +9,7 @@
 
 
 
-### Thread 3, Day 9 - Wednesday, April 10, 2024
+### Thread 3, Day 10 - Thursday, April 11, 2024
 #### Agenda
 
 1. Demo: Source of Truth for Data in an App
