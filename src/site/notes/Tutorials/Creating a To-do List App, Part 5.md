@@ -31,7 +31,7 @@ In this tutorial, you will begin to learn how to use [Supabase](https://supabase
 
 Rather than make further changes to the version of your to-do list app that writes data to a local database using SwiftData, it will be easier to return to the version of the app that kept to-do items in memory, and then edit the code from that point.
 
-So, you can [download this file](https://www.russellgordon.ca/russellgordon.ca/lcs/2023-24/ics3u/Todo-CloudDatabase.zip).
+So, you can [download this file](https://www.russellgordon.ca/lcs/2023-24/ics3u/Todo-CloudDatabase.zip).
 
 Once downloaded, you may need to double-click the `zip` file to de-compress it:
 
