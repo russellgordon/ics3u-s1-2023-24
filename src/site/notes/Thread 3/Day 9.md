@@ -19,5 +19,5 @@
 > The tutorial on how to build a version of the to-do list app that uses a cloud-hosted database has been deferred to a future class. The instructions were just a bit too much to try to complete in this short Wednesday period.
 
 ###### Things to do before our next class
-- [ ] Complete the agenda item described above.
+- [ ] Complete the agenda items described above.
 	- Then share your progress in one or more updates [on Notion](https://notion.so).
