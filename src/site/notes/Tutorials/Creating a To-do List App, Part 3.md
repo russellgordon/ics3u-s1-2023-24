@@ -813,3 +813,7 @@ For now, when using the app, notice how the text of a to-do item remains after a
 Look at the code in the `createToDo` function and consider the stored properties that are defined for `LandingView`.
 
 How could you add a single line of code to ensure that the text field, when adding a to-do item, is emptied after a to-do item has been added?
+
+> [!TIP]
+> 
+> When you have finished this part of the tutorial, in your next class, you can continue on to [[Tutorials/Creating a To-do List App, Part 4\|part 4]].
