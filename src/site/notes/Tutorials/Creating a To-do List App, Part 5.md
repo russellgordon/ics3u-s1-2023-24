@@ -432,6 +432,178 @@ You should see an interface like the following:
 
 ![Screenshot 2024-04-14 at 8.52.20 PM.png](/img/user/Media/Screenshot%202024-04-14%20at%208.52.20%E2%80%AFPM.png)
 
-You are all set to begin creating data in your database and interacting with it from your Xcode project.
+You are all set to begin creating data in this table.
 
-However... that will have to wait for part 6 of this tutorial... in tomorrow's class. 😮‍💨
+### Add data to the table
+
+Using the green **Insert** button, add three rows of data to the table:
+
+![Screenshot 2024-04-15 at 7.38.02 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.38.02%E2%80%AFAM.png)
+
+For the data:
+
+- let the database automatically generate the `id` value
+- select a title for the to-do item
+- set the `done` value to `false`
+
+... then press the green **Save** button:
+
+![Screenshot 2024-04-15 at 7.38.27 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.38.27%E2%80%AFAM.png)
+
+The to-do items don't need to be exactly as shown, but please don't spend time adding dozens of to-do items right now:
+
+![Screenshot 2024-04-15 at 7.40.44 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.40.44%E2%80%AFAM.png)
+
+### Modifying a table's structure
+
+You might have noticed that when adding data, `NULL` was an option. You can think of `NULL` in a database as equivalent to `nil` in a Swift program.
+
+Both the `title` of a to-do item and it's completion status, `done`, should always have a value.
+
+Therefore, let's learn how to modify the structure of a table and correct this.
+
+Click the three dots `•••` beside the table name and then **Edit Table**:
+
+![Screenshot 2024-04-15 at 7.42.27 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.42.27%E2%80%AFAM.png)
+
+Next to the definition of the `title` column, click the gear icon, `⛭` and then de-select the **Is Nullable** option:
+
+![Screenshot 2024-04-15 at 7.44.51 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.44.51%E2%80%AFAM.png)
+
+... so it looks like this:
+
+![Screenshot 2024-04-15 at 7.45.44 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.45.44%E2%80%AFAM.png)
+
+Then do the same for the `done` column.
+
+After adjusting both columns, press the green **Save** button:
+
+![Screenshot 2024-04-15 at 7.46.03 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%207.46.03%E2%80%AFAM.png)
+
+So, now the table is set up the way we need it to be, for now.
+
+How do we get the data out of this table, and into our app?
+
+## The Web
+
+The Internet, it's related technologies, and particularly the World Wide Web, or "the Web" for short, are at the core of many things we do in a day.
+
+This is a brief sidebar to explain a bit about how information is sent between computers using the Web.
+
+### Headers
+
+First, try visiting this page in your web browser:
+
+[https://www.russellgordon.ca/lcs/hello.html](https://www.russellgordon.ca/lcs/hello.html)
+
+The content of that web page, when Mr. Gordon added it to his website, looked like this:
+
+```html
+<html>
+	<head>
+		<title>A very small web page</title>
+	</head>
+	<body>
+		Hello, world!
+	</body>
+</html>
+```
+
+A web browser (on your computer) interprets the HTML – which stands for *hypertext markup language* – sent by a web server (a computer somewhere else in the world) and shows the content.
+
+Often, there are other files that control the appearance of the page (CSS – *cascading style sheets*) and behaviour of the page (JS – *JavaScript*).
+
+However, there is other information that is sent by the web server when a web browser makes a request – these are called *headers* – and they provide additional information about the content being sent.
+
+Open the **Terminal** app on your computer, using the Spotlight feature to find it:
+
+![Pasted image 20240415075648.png|400](/img/user/Media/Pasted%20image%2020240415075648.png)
+
+At the prompt that appears, type this command, then press **Return**:
+
+```bash
+curl -i https://www.russellgordon.ca/lcs/hello.html
+```
+
+In general, `curl` is "a tool for transferring data from or to a server using URLs".
+
+The command above asks a program named `curl` to fetch the web page and show us the contents of the requested file, along with any headers that the server provides for that document.
+
+You should see output similar to the following:
+
+![Screenshot 2024-04-15 at 8.03.28 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.03.28%E2%80%AFAM.png)
+
+In a similar way, we are now going to use `curl` to fetch the data from our database table hosted by Supabase.
+
+### Obtaining project details
+
+Every project in Supabase has a *URL* that it is accessed from, and a *key* that ensures the user accessing the project is allowed to do so.
+
+> [!NOTE]
+> 
+> There are other layers of authentication involved, but we are omitting those for the time being.
+
+Open the **Project Settings** page:
+
+![Screenshot 2024-04-15 at 8.04.21 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.04.21%E2%80%AFAM.png)
+
+Then select the **API** option (this stands for *application programming interface*):
+
+![Screenshot 2024-04-15 at 8.05.03 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.05.03%E2%80%AFAM.png)
+
+On the resulting page, there are two pieces of information that you need.
+
+Copy the **URL** and the **anon public** key to a safe place on your computer, such as a text file stored in your **Computer Studies** folder. You will need this information later on.
+
+![Screenshot 2024-04-15 at 8.07.31 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.07.31%E2%80%AFAM.png)
+
+### Fetching table data
+
+We will use `curl` to fetch all the data in the `todos` table.
+
+Select the **API Docs** page:
+
+![Screenshot 2024-04-15 at 8.09.49 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.09.49%E2%80%AFAM.png)
+
+Then select the link for the `todos` table:
+
+![Screenshot 2024-04-15 at 8.10.17 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.10.17%E2%80%AFAM.png)
+
+Now select the **Bash** option at top right:
+
+![Screenshot 2024-04-15 at 8.11.34 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.11.34%E2%80%AFAM.png)
+
+Next, there is an option, also at top-right, to show the API key – click the **hide** button:
+
+![Screenshot 2024-04-15 at 8.12.35 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.12.35%E2%80%AFAM.png)
+
+Then, select **(anon) public**:
+
+![Screenshot 2024-04-15 at 8.12.55 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.12.55%E2%80%AFAM.png)
+
+Now the documentation page for Supabase automatically generates the `curl` commands that you can use to query your database from the command line.
+
+Note that this is *not* how we will obtain the data for our app – but this is useful to explain how it is that Supabase sends us the information in our database.
+
+Scroll down to the **Read All Rows** option, then copy the command:
+
+![Screenshot 2024-04-15 at 8.16.11 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.16.11%E2%80%AFAM.png)
+
+This command uses `curl` to request a web page from the Supabase web server. It sets several *headers* to identify which project to pull data from. The `apikey` is a secret (for your project only) and that lets Supabase know that it is you (and not someone else) requesting data from your database.
+
+So, now, paste that command into your **Terminal** window:
+
+![Screenshot 2024-04-15 at 8.16.46 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.16.46%E2%80%AFAM.png)
+
+... then press the **Return** key:
+
+![Screenshot 2024-04-15 at 8.17.09 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.17.09%E2%80%AFAM.png)
+
+You should see output that provides the contents of the `todos` table.
+
+This is how Supabase sends us data (and in turn, how we send data to Supabase).
+
+It is all done by making requests over the World Wide Web.
+
+In part 6 of this tutorial (tomorrow's class) you will learn a little about the format of the data being sent from Supabase, and how to use the actual Supabase library to much more easily obtain data and use it within your to-do list app.
+
