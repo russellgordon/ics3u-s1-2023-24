@@ -8,6 +8,7 @@
 
 ### Thread 3
 
+- [[All Prior Classes#Thread 3, Day 12 - Tuesday, April 16, 2024\|Day 12 - Tuesday, April 16, 2024]]
 - [[All Prior Classes#Thread 3, Day 11 - Monday, April 15, 2024\|Day 11 - Monday, April 15, 2024]]
 - [[All Prior Classes#Thread 3, Day 10 - Thursday, April 11, 2024\|Day 10 - Thursday, April 11, 2024]]
 - [[All Prior Classes#Thread 3, Day 9 - Wednesday, April 10, 2024\|Day 9 - Wednesday, April 10, 2024]]
@@ -55,6 +56,33 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-12/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 3, Day 12 - Tuesday, April 16, 2024
+#### Agenda
+
+1. Concept: Usability Testing
+	- How can we [quickly identify](https://www.youtube.com/embed/0YL0xoSmyZI) most of the problems with our app or app prototype?
+	- How can users [help us know what they are thinking](https://www.youtube.com/embed/-q__eqNevb4) as they try out our app or app prototype?
+	- While we watch these short videos, please take notes to [answer the following questions](https://www.russellgordon.ca/lcs/2023-24/ics3u/Usability-Testing.pdf).
+2. Activity: Usability Café
+	- Conduct usability tests with your assigned group of peers.
+	- Complete at least three interviews.
+	- For each person who you interview, [complete this form](https://docs.google.com/forms/d/e/1FAIpQLSfpiOmapCLX23f9kmC96Oq2Jgsx8BqxPi8YDnHCsKCiwu3I5Q/viewform).
+3. Working Period: App Prototype Revisions
+	- You have the remainder of this period to make revisions to your app prototype in Keynote, based on the feedback you have received.
+
+###### Things to do before our next class
+- [ ] Finish your app prototype revisions in Keynote.
+	- Please be sure to share the revised Keynote file [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 3\|Back to top of thread 3 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-11/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
