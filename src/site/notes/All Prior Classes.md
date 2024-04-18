@@ -8,6 +8,7 @@
 
 ### Thread 3
 
+- [[All Prior Classes#Thread 3, Day 13 - Thursday, April 18, 2024\|Day 13 - Thursday, April 18, 2024]]
 - [[All Prior Classes#Thread 3, Day 12 - Tuesday, April 16, 2024\|Day 12 - Tuesday, April 16, 2024]]
 - [[All Prior Classes#Thread 3, Day 11 - Monday, April 15, 2024\|Day 11 - Monday, April 15, 2024]]
 - [[All Prior Classes#Thread 3, Day 10 - Thursday, April 11, 2024\|Day 10 - Thursday, April 11, 2024]]
@@ -56,6 +57,25 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-13/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 3, Day 13 - Thursday, April 18, 2024
+#### Agenda
+
+1. Working Period: Portfolio Clean-up
+	- Add evidence for whatever might be missing from your portfolio for assigned tasks in this module.
+	- Thinking back to the mid-module portfolio review just completed, make a post for today's class identifying where you feel your current grade should land, based on the new evidence you have added since the mid-module reviews.
+
+###### Things to do before Saturday at 10 PM
+- [ ] Work on portfolio and make your summary post (as described above).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 3\|Back to top of thread 3 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-3/day-12/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
