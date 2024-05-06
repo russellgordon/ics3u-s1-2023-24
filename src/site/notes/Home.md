@@ -14,7 +14,7 @@
 
 1. Working Period: Portfolio Clean-up
 	- Add evidence for whatever might be missing from your portfolio for assigned tasks in this module.
-	- Thinking back to the mid-module portfolio review just completed, make a post for today's class identifying where you feel your current grade should land, based on the new evidence you have added since the mid-module reviews.
+	- Thinking back to your mid-module portfolio review, make a post for today's class identifying where you feel your current grade should land, based on the new evidence you have added since the mid-module reviews.
 
 ###### Things to do before Saturday at 10 PM
 - [ ] Work on portfolio and make your summary post (as described above).
@@ -31,10 +31,9 @@ ___
 
 
 
-
 Day|Time|Location
 -|-|-
-Friday|1:30 PM to 2 PM|Room 36
+Tuesday|12:30 PM to 2 PM|Room 36
 
 Grove Time is a drop-in, no appointment needed.
 
