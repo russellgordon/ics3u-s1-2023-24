@@ -43,9 +43,33 @@ Then open the `Todo-CloudDatabase` folder, and double-click the blue `.xcodeproj
 
 Xcode will open, and you should see something like this:
 
-![Screenshot 2024-04-14 at 4.58.29 PM.png](/img/user/Media/Screenshot%202024-04-14%20at%204.58.29%E2%80%AFPM.png)
+![Screenshot 2024-05-21 at 12.33.47 PM.png](/img/user/Media/Screenshot%202024-05-21%20at%2012.33.47%E2%80%AFPM.png)
 
-Try out the app. You should see that you can add to-do items, edit them, delete them, and toggle their completion status. 
+Before you try out the app, you must set a *bundle identifier*. This uniquely identifies your app to the Simulator device or physical device that you run the app on. To set the bundle identifier, first select the blue project file at top-left, then select the **Signing & Capabilities** tab:
+
+![Screenshot 2024-05-21 at 12.26.47 PM.png](/img/user/Media/Screenshot%202024-05-21%20at%2012.26.47%E2%80%AFPM.png)
+
+In the **Bundle Identifier** field, replace this value:
+
+```
+replace.with.your.reverse.domain.name.TodoList
+```
+
+... with something like this (for example, if your name is Sophia Chen):
+
+```
+ca.chen.sophia.TodoList
+```
+
+... like this:
+
+![Screenshot 2024-05-21 at 12.28.57 PM.png](/img/user/Media/Screenshot%202024-05-21%20at%2012.28.57%E2%80%AFPM.png)
+
+Now try out the app in the Simulator:
+
+![Screenshot 2024-05-21 at 12.29.54 PM.png](/img/user/Media/Screenshot%202024-05-21%20at%2012.29.54%E2%80%AFPM.png)
+
+You should see that you can add to-do items, edit them, delete them, and toggle their completion status. 
 
 ### Create a local repository
 
@@ -115,9 +139,10 @@ Visually, and in general, that looks like this:
 ```mermaid
 flowchart LR
 
-id1["Model\n(Describes data)"] --> id2["View Model\n(Manages the state of data)"]
-id2 --> id3["View(s)\n(Present data)"]
+id1["<b>Model</b>\nDescribes data"] --> id2["<b>View Model</b>\nManages the state of data"]
+id2 --> id3["<b>View(s)</b>\nPresent data"]
 id3 --> id2
+
 ```
 
 If necessary, the view model creates an initial, empty instance of whatever data structures are described by the model. Or the view model might load existing instances of data (for example, from a database).
@@ -593,11 +618,11 @@ This command uses `curl` to request a web page from the Supabase web server. It 
 
 So, now, paste that command into your **Terminal** window:
 
-![Screenshot 2024-04-15 at 8.16.46 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.16.46%E2%80%AFAM.png)
+![Screenshot 2024-04-15 at 8.16.46 AM.png|500](/img/user/Media/Screenshot%202024-04-15%20at%208.16.46%E2%80%AFAM.png)
 
 ... then press the **Return** key:
 
-![Screenshot 2024-04-15 at 8.17.09 AM.png](/img/user/Media/Screenshot%202024-04-15%20at%208.17.09%E2%80%AFAM.png)
+![Screenshot 2024-04-15 at 8.17.09 AM.png|500](/img/user/Media/Screenshot%202024-04-15%20at%208.17.09%E2%80%AFAM.png)
 
 You should see output that provides the contents of the `todos` table.
 
