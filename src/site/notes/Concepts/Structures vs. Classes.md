@@ -44,6 +44,7 @@ var home = school
 ```
 
 Based on the results you have seen when running the playground – what can you conclude about what happened when the `home` variable was created?
+
 ## Reference types
 
 Now, on line 3, change the `struct` keyword so that it says `class` instead:
