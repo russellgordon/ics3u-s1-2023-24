@@ -3,7 +3,7 @@
 ---
 
 
-# Creating a To-do List App, Part 6
+# Creating a To-do List App, Part 7
 
 In [[Tutorials/Creating a To-do List App, Part 6\|part six]] of this task, you learned how to implement all the functionality required to create, read, update, and delete data from a database hosted at Supabase. That knowledge will be directly applicable to the app you build for your culminating task.
 
@@ -15,7 +15,7 @@ As the list of to-do items stored by a user grows, it would be ideal to be able 
 
 At present, search does not work:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif|351](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif)
 
 Using raw SQL, to search, or filter, the list of to-do items, you would run a query like this:
 
@@ -130,7 +130,7 @@ In our view, at present, it is the `.searchable` view modifier:
 
 ... attached to the `List` structure that adds the search field to our user interface:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png|351](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png)
 
 The search field has a binding to the `searchText` stored property. So, whenever the user types something into the search field, the contents of `searchText` will be updated.
 
