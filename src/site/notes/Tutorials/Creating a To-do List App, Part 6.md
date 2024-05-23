@@ -220,7 +220,7 @@ FROM todos
 
 Try running the app in the Simulator or on a device right now, and you will note that when it opens, there are no to-do items showing:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_12.09.54.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_12.09.54.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_12.09.54.png|351](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_12.09.54.png)
 
 There are no to-do items because the data is being kept in memory only, and is not persisted at all right now. We just opened the app, so of course, there are no to-do items to show.
 
@@ -451,7 +451,7 @@ This creates a block of code that is run asynchronously. We invoke the `getTodos
 
 Try running the app now in the Simulator or on a device. You should see whatever to-do items that are in your database now shown inside the app instead:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_14.20.30.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_14.20.30.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_14.20.30.png|351](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_14.20.30.png)
 
 This is excellent progress that you don't want to lose, so please commit and push your work with this message:
 
@@ -502,11 +502,11 @@ After selecting the `todos` table you should see the newly inserted data:
 
 If you run your app again from Xcode, you should see the newly created to-do item:
 
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_15.50.45.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_15.50.45.png)
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_15.50.45.png|351](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-19_15.50.45.png)
 
 Try adding a new to-do item, then force-quitting the app, then opening it again:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_15.58.16.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_15.58.16.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_15.58.16.gif|351](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_15.58.16.gif)
 
 Note that the newly created to-do item is *not* persisted. 
 
@@ -573,7 +573,7 @@ Now try running the app again in the Simulator, and add a new to-do item.
 
 Quit the app, and observe how the new to-do item has been persisted:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.17.04.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.17.04.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.17.04.gif|351](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.17.04.gif)
 
 This is important progress that you don't want to lose, so please commit and push your work with this message: 
 
@@ -625,7 +625,7 @@ Note how the view model must manage to-do items held in memory *and* keep the da
 
 If you try deleting a to-do item, then quitting and re-opening the app, you will notice a problem:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.29.56.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.29.56.gif)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.29.56.gif|351](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-19_16.29.56.gif)
 
 The to-do item that was deleted appears again when the app is re-opened.
 
