@@ -24,6 +24,7 @@
 				- Adding search.
 				- Enabling row-level security.
 	- If you are finished those tutorials, making reference to your Keynote prototypes built in our prior mod, begin making static, non-interactive interfaces for your culminating task app.
+		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
 
 ###### Things to do before our next class
 - [ ] Complete the tutorials mentioned above.
