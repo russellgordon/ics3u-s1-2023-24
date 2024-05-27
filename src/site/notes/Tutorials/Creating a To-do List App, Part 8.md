@@ -5,670 +5,670 @@
 
 # Creating a To-do List App, Part 8
 
-==Todo: Finish authoring this tutorial==
+In [[Tutorials/Creating a To-do List App, Part 7\|part seven]] of this task, you learned how to make search work within the app, and how to ensure that one user does not see another user's data by properly configuring row-level security on the `todos` table of your database hosted at Supabase.
 
-- add data structure to represent image selected from Photos library
-- add Picker to allow selection of image from Photos library
-- create a bucket to store images in Supabase project and configure policies
-- add column name to `todos` to hold image ID
-- adjust model to handle new column in table
-- add code to upload images to bucket
-- add code to download and display images from bucket
+In this continuation of that tutorial, you will learn how to add some niceties to the user interface, such as:
 
-In [[Tutorials/Creating a To-do List App, Part 6\|part six]] of this task, you learned how to implement all the functionality required to create, read, update, and delete data from a database hosted at Supabase. That knowledge will be directly applicable to the app you build for your culminating task.
+- clearing the input field
+- disabling the **Add** button when the user types nothing, or only spaces
+- using a sheet that slides up to hold the user interface for adding an item
+- a cue to the user about how to get started, when there are no to-do items
 
-In this continuation of that tutorial, you will learn how to make search work within the to-do app and how to correct a critical security flaw with the current configuration of your Supabase project.
-
-## Search data in the cloud
-
-As the list of to-do items stored by a user grows, it would be ideal to be able to filter, or search, the list of items.
-
-At present, search does not work:
-
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif|351](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_19.42.07.gif)
-
-Using raw SQL, to search, or filter, the list of to-do items, you would run a query like this:
-
-```sql
-SELECT *
-FROM todos
-WHERE title LIKE '%nap%'
-```
-
-If you like, try this out directly on your database hosted at Supabase.
-
-From the Supabase website, select the **SQL Editor** icon:
-
-![Screenshot 2024-05-19 at 3.42.00 PM.png](/img/user/Media/Screenshot%202024-05-19%20at%203.42.00%E2%80%AFPM.png)
-
-You will come to a page that looks like this:
-
-![Screenshot 2024-05-19 at 3.45.38 PM.png](/img/user/Media/Screenshot%202024-05-19%20at%203.45.38%E2%80%AFPM.png)
-
-Try running a `SELECT` statement like the one above directly on the `todos` table in your database. Notice how the list of rows returned is reduced based on what you provide between the `%` signs.
-
-Now try running a query like this:
-
-```sql
-SELECT *
-FROM todos
-```
-
-Notice how all the rows of the `todos` table are returned.
-
-### Adjust the view model
-
-The first step using the Supabase framework to search, or filter, to-do list items within your app is to add another function to the view model.
-
-Switch to the `TodoListViewModel` file and fold up the existing functions so that they look like this:
-
-![Screenshot 2024-05-22 at 7.46.15 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%207.46.15%E2%80%AFPM.png)
-
-Now, copy and paste the code below to add a new function at the end of the list of existing functions – be sure the new function goes inside the `TodoListViewModel` class – that is, before the closing `}` bracket:
-
-```swift
-func filterTodos(on searchTerm: String) async throws {
-
-	if searchTerm.isEmpty {
-
-		// Get all the to-dos
-		Task {
-			try await getTodos()
-		}
-
-	} else {
-
-		// Get a filtered list of to-dos
-		do {
-			let results: [TodoItem] = try await supabase
-				.from("todos")
-				.select()
-				.ilike("title", pattern: "%\(searchTerm)%")
-				.order("id", ascending: true)
-				.execute()
-				.value
-
-			self.todos = results
-
-		} catch {
-			debugPrint(error)
-		}
-
-	}
-
-}
-```
-
-... like this:
-
-![Screenshot 2024-05-22 at 7.49.59 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%207.49.59%E2%80%AFPM.png)
-
-Let's break that function down a bit.
-
-> [!Discussion]
+> [!TIP]
 > 
-> 1. The `filterTodos` function accepts a single argument of type `String`, with an external parameter name of `on`. Whatever data is passed in to the parameter will be accessible inside the function using the internal parameter name of `searchTerm`.
->    &nbsp;
-> 2. When the provided search term is empty, the complete list of to-do items is fetched from the cloud-hosted database.
->    &nbsp;
-> 3. When the provided search term is not empty, we invoke a series of function calls to run a select statement with a `WHERE` clause, limiting results to rows where data in the `title` column contains whatever was provided in the search term. We then assign these results to the `todos` array. Since the view model is marked with `@Observable`, when the contents of the `todos` array are changed, the user interface of our app will be updated.
->    
->    Note that the `ilike` function is a case insensitive search. That means a search term of `For` would match a to-do item with a title of `Go for a run`.
->    
->    If you use the `like` function in the same way, results are case sensitive. In that case, a search term of `For` would *not* match a to-do item with a title of `Go for a run`.
+> Learning how to make these changes will be useful to learn for anyone whose culminating task app involves the user creating new data within an app.
 
-Before continuing with this tutorial, it is worth briefly reviewing, and then bookmarking [this section of the Supabase documentation](https://supabase.com/docs/reference/javascript/using-filters). It is quite likely you will need to query and filter data that exists in your database while authoring your culminating task app – so, this documentation will be a helpful reference.
+After those changes are made, in an optional part 9 of this tutorial series (coming soon), you will learn how to add support for attaching an image to a given to-do item.
 
-### Adjust the view
+Here is a 90-second video showing how the revised app will function when you have completed today's tutorial, and, the tutorial coming in our next class to show how to work with images:
 
-Now that we have a new function in the view model that finds to-do items whose title contains a provided search term, we must modify the view so that it makes use of this new function. 
-
-Remember that in general, this is how the MVVM (model, view, view model) design pattern works:
-
-```mermaid
-flowchart LR
-
-id1["<b>Model</b>\nDescribes data"] --> id2["<b>View Model</b>\nManages the state of data"]
-id2 --> id3["<b>View(s)</b>\nPresent data"]
-id3 --> id2
-
-```
-
-In our view, at present, it is the `.searchable` view modifier:
-
-![Screenshot 2024-05-22 at 8.03.40 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%208.03.40%E2%80%AFPM.png)
-
-... attached to the `List` structure that adds the search field to our user interface:
-
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png|351](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-22_20.04.14.png)
-
-The search field has a binding to the `searchText` stored property. So, whenever the user types something into the search field, the contents of `searchText` will be updated.
-
-We need to make our app react to changes in the `searchText` stored property.
-
-To do this, copy the following code and then add it below the `.searchable` view modifier:
-
-```swift
-.onChange(of: searchText) {
-	Task {
-		try await viewModel.filterTodos(on: searchText)
-	}
-}
-```
-
-...like this:
-
-![Screenshot 2024-05-22 at 8.08.20 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%208.08.20%E2%80%AFPM.png)
-
-If needed, press **Command-`A`** and then **Control-`I`** to re-indent your code and keep it tidy.
-
-Now, whenever the value of the `searchText` stored property changes, a task – a block of asynchronous work – will be started. This block of code invokes the `filterTodos` function that we just added to the view model, passing in `searchText` as the argument for the `on` parameter.
-
-As described earlier, that will cause the `todos` array to be refreshed and limited to rows in the `todos` table in our database whose `title` column data contains the provided search text.
-
-Try this out in your app now. You should see something like the following:
-
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_20.10.48.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-22_20.10.48.gif)
-
-This is important progress, so please be sure to commit and push your work at this point with the following message:
-
-```
-Added the ability to search and filter the list of to-do items.
-```
-
-## A significant security problem
-
-To keep things simple when we started to use Supabase, we initially [[Tutorials/Creating a To-do List App, Part 5#Create a table\|disabled row-level security]] on the `todos` table.
-
-What does that mean, though?
-
-To understand this, try running your app on a different device in the Simulator, or, watch and consider the short video below.
-
-Each Simulator device is equivalent to a different physical device.
-
-So if you try out your app on an iPhone 15 Pro in the Simulator, and then you also try out your app on an iPhone 15 in the Simulator, this is like running your app on two different physical devices. 
-
-Let's see what this looks like as a video:
-
-<figure style="width: 640px;">
-	<video width="640" controls preload="metadata">
-	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/no-row-level-security.mp4" type="video/mp4">
+<figure style="width: 350px;">
+	<video width="350" controls preload="metadata">
+	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/todo-list-with-images.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 	</video>
 </figure>
 
-Do you see the problem? Imagine that those two phones have different owners. It is not correct for one person to be seeing another person's to-do items!
+## Clearing the input field
 
-### Enable row-level security
+You may have already added this functionality, as it's quite irritating to have to do this manually! Here is how the app functions at the conclusion of [[Tutorials/Creating a To-do List App, Part 7\|part seven]]:
 
-To fix this problem, we will enable row-level security on the `todos` table using the Supabase website.
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_06.55.03.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_06.55.03.gif)
 
-Then, we will adjust our app so that it authenticates with Supabase, allowing it to make changes to the `todos` table even while row-level security is enabled.
+Clearing the input field was an exercise much earlier on in this tutorial series. Let's add this code now if you have not already, so you do not get the urge to throw your computer out the window as you complete further testing! 🫠
 
-First, visit your [Supabase dashboard](https://supabase.com/dashboard/):
+Navigate to `LandingView` and review the list of stored properties that maintain state in this part of the app:
 
-![Screenshot 2024-05-22 at 9.04.20 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.04.20%E2%80%AFPM.png)
+![Screenshot 2024-05-27 at 7.05.18 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.05.18%E2%80%AFAM.png)
 
-Select your to-do list app project, and you will see something like the following:
+From the comments, we see that `newItemDescription` appears to hold the text the user is entering for a new to-do item.
 
-![Screenshot 2024-05-22 at 9.04.54 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.04.54%E2%80%AFPM.png)
+By scrolling down a bit and looking for the `TextField` structure, we confirm that the text field is bound to the stored property. So – we definitely need to do something with `newItemDescription` to clear the input field. What, though?
 
-At left, select the **Table Editor** icon:
+![Screenshot 2024-05-27 at 7.05.36 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.05.36%E2%80%AFAM.png)
 
-![Screenshot 2024-05-22 at 9.05.24 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.05.24%E2%80%AFPM.png)
+When trying to think through a situation like this, remember that *SwiftUI reacts to changes in state*. Put another way, if we change the data, SwiftUI will update the interface.
 
-Then select the `todos` table:
+So... after a to-do item has been safely stored in the database and added to the list, what should happen to the data that was in `newItemDescription`?
 
-![Screenshot 2024-05-22 at 9.06.07 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.06.07%E2%80%AFPM.png)
+It needs to be cleared! We will assign an empty string to `newItemDescription`. SwiftUI will then update the user interface to reflect this change in state.
 
-Now select the **RLS disabled** button:
+So, look just below the `TextField` to the `Button` that the user presses when adding a new to-do item. Add the code shown:
 
-![Screenshot 2024-05-22 at 9.06.34 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.06.34%E2%80%AFPM.png)
+![Screenshot 2024-05-27 at 7.08.59 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.08.59%E2%80%AFAM.png)
 
-You will see the following message – go ahead and select the **Enable RLS for this table** button:
+Now run and test your app. Ah, that's better! A quick change but a huge improvement in the usability of the app.
 
-![Screenshot 2024-05-22 at 9.08.14 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.08.14%E2%80%AFPM.png)
+Although this is a tiny change, *never co-mingle code that makes multiple features happen within your app*.
 
-On the dialog that appears, go ahead and select the **Enable RLS** button:
-
-![Screenshot 2024-05-22 at 9.08.45 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.08.45%E2%80%AFPM.png)
-
-### Add a column to identify the user
-
-Next we must configure our project to automatically generate a universally unique identifier for each user of the app.
-
-The user of our app will not know this is happening. As such, identifying the user to Supabase in this way is known as an *anonymous sign-in*. 
-
-This identifier, or UUID, is used to define a *session* when interacting with Supabase. By default, a session created from an anonymous sign-in lasts indefinitely – that is, forever.
-
-We need to add a column to the `todos` table to keep track of this unique identifier, or user id.
-
-To do this, select the three dots beside the `todos` table entry at left:
-
-![Screenshot 2024-05-22 at 9.29.01 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.29.01%E2%80%AFPM.png)
-
-Then select the **Edit Table** option:
-
-![Screenshot 2024-05-22 at 9.29.39 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.29.39%E2%80%AFPM.png)
-
-Scroll down and at the bottom, select the **Add Column** button:
-
-![Screenshot 2024-05-22 at 9.30.17 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.30.17%E2%80%AFPM.png)
-
-As shown below:
-
-1. name the column `user_id`
-2.  for the data type, scroll down in the menu provided and select `uuid`
-3.  for the default value, select `auth.uid()`
-
-Then go ahead and select the green **Save** button:
-
-![Screenshot 2024-05-22 at 9.33.40 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.33.40%E2%80%AFPM.png)
-
-After a moment, you will briefly see a success message at top right:
-
-![Screenshot 2024-05-22 at 9.34.00 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.34.00%E2%80%AFPM.png)
-
-Any existing rows will have the `user_id` set to `NULL` since those rows were created before the `user_id` column had been created.
-
-### Define an RLS policy
-
-There are a variety of ways row-level security (RLS) can be configured.
-
-We now need to make that decision by defining an RLS policy.
-
-Go ahead and select the **Add RLS policy** button:
-
-![Screenshot 2024-05-22 at 9.35.12 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.35.12%E2%80%AFPM.png)
-
-On the next screen that appears, select the **Create policy** button:
-
-![Screenshot 2024-05-22 at 9.11.44 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.11.44%E2%80%AFPM.png)
-
-You will then see this screen:
-
-![Screenshot 2024-05-22 at 9.16.06 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.16.06%E2%80%AFPM.png)
-
-Choose the template for `INSERT` at right by clicking on it, and your screen will change to the following:
-
-![Screenshot 2024-05-22 at 9.16.54 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.16.54%E2%80%AFPM.png)
-
-Next, make the following changes:
-
-- In the **Policy Command** section, select `ALL`
-- In the **Policy Name** field, change the title to `Enable access for users based on user_id`
-
-... like this:
-
-![Screenshot 2024-05-22 at 9.18.42 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.18.42%E2%80%AFPM.png)
-
-Finally, copy the text below:
+We just added a small, but important feature, so it's time to commit and push our work with this message:
 
 ```
-(auth.uid() = user_id)
+Now clearing the input text field after a new to-do item is added.
 ```
 
-...and paste it on line 7 in the policy code block, like this:
+Now we can continue and add additional features.
 
-![Screenshot 2024-05-22 at 9.24.04 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.24.04%E2%80%AFPM.png)
+## Conditionally disable the Add button
 
-Then press the green **Save policy** button.
+At the moment, the user can add to-do items even when they contain a bunch of spaces, or even a completely empty input field:
 
-When you return to the **Policies** screen you will see the following:
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.15.55.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.15.55.gif)
 
-![Screenshot 2024-05-22 at 9.36.22 PM.png](/img/user/Media/Screenshot%202024-05-22%20at%209.36.22%E2%80%AFPM.png)
+We can prevent this situation by disabling the **Add** button when `newItemDescription` is empty or contains just spaces.
 
-### Add authentication code to the app
+![Screenshot 2024-05-27 at 7.17.58 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.17.58%E2%80%AFAM.png)
 
-The next step is to add code to our app to sign-in users anonymously, so that they can interact with the database.
+Move down just a bit and add the code shown here just after the `.font(.caption)` view modifier that is attached to the `Button` structure:
 
-Here is the approach our app will now take:
+![Screenshot 2024-05-27 at 7.22.45 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.22.45%E2%80%AFAM.png)
 
-```mermaid
-flowchart TB
+Now run your app. You will notice that the **Add** button is always disabled: 
 
-id1([App Entry Point])
-id2["<b>AppEntryView</b>\nMonitors authentication state"]
-id3((Is the user authenticated?))
-id4["<b>LandingView</b>\nPresents list of to-do items"]
-id5["<b>AuthView</b>\nPerforms anonymous sign-in\nwhich changes authentication state"]
-id1-- shows -->id2
-id2-- asks -->id3
-id3-- yes -->id4
-id3-- no -->id5
-id5-. state change triggers re-loading of .->id2
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.23.37.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.23.37.gif)
+
+This isn't what we want, but it illustrates how the `.disabled` view modifier works. It accepts a Boolean value – `true` or `false`. When it receives `true` the button is disabled.
+
+Change the code so it reads as follows, then try running your app again:
+
+![Screenshot 2024-05-27 at 7.29.10 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.29.10%E2%80%AFAM.png)
+
+We have added a conditional statement:
+
+```swift
+newItemDescription.isEmpty == true
 ```
 
-That's the theory. How does that work in practice?
+... as the input to the `.disabled` view modifier.
+
+Every variable or constant in Swift that is a `String` has a property named  `.isEmpty` that returns `true` when... the string is empty!
+
+So we are testing for this situation by adding the code above.
+
+When you tested your app just now, you should see this:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.31.37.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.31.37.gif)
+
+The button is disabled when the string is empty, but if the user (silly, silly user) types in a bunch of empty spaces, a to-do item can still be added.
 
 > [!DISCUSSION]
 > 
-> Let's say a user has never opened our app before. 
+> On a more serious note, a general rule of app development – of authoring usable apps – is to *let the user be in control*.
 > 
-> The app opens to `AppEntryView`. A selection statement in `AppEntryView` identifies the current authentication state – the user is not authenticated. 
+> Have you ever used a website that prevented you from typing certain characters into an input field?
 > 
-> As a result `AuthView` is loaded. `AuthView` communicates with Supabase, signing the user in anonymously and creating a session with Supabase that will last indefinitely (forever). The authentication state changes to *signed in*.
+> The website developer was likely well-intentioned, but usually, disabling certain keystrokes, or perhaps disabling cut and paste in an app or on a website... these things are deeply irritating to users.
 > 
-> Since the authentication state changed, `AppEntryView` is re-loaded. This time the user is authenticated because a session with the Supabase service was just created by `AuthView`. As a result `LandingView` is shown.
+> However, in this case, in this context – it seems highly unlikely that a user would *want* to enter a completely blank to-do item.
+> 
+> It's always important to carefully consider how you build out a user interface within an app – and it's usually a good idea to seek the input of others to see if your plans are good.
 
-You can use this very same approach in your own app for the culminating task if you need a cloud-hosted database but do not need to know who is using your app.
+So, we can make one more adjustment. Replace this code:
 
-Inside the **Views** group in your project, create a new file named `AppEntryView`, like this:
+```swift
+.disabled(newItemDescription.isEmpty == true)
+```
 
-![Screenshot 2024-05-23 at 5.58.34 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%205.58.34%E2%80%AFAM.png)
+... with this instead:
+
+```swift
+.disabled(newItemDescription.trimmingCharacters(in: .whitespaces).isEmpty == true)
+```
+
+The `.trimmingCharacters(in:)` method is also built-in to any variable of type `String` in Swift. It is a very useful method that allows you to trim all sorts of different characters from the start or end of a string:
+
+![Screenshot 2024-05-27 at 7.44.27 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.44.27%E2%80%AFAM.png)
+
+There are many options for what type of characters you might like to trim:
+
+![Screenshot 2024-05-27 at 7.44.35 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.44.35%E2%80%AFAM.png)
+
+In this case though, we want the code to look as follows:
+
+![Screenshot 2024-05-27 at 7.44.46 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.44.46%E2%80%AFAM.png)
+
+So now, in order, first whitespace characters (spaces, tabs, and so on) are trimmed from both ends of the string. Then, second, we test for whether the string is empty. If it is, the **Add** button is disabled.
+
+Now we have the behaviour that we want:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.46.09.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_07.46.09.gif)
+
+Commit and push your work now with this message:
+
+```
+Ensure that you cannot input a to-do item that is blank.
+```
+
+## Using a sheet to add new items
+
+At present, `LandingView` has two main parts of it's interface showing at all times.
+
+The list, and the horizontal stack at the bottom where you can enter a new to-do items:
+
+![Screenshot 2024-05-27 at 7.58.19 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%207.58.19%E2%80%AFAM.png)
+
+This works well enough when there is only a short bit of text being provided for each to-do item.
+
+However, later on we will make it possible to attach an image to a to-do item, which will make the input area at the bottom of the window take up more space.
+
+A solution to this is to use a tool bar button, a ＋ symbol, to trigger the appearance of a sheet.
+
+The user can add as many to-do items they like, and then dismiss the sheet when they are done, like this:
+
+![RocketSim_Recording_iPhone_15_6.1_2024-05-27_08.07.20.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_6.1_2024-05-27_08.07.20.gif)
+
+Let's get started.
+
+### Trigger the sheet's appearance
+
+Ensure that you are in `LandingView` and then scroll up to the stored properties section of the structure:
+
+![Screenshot 2024-05-27 at 8.10.45 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.10.45%E2%80%AFAM.png)
+
+User interface updates are triggered by state changes in SwiftUI, so we need a stored property to control whether the sheet is visible or not.
+
+Add this code:
+
+![Screenshot 2024-05-27 at 8.11.42 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.11.42%E2%80%AFAM.png)
+
+Then scroll down and add this code:
+
+```swift
+.sheet(isPresented: $presentingNewItemSheet) {
+	Text("Hello, world!")
+}
+```
+
+... right after the `.navigationTitle` view modifier that is attached to the `VStack`, like this:
+
+![Screenshot 2024-05-27 at 8.14.12 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.14.12%E2%80%AFAM.png)
+
+If needed, press **Command-`A`** and then **Control-`I`** to re-indent your code and keep it tidy.
+
+The way the `.sheet` view modifier works is that when `presentingNewItemSheet` is true, the sheet is shown. Run your app now and notice that the sheet does not show up:
+
+![Screenshot 2024-05-27 at 8.18.50 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.18.50%E2%80%AFAM.png)
+
+Now go back into your code and initialize `presentingNewItemSheet` with `true` instead, then run your app:
+
+![Screenshot 2024-05-27 at 8.18.14 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.18.14%E2%80%AFAM.png)
+
+Notice that the sheet is immediately visible and that it covers the entire to-do list.
+
+We can control how big the sheet is on our screen by using the `.presentationDetents` view modifier on the view the sheet is showing.
+
+> [!TIP]
+> 
+> You may not have heard the word *detent* used very often – Mr. Gordon hadn't when this feature was introduced!
+> 
+> The word *detent* means to hold something in place.
+> 
+> We can use built-in detent sizes, or provide our own custom detent size to control the height of the sheet.
+
+After the `Text` view, add this code:
+
+```swift
+.presentationDetents([.medium, .fraction(0.15)])
+```
+
+... then run your app:
+
+![Screenshot 2024-05-27 at 8.25.36 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.25.36%E2%80%AFAM.png)
+
+Here, we have used a built-in size, `.medium`, which is always half, or 50%, of the available screen height. We also provide a custom detent size, a fraction, set to 15% of the available screen height. When multiple size options are provided like this, SwiftUI will always present the sheet with the smallest size first, no matter what order you provide sizes in. However, the user is given a drag handle, which allows them to change the size of sheet in the app, if they prefer:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_08.29.12.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_08.29.12.gif)
+
+For now, we'll use a sheet that's just big enough to display our user interface for adding a new to-do item, so change the code to provide just a custom size of 15%:
+
+![Screenshot 2024-05-27 at 8.32.21 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.32.21%E2%80%AFAM.png)
+
+Of course, we don't want to show the sheet right away. We need the user to be able to trigger the appearance of the sheet only when they want to add a new to-do item.
+
+To do this, we'll add a tool bar button to the top right corner of the app's interface.
+
+Let's first add a comment to our `.sheet` view modifier:
+
+![Screenshot 2024-05-27 at 8.34.20 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.34.20%E2%80%AFAM.png)
 
 Then copy this code into your clipboard:
 
 ```swift
+// Add a tool bar to the top of the interface
+// NOTE: For a toolbar to appear, it must be
+//       inside a NavigationView or NavigationStack.
+.toolbar {
+	// Add a button to trigger showing the sheet
+	ToolbarItem(placement: .automatic) {
+		Button {
+			presentingNewItemSheet = true
+		} label: {
+			Image(systemName: "plus")
+		}
+	}
+}
+```
+
+... or type it if you prefer to practice with that, and add it below the `.sheet` view modifier, like this:
+
+![Screenshot 2024-05-27 at 8.37.37 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.37.37%E2%80%AFAM.png)
+
+Finally, scroll up to the top of `LandingView`,  and change the default value of `presentingNewItemSheet` to `false`, like this:
+
+![Screenshot 2024-05-27 at 8.38.45 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.38.45%E2%80%AFAM.png)
+
+If you run your app, you should now be able to hide and show the sheet like this:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_08.39.54.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_08.39.54.gif)
+
+What's happening here is that the toolbar button changes `presentingNewItemSheet` from `false` to `true`. SwiftUI sees this change, and since the `.sheet` view modifier is watching the value of `presentingNewItemSheet`, when it becomes `true`, the sheet is displayed. When the user taps outside the sheet, SwiftUI automatically changes `presentingNewItemSheet` back to `false`, and the sheet is hidden.
+
+This is nice progress that we don't want to lose if something goes wrong later on, so, please commit and push your work with the following message:
+
+```
+Added a sheet that can be shown by pressing a button in the toolbar.
+```
+
+### Add a new item from the sheet
+
+Next we will make it possible to add a new item from the sheet, moving this code out of `LandingView`.
+
+First we need to create a new file to hold that code. Add a **SwiftUI View** named `NewItemView` to your project:
+
+![Screenshot 2024-05-27 at 8.52.51 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.52.51%E2%80%AFAM.png)
+
+To save you a complicated series of edits, the code for this new view is provided below, which you can copy into your clipboard:
+
+```swift
 import SwiftUI
 
-struct AppEntryView: View {
+struct NewItemView: View {
     
     // MARK: Stored properties
     
-    // Keeps track of whether the user has been authenticated
-    @State var isAuthenticated = false
+    // The item currently being added
+    @State var newItemDescription = ""
+    
+    // Access the view model through the environment
+    @Environment(TodoListViewModel.self) var viewModel
+    
+    // Binding to control whether this view is visible
+    @Binding var showSheet: Bool
     
     // MARK: Computed properties
     var body: some View {
-        Group {
-            
-            // Directs to appropriate view based on whether
-            // user is authenticated or not
-            if isAuthenticated {
-                
-                // User is authenticated – show main view of our app
-                LandingView()
-            } else {
-                
-                // User not authenticated
-                AuthView()
-            }
-        }
-        .task {
-            
-            // Monitor authentication state
-            for await state in await supabase.auth.authStateChanges {
-                
-                // If the user has been signed in, signed out, or if this is their
-                // initial session with Supabase, the code block below will run
-                if [.initialSession, .signedIn, .signedOut].contains(state.event) {
+        NavigationView {
+            VStack {
+                HStack {
+                    TextField("Enter a to-do item", text: $newItemDescription)
                     
-                    // isAuthenticated set to true when the user has a session
-                    // Otherwise, it is set to false
-                    isAuthenticated = state.session != nil
+                    Button("ADD") {
+                        // Add the new to-do item
+                        viewModel.createToDo(withTitle: newItemDescription)
+                        // Clear the input field
+                        newItemDescription = ""
+                    }
+                    .font(.caption)
+                    .disabled(newItemDescription.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == true)
+                }
+
+                Spacer()
+            }
+            .padding(20)
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        showSheet = false
+                    } label: {
+                        Text("Done")
+                            .bold()
+                    }
+                    
                 }
             }
         }
+
+
     }
 }
 
 #Preview {
-    AppEntryView()
+    NewItemView(showSheet: .constant(true))
 }
 ```
 
-... and paste it into the new file, like this:
+Now replace the existing code:
 
-![Screenshot 2024-05-23 at 6.00.45 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.00.45%E2%80%AFAM.png)
+![Screenshot 2024-05-27 at 8.56.07 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.56.07%E2%80%AFAM.png)
 
-After adding that new code, you will see one error from the Swift compiler, noting that `AuthView` does not exist.
+... with the new code:
 
-We will correct that situation now. Create a new file named `AuthView` inside the **Views** group, like this:
+![Screenshot 2024-05-27 at 8.57.03 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.57.03%E2%80%AFAM.png)
 
-![Screenshot 2024-05-23 at 6.04.03 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.04.03%E2%80%AFAM.png)
+Take a moment to review that code. You will notice that, largely, it is the code that currently exists in `LandingView` that handles adding a new to-do item. We have simply moved that code into `NewItemView`.
 
-> [!NOTE]
-> 
-> When you paste in the code below, take a moment to skim the comments. 
-> 
-> Do not worry about memorizing any of this!
-> 
-> You can use this code verbatim in your own projects.
+There are a couple of parts of this new code worth highlighting.
 
-Now copy the following code into your clipboard:
+First, there is a binding to control whether the sheet is visible – more on that in a moment:
+
+![Screenshot 2024-05-27 at 8.57.03 AM copy 1.png](/img/user/Media/Screenshot%202024-05-27%20at%208.57.03%E2%80%AFAM%20copy%201.png)
+
+Second, there is a toolbar button that changes the value of that stored property back to false:
+
+![Screenshot 2024-05-27 at 9.00.52 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.00.52%E2%80%AFAM.png)
+
+Let's look at how this new view is used. Inside `LandingView` we still have all the code to add a new to-do item (this will be removed shortly) and in the sheet, we are simply showing a `Text` view that shows *Hello, world!*:
+
+![Screenshot 2024-05-27 at 9.02.45 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.02.45%E2%80%AFAM.png)
+
+Instead, we want to show `NewItemView` within that sheet:
+
+![Screenshot 2024-05-27 at 9.04.18 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.04.18%E2%80%AFAM.png)
+
+So, please make that edit, replacing:
 
 ```swift
-import Supabase
-import SwiftUI
-
-struct AuthView: View {
-
-    // Keeps track of what happened when we tried to authenticate with Supabase
-    @State var result: Result<Void, Error>?
-    
-    var body: some View {
-        
-        VStack {
-            
-            // Show a "spinner" indicator while authentication occurs
-            ProgressView()
-
-            // Based on what happened during authentication, show an appropriate
-            // message
-            // NOTE: Unlikely this will ever be seen by the user, since a successful
-            //       anonymous sign-in will trigger AppEntryView to reload and direct
-            //       us to the main view of our app
-            if let result {
-                switch result {
-                case .success:
-                    Text("Ready!")
-                case .failure(let error):
-                    Text(error.localizedDescription).foregroundStyle(.red)
-                }
-            }
-            
-        }
-        .task {
-            do {
-                
-                // Try to restore an existing session rather than create a new one
-                let _ = try await supabase.auth.user()
-                result = .success(())
-                
-                // NOTE: It's important to restore an existing session if it exists,
-                //       so that we can see data we previously created.
-                //
-                // NOTE: Sessions last indefinitely by default.
-                // https://supabase.com/docs/guides/auth/sessions
-                
-            } catch AuthError.sessionNotFound {
-                
-                // No session was found when we tried to restore a session.
-                // So, we need to sign in anonymously for the first time.
-                do {
-                    
-                    try await supabase.auth.signInAnonymously()
-                    
-                } catch {
-                    
-                    // Report any error encountered when signing in
-                    result = .failure(error)
-                    
-                }
-                
-            } catch {
-                
-                // Report any error encountered when trying to find an existing session
-                result = .failure(error)
-                
-            }
-        }
-    }
-    
-}
-
-#Preview {
-    AuthView()
-}
+Text("Hello, world!")
 ```
 
-... and paste it into your new `AuthView` file, like this:
+... with:
 
-![Screenshot 2024-05-23 at 6.11.55 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.11.55%E2%80%AFAM.png)
-
-The final step is to adjust the app entry point file, so that it opens `AppEntryView` (see the flowchart included earlier).
-
-Make this edit to the `TodoListApp` file:
-
-![Screenshot 2024-05-23 at 6.13.17 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.13.17%E2%80%AFAM.png)
-
-Specifically, we previously opened `LandingView` directly from the app entry point.
-
-Instead, we now open `AppEntryView`, which kicks off the logic described in the flowchart earlier.
-
-Now you can test your app:
-
-![Screenshot 2024-05-23 at 6.16.40 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.16.40%E2%80%AFAM.png)
-
-When you run your app, you will see this message:
-
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-23_06.19.59.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-23_06.19.59.png)
-
-By default, Supabase projects have anonymous sign-ins disabled. This is by design, for security purposes.
-
-### Enable anonymous sign-ins
-
-Anonymous sign-ins to Supabase are easily enabled.
-
-Visit [your Supabase dashboard](https://supabase.com/dashboard/), then select your project:
-
-![Screenshot 2024-05-23 at 6.23.23 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.23.23%E2%80%AFAM.png)
-
-At left, select the **Project Settings** link:
-
-![Screenshot 2024-05-23 at 6.26.18 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.26.18%E2%80%AFAM.png)
-
-You will see a page like this – select the **Authentication** link:
-
-![Screenshot 2024-05-23 at 6.27.26 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.27.26%E2%80%AFAM.png)
-
-You will see the **Auth Settings** page:
-
-![Screenshot 2024-05-23 at 6.28.25 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.28.25%E2%80%AFAM.png)
-
-From this page, flip the switch so that anonymous sign-ins are allowed for your project:
-
-![Screenshot 2024-05-23 at 6.29.07 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.29.07%E2%80%AFAM.png)
-
-Scroll down on that page, and select the **Save** button to ensure your authentication settings change takes effect:
-
-![Screenshot 2024-05-23 at 6.33.11 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.33.11%E2%80%AFAM.png)
-
-After a moment you should briefly see a success message:
-
-![Screenshot 2024-05-23 at 6.33.45 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.33.45%E2%80%AFAM.png)
-
-Now build your application again:
-
-![Screenshot 2024-05-23 at 6.31.36 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.31.36%E2%80%AFAM.png)
-
-When the app opens, you will see an empty list of to-do items:
-
-![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-23_06.35.11.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-23_06.35.11.png)
-
-This expected, because we have just enabled row-level security and anonymous sign-ins.
-
-No user of your app will be able to see the to-do items of another user, even though everyone's to-do items are stored in the same `todos` table of your database.
-
-So, how does that work? Let's take a brief look to complete this part of the tutorial.
-
-First, though – be sure to commit and push your changes with this message:
-
-```
-Added an authentication flow so that users are signed-in anonymously and assigned a unique user id. This prevents one user from seeing another user's data.
+```swift
+NewItemView(showSheet: $presentingNewItemSheet)
 ```
 
-### Understanding Supabase authentication
+Notice that there is a `showSheet` parameter:
 
-Let's see how the changes we've just made impact what happens when we use two different devices.
+![Screenshot 2024-05-27 at 9.04.18 AM 1.png](/img/user/Media/Screenshot%202024-05-27%20at%209.04.18%E2%80%AFAM%201.png)
 
-With your app running in the Simulator, add a few different to-do items, like this:
+... and that the argument we provide is a binding to `presentingNewItemSheet`:
 
-![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-23_06.39.26.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-23_06.39.26.gif)
+![Screenshot 2024-05-27 at 9.06.23 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.06.23%E2%80%AFAM.png)
 
-Now return to [your Supabase dashboard](https://supabase.com/dashboard/) and select your project:
+Run the app. You will see that you can show the sheet, and then hide it again, and even add new to-do items from the sheet already:
 
-![Screenshot 2024-05-23 at 6.41.33 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.41.33%E2%80%AFAM.png)
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.07.56.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.07.56.gif)
 
-Then open the table editor:
+The sheet's appearance is triggered from the ＋ button in the toolbar of `LandingView` as [[Tutorials/Creating a To-do List App, Part 8#Trigger the sheet's appearance\|previously explained]].
 
-![Screenshot 2024-05-23 at 6.42.07 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.42.07%E2%80%AFAM.png)
+When we tap the **Done** button, the `showSheet` stored property is changed to `false`. This stored property is bound to `presentingNewItemSheet` in the parent view, `LandingView`. In turn, when `presentingNewItemSheet` becomes `false`, the sheet is hidden.
 
-Then open the `todos` table:
+We can add a new to-do item because `NewItemView` has access to the view model through the environment.
 
-![Screenshot 2024-05-23 at 6.42.58 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.42.58%E2%80%AFAM.png)
+This is nice progress, so please commit and push your work with this message:
 
-You will see the to-do items just created, as well as (probably) some to-do items that you created before authentication was turned on:
+```
+Can now add a new to-do item from inside the sheet.
+```
 
-![Screenshot 2024-05-23 at 6.43.22 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.43.22%E2%80%AFAM.png)
+### Remove the duplicate interface
 
-Notice that the new to-do items have a UUID value placed in the `todos` table within the `user_id` column. That information is added automatically for us by Supabase.
+We still have the code that adds a new to-do item left inside `LandingView`, which results in duplicated user interface elements:
 
-Now try running your app in a second device within the Simulator, as shown in this short video:
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.16.57.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.16.57.gif)
 
-<figure style="width: 640px;">
-	<video width="640" controls preload="metadata">
-	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/row-level-security-enabled.mp4" type="video/mp4">
+That code doesn't need to be in `LandingView` any more, so let's remove it.
+
+First remove the `HStack`  that contains the `TextField` and the `Button`:
+
+![Screenshot 2024-05-27 at 9.20.39 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.20.39%E2%80%AFAM.png)
+
+... like this:
+
+![Screenshot 2024-05-27 at 9.20.52 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.20.52%E2%80%AFAM.png)
+
+Then remove the stored property that held the new to-do item's description:
+
+![Screenshot 2024-05-27 at 9.21.06 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.21.06%E2%80%AFAM.png)
+
+... like this:
+
+![Screenshot 2024-05-27 at 9.21.40 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.21.40%E2%80%AFAM.png)
+
+Run the app. You should no longer see the interface on `LandingView` for adding a new to-do item, but you should still be able to add a new to-do item from the sheet:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.22.05.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.22.05.gif)
+
+Commit and push your work now with this message before continuing:
+
+```
+Removed user interface for adding a new to-do item from the main landing view of the app.
+```
+
+## Providing a cue to add items
+
+Try running the app now and deleting all the to-do items in the list:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.27.24.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_09.27.24.gif)
+
+The interface when no-to items have been provided is a bit bare.
+
+A new user might not understand that the ＋ could be used to add new items.
+
+The SwiftUI framework provides a structure, `ContentUnavailableView`, that offers a standardized appearance for situations like these.
+
+Here's what that code looks like – don't worry about adding this to your project just yet:
+
+```swift
+ContentUnavailableView(
+	"No to-do items",
+	systemImage: "pencil.tip.crop.circle.badge.plus",
+	description: Text("Add a reminder to get started")
+)
+```
+
+Here's what the app will display when there are no to-do items:
+
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-27_09.31.44.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-05-27_09.31.44.png)
+
+Of course, the written prompts and the icon shown can be changed to whatever makes sense in a given app.
+
+All we need to do is add some logic to our app to detect when there are no to-do items.
+
+Recall that we create the view model within `LandingView`:
+
+![Screenshot 2024-05-27 at 9.37.21 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.37.21%E2%80%AFAM.png)
+
+When that source of truth – the instance of our view model is initialized – the following sequence of steps occurs:
+
+![Screenshot 2024-05-27 at 9.33.16 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%209.33.16%E2%80%AFAM.png)
+
+1. The initializer is run, which invokes the `getTodos` function.
+2. The `getTodos` function queries the database, receiving an array of `TodoItem` instances that matches the rows of data in the `todos` table of our database which is hosted at Supabase.
+3. We assign those results to the stored property named `todos` in our view model. The to-do items are held in memory in our app, but they are always kept in sync with the rows in the `todos` table in our database.
+
+So, the key to detecting when there are no to-do items is to look at the contents of the `todos` array in our view model.
+
+We can add logic to `LandingView` to look for this.
+
+Here is a short video that you can pause where necessary – this shows the edits you must make – keyboard shortcuts used are displayed in an overlay, but these are not essential – just pay attention to what edits are being made:
+
+<figure style="width: 700px;">
+	<video width="700" controls preload="metadata">
+	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/Adding_Conditional_Logic_to_LandingView.mp4" type="video/mp4">
 	Your browser does not support the video tag.
 	</video>
 </figure>
 
-Notice how to-do items between the two devices are now separate – items added on one device are not seen on the other device. 🎉
+Essentially, we:
 
-If you go back to the `todos` table at Supabase – notice the new to-do items have been added, but under a different UUID:
+1. Move the view modifiers that make search work down so they are attached below the `.toolbar` view modifier.
+2. Add a selection statement – an `if` statement – inside the `VStack` that looks for whether the `todos` array is empty or not.
 
-![Screenshot 2024-05-23 at 6.53.09 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.53.09%E2%80%AFAM.png)
+> [!TIP]
+> 
+> Here are what the different symbols shown in the overlays mean – what key they refer to on the keyboard:
+> 
+> - `⌘` Command (or Cmd)
+> - `⇧` Shift
+> - `⌥` Option (or Alt)
+> - `⌃` Control (or Ctrl)
+> - `⇥` Tab
+> - `↩` Return
+> - `␣` Space
+> - `←` Left arrow
+> - `→` Right arrow
+> - `↑` Up arrow
+> - `↓` Down
 
-Each device that uses your app will be assigned a different unique user id – once again – different users will not see each other's data.
+If you run the app, this what you should now see:
 
-What's really nice about the Supabase framework is that – outside of having to add an authentication flow (sign-in logic) to our app – we *did not have to change any other code*.
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_10.04.56.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-05-27_10.04.56.gif)
 
-Remember, when the `getTodos` function in the view model is run:
+This is great progress. Please commit and push your work with this message:
 
-![Screenshot 2024-05-23 at 6.55.14 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.55.14%E2%80%AFAM.png)
-
-... that is essentially this SQL command:
-
-```sql
-SELECT *
-FROM todos
+```
+Used ContentUnavailableView to provide a prompt when no to-do items exist.
 ```
 
-However, in our app, the user only sees their own to-do items!
+## Detecting when to-do items are fetched
 
-How does that work? Behind the scenes, Supabase is silently adding this `WHERE` clause to every query we run:
+If you run your app in the Simulator, when to-do items are fetched for the first time, you might notice a problem after our recent changes – look carefully when the app loads, and pause the video here if needed:
 
-```sql
-SELECT *
-FROM todos
-WHERE user_id = auth.uid
+<figure style="width: 350px;">
+	<video width="350" controls preload="metadata">
+	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/issue-when-loading-todos-first-time.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+</figure>
+
+Did you see it? Watch again when the app runs – it's brief, but this screen shows for a moment:
+
+![Screenshot 2024-05-27 at 10.23.05 AM.png|350](/img/user/Media/Screenshot%202024-05-27%20at%2010.23.05%E2%80%AFAM.png)
+
+This behaviour is not correct.
+
+What's happening here is that the `todos` array *is* empty – but only because the to-do items have not yet been fetched from our database hosted at Supabase.
+
+If the user has a slower Internet connection (entirely possible when out and about with a weak cellular signal) then this screen might be alarming for the user – they may think they have lost all of their to-do items.
+
+What should happen instead is that we show a progress or "loading" indicator while fetching to-do items.
+
+If no to-do items exist in the database, then we can show the `ContentUnavailableView`.
+
+Differentiating between these two situations:
+
+- loading to-do items
+- no to-do items exist
+
+... is not so hard, and just involves the use of a "flag" or a Boolean value of `true` or `false` to track when the view model is busy fetching to-do items.
+
+### Adjust the view model
+
+So, please switch to the `TodoListViewModel` file, in the stored properties section:
+
+![Screenshot 2024-05-27 at 10.26.49 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.26.49%E2%80%AFAM.png)
+
+Add the following stored property:
+
+```swift
+// Track when to-do items are initially being fetched
+var fetchingTodos: Bool = false
 ```
 
-That is saying:
+... like this:
 
-	"Get all the rows from the 'todos' table, but only those rows where the user id matches the user id of the authenticated user."
+![Screenshot 2024-05-27 at 10.27.33 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.27.33%E2%80%AFAM.png)
 
-Pat yourself on the back – no really, do it!
+Then scroll down a bit further to the `getTodos` function: 
 
-Authentication within an app can be a tricky topic to wrap your head around.
+![Screenshot 2024-05-27 at 10.28.01 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.28.01%E2%80%AFAM.png)
 
-Fortunately, Supabase makes it pretty easy to do.
+When the function begins, we need to use the new stored property – we'll change it's value to `true` to reflect the fact that to-do items are being fetched:
 
-If you have further questions, please, be sure to ask Mr. Gordon!
+![Screenshot 2024-05-27 at 10.29.34 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.29.34%E2%80%AFAM.png)
 
-### Addendum
+When the function has finished the asynchronous task of fetching to-do items from the cloud-hosted database, we can set this stored property back to `false`:
 
-If you see this warning, you can ignore it:
+![Screenshot 2024-05-27 at 10.30.38 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.30.38%E2%80%AFAM.png)
 
-![Screenshot 2024-05-23 at 6.58.48 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.58.48%E2%80%AFAM.png)
+### Adjust the view
 
-That is the Swift compiler saying, essentially – "You don't need to use `await` here because there are no asynchronous tasks happening."
+In `LandingView`, replace this code:
 
-However, if you hold the **Option** key down and click the `authStateChanges` function you can see the documentation clearly identifies the function as being asynchronous:
+![Screenshot 2024-05-27 at 10.33.41 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.33.41%E2%80%AFAM.png)
 
-![Screenshot 2024-05-23 at 6.59.08 AM.png](/img/user/Media/Screenshot%202024-05-23%20at%206.59.08%E2%80%AFAM.png)
+... with the following code instead:
 
-So far as Mr. Gordon can tell – this warning should not be showing up. It will probably go away in a future version of Xcode when this same code is run.
+```swift
+if viewModel.fetchingTodos {
+	
+	Spacer()
+	
+	ProgressView()
+	
+	Spacer()
+	
+} else {
 
-Is it a bit annoying that the compiler shows a warning when it shouldn't? Yes, it certainly is. However, this is part of life as a software developer.
+	ContentUnavailableView(
+		"No to-do items",
+		systemImage: "pencil.tip.crop.circle.badge.plus",
+		description: Text("Add a reminder to get started")
+	)
+
+}
+```
+
+... like this:
+
+![Screenshot 2024-05-27 at 10.34.25 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.34.25%E2%80%AFAM.png)
+
+If needed, press **Command-`A`** and then **Control-`I`** to re-indent your code and keep it tidy.
+
+Overall now – we first look for when the `todos` array is empty:
+
+![Screenshot 2024-05-27 at 10.36.33 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.36.33%E2%80%AFAM.png)
+
+We then do an additional check to see whether to-do items are being fetched:
+
+![Screenshot 2024-05-27 at 10.36.57 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%2010.36.57%E2%80%AFAM.png)
+
+When that is `true` and to-do items are being fetched, a loading indicator will be shown.
+
+When that is `false` and there truly are no to-do items (because we have finished fetching items and no to-do items were loaded) we show `ContentUnavailableView`.
+
+Here is what the new behaviour looks like:
+
+<figure style="width: 350px;">
+	<video width="350" controls preload="metadata">
+	  <source src="https://www.russellgordon.ca/lcs/2023-24/ics3u/progress-indicator-added.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+</figure>
+
+When there is a fast Internet connection, this progress indicator only appears very briefly, but it is there:
+
+![Screenshot 2024-05-27 at 10.47.17 AM.png|350](/img/user/Media/Screenshot%202024-05-27%20at%2010.47.17%E2%80%AFAM.png)
+
+Touches like these are an important part of building a usable application.
+
+So, please commit and push your work with this message now:
+
+```
+Added a flag to differentiate between state of having no to-do items and waiting to fetch to-do items.
+```
+
+This concludes the series of usability improvements we will make for today.
+
+In the optional portion of this tutorial to come in our next class, you can learn how to attach an image to a to-do item and how to store those images in the cloud with Supabase.
