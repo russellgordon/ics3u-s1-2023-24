@@ -8,6 +8,7 @@
 
 ### Thread 4
 
+- [[All Prior Classes#Thread 4, Day 4 - Monday, May 27, 2024\|Day 4 - Monday, May 27, 2024]]
 - [[All Prior Classes#Thread 4, Day 3 - Friday, May 24, 2024\|Day 3 - Friday, May 24, 2024]]
 - [[All Prior Classes#Thread 4, Day 2 - Thursday, May 23, 2024\|Day 2 - Thursday, May 23, 2024]]
 - [[All Prior Classes#Thread 4, Day 1 - Wednesday, May 22, 2024\|Day 1 - Wednesday, May 22, 2024]]
@@ -63,6 +64,34 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 4, Day 4 - Monday, May 27, 2024
+#### Agenda
+
+1. Tutorial: [[Tutorials/Creating a To-do List App, Part 8\|Creating a To-do List App, Part 8]]
+	- Add some user interface refinements to the app, including the use of a slide-up sheet to show the user interface for adding a new to-do item.
+	> [!TIP]
+	> 
+	> In your culminating task app, if your users need to be able to create and save data within your app, then you should complete this tutorial today.
+	> 
+	> Actually adding images will be covered in an optional tutorial made available in our next class.
+1. Culminating Task: Create Static Interfaces
+	- Making reference to your Keynote prototypes built in our prior mod, begin making static, non-interactive interfaces for your culminating task app.
+		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
+		- Remember to use source control – commit and push your work frequently.
+
+###### Things to do before our next class
+- [ ] Work on the items mentioned above.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 4\|Back to top of thread 4 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-3/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
