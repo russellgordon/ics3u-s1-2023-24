@@ -201,13 +201,13 @@ Then scroll down and add this code:
 
 ... right after the `.navigationTitle` view modifier that is attached to the `VStack`, like this:
 
-![Screenshot 2024-05-27 at 8.14.12 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.14.12%E2%80%AFAM.png)
+![Screenshot 2024-05-27 at 8.14.12 AM.png|701](/img/user/Media/Screenshot%202024-05-27%20at%208.14.12%E2%80%AFAM.png)
 
 If needed, press **Command-`A`** and then **Control-`I`** to re-indent your code and keep it tidy.
 
 The way the `.sheet` view modifier works is that when `presentingNewItemSheet` is true, the sheet is shown. Run your app now and notice that the sheet does not show up:
 
-![Screenshot 2024-05-27 at 8.18.50 AM.png](/img/user/Media/Screenshot%202024-05-27%20at%208.18.50%E2%80%AFAM.png)
+![Screenshot 2024-05-27 at 8.18.50 AM.png|701](/img/user/Media/Screenshot%202024-05-27%20at%208.18.50%E2%80%AFAM.png)
 
 Now go back into your code and initialize `presentingNewItemSheet` with `true` instead, then run your app:
 
