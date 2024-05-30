@@ -4,21 +4,19 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-4/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-5/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 4, Day 4 - Monday, May 27, 2024
+### Thread 4, Day 5 - Thursday, May 30, 2024
 #### Agenda
 
-1. Tutorial: [[Tutorials/Creating a To-do List App, Part 8\|Creating a To-do List App, Part 8]]
-	- Add some refinements to the app, including the use of a slide-up sheet to show the user interface for adding a new to-do item.
+1. Optional Tutorial: [[Tutorials/Creating a To-do List App, Part 9\|Creating a To-do List App, Part 9]]
+	- Learn how to add an image to a to-do item and persist that image using the Supabase service.
 	> [!TIP]
 	> 
-	> In your culminating task app, if your users need to be able to create and save data within your app, then you should complete this tutorial today.
-	> 
-	> Actually adding images will be covered in an optional tutorial made available in our next class.
+	> You do not need to complete this tutorial if you will not need to allow users to upload images within your culminating task app.
 1. Culminating Task: Create Static Interfaces
 	- Making reference to your Keynote prototypes built in our prior mod, begin making static, non-interactive interfaces for your culminating task app.
 		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
