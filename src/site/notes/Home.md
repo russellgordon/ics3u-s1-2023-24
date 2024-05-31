@@ -4,23 +4,26 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-5/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 4, Day 5 - Thursday, May 30, 2024
+### Thread 4, Day 6 - Friday, May 31, 2024
 #### Agenda
 
-1. Optional Tutorial: [[Tutorials/Creating a To-do List App, Part 9\|Creating a To-do List App, Part 9]]
-	- Learn how to add an image to a to-do item and persist that image using the Supabase service.
-	> [!TIP]
-	> 
-	> You do not need to complete this tutorial if you will not need to allow users to upload images within your culminating task app.
 1. Culminating Task: Create Static Interfaces
-	- Making reference to your Keynote prototypes built in our prior mod, begin making static, non-interactive interfaces for your culminating task app.
+	- Make a big push to score significant progress on your static interface today.
+		- Use your Keynote prototypes as a reference.
 		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
 		- Remember to use source control – commit and push your work frequently.
+		> [!TIP]
+		> 
+		> After your static interface is complete, the next step is to create and populate your database. A how-to guide on this topic is forthcoming.
+		> 
+		> Note that this step is necessary for completion of culminating tasks but database design and creation is *not* being evaluated.
+		> 
+		> If you are ready now, see Mr. Gordon today in class, and he will give you the condensed version of the database design and creation lesson on the spot.
 
 ###### Things to do before our next class
 - [ ] Work on the items mentioned above.
