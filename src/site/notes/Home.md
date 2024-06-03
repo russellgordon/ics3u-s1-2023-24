@@ -4,22 +4,24 @@
 
 ## Most Recent Class
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-7/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
 
-### Thread 4, Day 6 - Friday, May 31, 2024
+### Thread 4, Day 7 - Monday, June 3, 2024
 #### Agenda
 
 1. Culminating Task: Create Static Interfaces
-	- Make a big push to score significant progress on your static interface today.
-		- Use your Keynote prototypes as a reference.
+	- You have one more day to work on your static interfaces this week.
+		- Use your Keynote prototypes as a reference. 
 		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
-		- Remember to use source control – commit and push your work frequently.
 		> [!TIP]
+		> If you prefer, rather than making a truly static interface (where data is embedded in views as string literals) you can can instead [[Concepts/Abstraction Using Lists\|store data in arrays and apply abstraction]] (which makes building an app out easier).
+		- Remember to use source control – commit and push your work frequently.
+		> [!REMINDER]
 		> 
-		> After your static interface is complete, the next step is to create and populate your database. A how-to guide on this topic is forthcoming.
+		> Next week, with guidance from Mr. Gordon, you will design, create, and populate your app's database.
 		> 
 		> Note that this step is necessary for completion of culminating tasks but database design and creation is *not* being evaluated.
 		> 
