@@ -8,6 +8,7 @@
 
 ### Thread 4
 
+- [[All Prior Classes#Thread 4, Day 7 - Monday, June 3, 2024\|Day 7 - Monday, June 3, 2024]]
 - [[All Prior Classes#Thread 4, Day 6 - Friday, May 31, 2024\|Day 6 - Friday, May 31, 2024]]
 - [[All Prior Classes#Thread 4, Day 5 - Thursday, May 30, 2024\|Day 5 - Thursday, May 30, 2024]]
 - [[All Prior Classes#Thread 4, Day 4 - Monday, May 27, 2024\|Day 4 - Monday, May 27, 2024]]
@@ -66,6 +67,37 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-7/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 4, Day 7 - Monday, June 3, 2024
+#### Agenda
+
+1. Culminating Task: Create Static Interfaces
+	- You have one more day to work on your static interfaces this week.
+		- Use your Keynote prototypes as a reference. 
+		- Be sure to use [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]] as a reference while building out static interfaces.
+		> [!TIP]
+		> If you prefer, rather than making a truly static interface (where data is embedded in views as string literals) you can can instead [[Concepts/Abstraction Using Lists\|store data in arrays and apply abstraction]] (which makes building an app out easier).
+		- Remember to use source control – commit and push your work frequently.
+		> [!REMINDER]
+		> 
+		> Next week, with guidance from Mr. Gordon, you will design, create, and populate your app's database.
+		> 
+		> Note that this step is necessary for completion of culminating tasks but database design and creation is *not* being evaluated.
+		> 
+		> If you are ready now, see Mr. Gordon today in class, and he will give you the condensed version of the database design and creation lesson on the spot.
+
+###### Things to do before our next class
+- [ ] Work on the items mentioned above.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 4\|Back to top of thread 4 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-6/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
