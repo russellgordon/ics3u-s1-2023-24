@@ -8,6 +8,7 @@
 
 ### Thread 4
 
+- [[All Prior Classes#Thread 4, Day 8 - Wednesday, June 5, 2024\|Day 8 - Wednesday, June 5, 2024]]
 - [[All Prior Classes#Thread 4, Day 7 - Monday, June 3, 2024\|Day 7 - Monday, June 3, 2024]]
 - [[All Prior Classes#Thread 4, Day 6 - Friday, May 31, 2024\|Day 6 - Friday, May 31, 2024]]
 - [[All Prior Classes#Thread 4, Day 5 - Thursday, May 30, 2024\|Day 5 - Thursday, May 30, 2024]]
@@ -67,6 +68,30 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-8/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 4, Day 8 - Wednesday, June 5, 2024
+#### Agenda
+
+1. Culminating Task: Model Data
+	- In today's class, you will learn [[Concepts/Entity-Relationship Diagrams\|what an entity-relationship diagram is]], and take a stab at drawing one for your culminating task app.
+		- Once you have:
+			- drawn your ER diagram
+			- used it to generate the SQL necessary to define and populate your database
+			- posted all of this to your portfolio entry [on Notion](https://notion.so)
+		- ... you can use any remaining time to continue working on the static user interface for your culminating task app.
+
+###### Things to do before our next class
+- [ ] Work on the items mentioned above.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 4\|Back to top of thread 4 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-7/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
