@@ -90,7 +90,7 @@ INSERT INTO City (name, country_id) VALUES ('Mexico City', 5);
 INSERT INTO City (name, country_id) VALUES ('Guadalajara', 5);
 ```
 
-> ### Explanation:
+> **Explanation:**
 > 1. **Country Table**:
 >    - `id`: Unique identifier for each country (Primary Key).
 >    - `name`: Name of the country.
@@ -100,7 +100,7 @@ INSERT INTO City (name, country_id) VALUES ('Guadalajara', 5);
 >    - `name`: Name of the city.
 >    - `country_id`: Foreign key referencing the `id` column in the `Country` table, establishing the relationship between cities and their respective countries.
 > 
-> ### Sample Data:
+> **Sample Data:**
 > - **Countries**:
 >   - Canada
 >   - United States
@@ -147,7 +147,7 @@ Two tables were created; attributes that are underlined are converted into *prim
 
 The `city` table has a *foreign key* connecting it to the `country` table.
 
-Reviewing the data used to populate these tables, we can see how the foreign key ties multiple cities to a single country:
+Reviewing the data used to populate these tables, we can see how the foreign key values in `country_id` tie multiple cities to a single country:
 
 ![Screenshot 2024-06-08 at 12.56.28 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%2012.56.28%E2%80%AFPM.png)
 
@@ -156,7 +156,7 @@ Reviewing the data used to populate these tables, we can see how the foreign key
 To query the data in this newly created database, Mr. Gordon:
 
 - created a new project in Xcode, ensuring source control was enabled
-- created a remote
+- created a GitHub remote
 - created groups for the model, views, view models, and helper code
 - created a file named `Supabase.swift` that contains the database information required to connect to his database hosted at Supabase
 
@@ -178,7 +178,7 @@ He then made sure that all six package products were being compiled into the app
 
 Before proceeding, Mr. Gordon committed his work.
 
-#### Listing countries alone
+### Listing countries alone
 
 To simply list the countries in the database, Mr. Gordon at first created a view with a couple of static values:
 
@@ -202,7 +202,7 @@ After committing that work, Mr. Gordon then made the view use the view model, ra
 
 Mr. Gordon then committed his work.
 
-#### Listing countries with cities (one to many)
+### Listing countries with cities (one to many)
 
 Listing countries alone might be useful.
 
@@ -353,17 +353,17 @@ Mr. Gordon then committed his work.
 
 ##### Adding a cities list view
 
-What we really want to do, though, is navigate from our list of countries to a list of cities in that country.
+What we really want to do, though, is navigate from our list of countries to another list that shows the cities in that country.
 
 So, Mr. Gordon added a new view named `CitiesListView` that accepts a single country:
 
 ![Screenshot 2024-06-08 at 3.06.50 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%203.06.50%E2%80%AFPM.png)
 
-He then modified the `CountriesListView` so that it navigates down to  `CitiesListView`:
+He then modified the `CountriesListView` so that it provides navigation down to  `CitiesListView`:
 
 ![Screenshot 2024-06-08 at 3.04.16 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%203.04.16%E2%80%AFPM.png)
 
-Now the app works as follows:
+The app now works as follows:
 
 ![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_15.07.34.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_15.07.34.gif)
 
@@ -371,3 +371,59 @@ This illustrates how to read data from two database tables – `country` and `ci
 
 Mr. Gordon then committed his work.
 
+#### Creating a new city
+
+How might we create a new city within the database, using an interface that looks something like this?
+
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_15.49.53.png|700](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_15.49.53.png)
+
+We'd need to write code that could add a row to the `city` table:
+
+![Screenshot 2024-06-08 at 3.53.23 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%203.53.23%E2%80%AFPM.png)
+
+To do so, we'd need to know the city name, as well as the `id` value of the country the city is in.
+
+Mr. Gordon started down this road by creating a model file to represent the new city:
+
+![Screenshot 2024-06-08 at 3.56.07 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%203.56.07%E2%80%AFPM.png)
+
+> [!NOTE]
+> We provide the Swift compiler with a hint so that it knows the `countryId` property maps to the `country_id` column in the `city` table in the database.
+
+He then added a function to the view model to allow for the addition of a city:
+
+![Screenshot 2024-06-08 at 3.59.32 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%203.59.32%E2%80%AFPM.png)
+
+> [!NOTE]
+> After inserting a new city, we refresh the list of countries and cities from the database.
+
+The view that shows the list of cities is `CitiesListView`. From that view, we will need to show a sheet that allows for the addition of a new city.
+
+To do that, we need to insert the view model into the environment. Why? So that the view model will be available when we add the new city. 
+
+To make the view model available to `CitiesListView`, Mr. Gordon made this change to the `CountriesListView` file:
+
+![Screenshot 2024-06-08 at 4.02.06 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.02.06%E2%80%AFPM.png)
+
+Next, Mr. Gordon created a new view named `AddCityView`, like this:
+
+![Screenshot 2024-06-08 at 4.04.59 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.04.59%E2%80%AFPM.png)
+
+> [!NOTE]
+> We accept a reference to the current country, so that we will have the country `id` available when we use the view model to add the new city.
+
+Finally, Mr. Gordon visited `CitiesListView`, which currently looks like this:
+
+![Screenshot 2024-06-08 at 4.06.23 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.06.23%E2%80%AFPM.png)
+
+Mr. Gordon then made edits to `CitiesListView` so that it presents a sheet showing `AddCityView` when the `+` button is pressed in the toolbar:
+
+![Screenshot 2024-06-08 at 4.07.20 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.07.20%E2%80%AFPM.png)
+
+Here is the result after making these changes:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_16.13.29.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_16.13.29.gif)
+
+We can see that the new cities were in fact added in the `city` database:
+
+![Screenshot 2024-06-08 at 4.16.14 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.16.14%E2%80%AFPM.png)
