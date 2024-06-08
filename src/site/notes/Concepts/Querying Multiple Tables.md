@@ -427,3 +427,125 @@ Here is the result after making these changes:
 We can see that the new cities were in fact added in the `city` database:
 
 ![Screenshot 2024-06-08 at 4.16.14 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%204.16.14%E2%80%AFPM.png)
+
+### Listing cities with their country (many to one)
+
+What if, in our app, we wanted to simply list all of the cities that have been defined in alphabetical order, along with the country they are part of?
+
+As a raw SQL query, like we learned to write earlier this year, that would look like this:
+
+```sql
+SELECT 
+  city.id AS "city_id",
+  city.name AS "city_name",
+  city.country_id AS "city_country_foreign_key",
+  country.id AS "country_id",
+  country.name AS "country_name"
+FROM city
+  INNER JOIN country
+  ON city.country_id = country.id
+ORDER BY city.name;
+```
+
+Here is what that query returns at Supabase:
+
+![Screenshot 2024-06-08 at 5.24.48 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.24.48%E2%80%AFPM.png)
+
+In the app, that information might be presented like so:
+
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_17.41.54.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_17.41.54.png)
+
+To implement this, Mr. Gordon first added a new model file named `CityCountry`, to represent a given city and it's connection to a single country:
+
+![Screenshot 2024-06-08 at 5.11.03 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.11.03%E2%80%AFPM.png)
+
+Mr. Gordon then committed his work.
+
+Next, he created a new view, named `CitiesWithCountriesListView`, with a few static values to get a feel for how he wanted things to look:
+
+![Screenshot 2024-06-08 at 5.16.54 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.16.54%E2%80%AFPM.png)
+
+Mr. Gordon then committed his work.
+
+Next, Mr. Gordon added a new view model named `CitiesWithCountriesListViewModel`, which has an array to hold the cities retrieved from the database, an initializer that gets the view model ready to use, and a function that actually does the work of retrieving the list of cities:
+
+![Screenshot 2024-06-08 at 5.26.31 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.26.31%E2%80%AFPM.png)
+
+Mr. Gordon then committed his work.
+
+Next Mr. Gordon adjusted the view to use the view model:
+
+![Screenshot 2024-06-08 at 5.33.00 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.33.00%E2%80%AFPM.png)
+
+Mr. Gordon realized that the cities were not being displayed in alphabetical order (as they were in the SQL query given above).
+
+So, he modified the view model slightly:
+
+![Screenshot 2024-06-08 at 5.34.24 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.34.24%E2%80%AFPM.png)
+
+Then he re-visited the new view:
+
+![Screenshot 2024-06-08 at 5.37.22 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.37.22%E2%80%AFPM.png)
+
+Happy with these results, Mr. Gordon committed his code.
+
+### Summary
+
+This tutorial has demonstrated that for a given pair of entities:
+
+![IMG_4312 Large.png](/img/user/Media/IMG_4312%20Large.png)
+
+...we can think of the relationship from two directions.
+
+1. country to city
+	- A given country has *many* cities.
+
+So if we are going to show a list of all the countries, when the user selects a given country, we need to let them navigate or "drill down" in the user interface, to see the many cities that exist for the selected country:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_15.07.34.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_15.07.34.gif)
+
+And in the other direction:
+
+2. city to country
+	- A given city belongs to *one* country.
+
+When showing all the cities in a list, for each city, we need to show the one country that the city belongs to:
+
+![RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_17.41.54.png|350](/img/user/Media/RocketSim_Screenshot_iPhone_15_Pro_6.1_2024-06-08_17.41.54.png)
+
+As you have seen, in code, we handle the direction of the relationship between entities in different ways.
+
+Both directions of the relationship between entities might be useful to our users.
+
+So, we can give them the option of interacting with the data in both ways.
+
+This is where a tab view might make sense.
+
+Mr. Gordon decided to add the following view into his app – `LandingView` – as this is where the user "lands" when the app is opened:
+
+![Screenshot 2024-06-08 at 5.52.31 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.52.31%E2%80%AFPM.png)
+
+He then modified the app entry point to create an instance of `LandingView`:
+
+![Screenshot 2024-06-08 at 6.00.12 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%206.00.12%E2%80%AFPM.png)
+
+Overall, the app now looks and functions like this:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_18.02.20.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-08_18.02.20.gif)
+
+### Source code
+
+If you wish to review the source used in these examples, commit-by-commit, [you can do so here](https://github.com/lcs-rgordon/CountriesAndCities/commits/main/).
+
+If you click the link at right for any given commit:
+
+![Screenshot 2024-06-08 at 5.03.44 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.03.44%E2%80%AFPM.png)
+
+... you can then see the changes that were made in that commit:
+
+![Screenshot 2024-06-08 at 5.06.11 PM.png](/img/user/Media/Screenshot%202024-06-08%20at%205.06.11%E2%80%AFPM.png)
+
+Lines shown in green were added; lines shown in red were removed.
+
+
+
