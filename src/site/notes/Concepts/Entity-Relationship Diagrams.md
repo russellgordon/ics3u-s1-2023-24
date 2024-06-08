@@ -96,11 +96,11 @@ Now let's reconsider that relationship between a book and a genre. We always beg
 Looking at the relationship in each direction:
 
 - book to genre
-	- A given book can fit in many genres.
+	- A given book can fit in *many* genres.
 - genre to book
-	- A given genre includes many books.
+	- A given genre includes *many* books.
 
-This cardinality fits, in theory. Some books do have elements from multiple genres. For example, *Outlander* by Diana Gabaldon is considered by many to be a romance novel, but Mr. Gordon, who has read and enjoyed this novel, is not alone in pointing out that *Outlander* has elements of science fiction and historical fiction as well.
+This many-to-many cardinality fits, in theory. Some books do have elements from multiple genres. For example, *Outlander* by Diana Gabaldon is considered by many to be a romance novel, but Mr. Gordon, who has read and enjoyed this novel, is not alone in pointing out that *Outlander* has elements of science fiction and historical fiction as well.
 
 Alas, when Mr. Gordon went to [Knotanew Books in Peterborough](https://knotanew.ca) to purchase a copy of *Outlander*, he was referred by the owner of the book store to the romance section.
 
@@ -108,10 +108,10 @@ When librarians shelve books, they need to pick a single section in which to pla
 
 So, we can revise the relationship between book and genre as follows:
 
-- book to **genre**
-	- A given book (in a library or bookstore) is assigned to **one** genre.
-- genre to **book**
-	- A given genre (in a library or bookstore) includes **many** books.
+- book to genre
+	- A given book (in a library or bookstore) is assigned to *one* genre.
+- genre to book
+	- A given genre (in a library or bookstore) includes *many* books.
 
 Where the cardinality is *one*, we add an arrowhead, as follows:
 
