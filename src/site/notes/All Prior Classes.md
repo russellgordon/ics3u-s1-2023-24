@@ -8,6 +8,7 @@
 
 ### Thread 4
 
+- [[All Prior Classes#Thread 4, Day 11 - Monday, June 10, 2024\|Day 11 - Monday, June 10, 2024]]
 - [[All Prior Classes#Thread 4, Day 10 - Friday, June 7, 2024\|Day 10 - Friday, June 7, 2024]]
 - [[All Prior Classes#Thread 4, Day 9 - Thursday, June 6, 2024\|Day 9 - Thursday, June 6, 2024]]
 - [[All Prior Classes#Thread 4, Day 8 - Wednesday, June 5, 2024\|Day 8 - Wednesday, June 5, 2024]]
@@ -70,6 +71,69 @@
 - [[All Prior Classes#Thread 1, Day 1 - Tuesday, October 17, 2023\|Day 1 - Tuesday, October 17, 2023]]
 
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-11/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 4, Day 11 - Monday, June 10, 2024
+#### Agenda
+
+1. Culminating Task: Working Period
+	- Continue building your culminating task app.
+	- Resources that may be useful:
+		- [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]]
+		- For those students using databases
+			- [[Concepts/Querying Multiple Tables\|Querying Multiple Tables]] (==new==)
+				- How to handle one-to-many and many-to-one relationships
+		- Exemplar being built by Mr. Gordon
+			- The [Keynote prototype](https://www.russellgordon.ca/lcs/2023-24/ics3u/App_Prototype_Exemplar.zip) that identifies what he is aiming for
+			- Videos showing how he is building this app:
+				- [Static interface construction, part 1](https://www.youtube.com/watch?v=82ltYV72fKM)
+				- [Static interface construction, part 2 ](https://youtu.be/23HaaW3zld8)
+				- [Making the app interactive using arrays ](https://youtu.be/u1DgK1F3sjM)
+				> [!TIP]
+				> Have a look the chapters in each video – it's probably unlikely that you would want to watch every minute of every video, but it's likely that everyone will find at least one chapter of one of these videos useful.
+
+
+###### Things to do before our next class
+- [ ] Work on your culminating task app.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 4\|Back to top of thread 4 ⬆]]</small>
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-10/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+### Thread 4, Day 10 - Friday, June 7, 2024
+#### Agenda
+
+1. Culminating Task: Working Period
+	- Continue building your culminating task app.
+	- Resources that may be useful:
+		- [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]]
+		- Exemplar being built by Mr. Gordon
+			- The [Keynote prototype](https://www.russellgordon.ca/lcs/2023-24/ics3u/App_Prototype_Exemplar.zip) that identifies what he is aiming for
+			- Videos showing how he is building this app:
+				- [Static interface construction, part 1](https://www.youtube.com/watch?v=82ltYV72fKM)
+				- [Static interface construction, part 2 ](https://youtu.be/23HaaW3zld8)(==new==)
+				- [Making the app interactive using arrays ](https://youtu.be/u1DgK1F3sjM)(==new==)
+				> [!TIP]
+				> Have a look the chapters in each video – it's probably unlikely that you would want to watch every minute of every video, but it's likely that everyone will find at least one chapter of one of these videos useful.
+
+
+###### Things to do before our next class
+- [ ] Work on your culminating task app.
+	- Share your progress in one or more updates [on Notion](https://notion.so).
+
+</div></div>
+
+<small>[[All Prior Classes#Thread 4\|Back to top of thread 4 ⬆]]</small>
 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/thread-4/day-9/" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
