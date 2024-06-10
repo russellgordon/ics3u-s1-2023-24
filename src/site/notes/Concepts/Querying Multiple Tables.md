@@ -491,7 +491,7 @@ Happy with these results, Mr. Gordon committed his code.
 
 ### Summary
 
-This tutorial has demonstrated that for a given pair of entities:
+This guide has demonstrated that for a given pair of entities:
 
 ![IMG_4312 Large.png](/img/user/Media/IMG_4312%20Large.png)
 
