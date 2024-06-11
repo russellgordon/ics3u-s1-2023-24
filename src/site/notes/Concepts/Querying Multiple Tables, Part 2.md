@@ -921,7 +921,7 @@ When looking at enrolments for a course, we might want to add a student.
 
 We want to add a course that a student will take, when viewing their current enrolments, like this:
 
-<< ADD ANIMATION >>
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.11.52.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.11.52.gif)
 
 This is equivalent to adding a row to the `enrols_in` table using raw SQL, like this:
 
@@ -1026,7 +1026,7 @@ The view receives a reference to it's view model. This allows the picker to be p
 
 Before continuing, Mr. Gordon [chose to commit his work](https://github.com/lcs-rgordon/StudentsAndCourses/commit/4f907504ebbe3f304a815033b8ad62d8aebcaac0). Although the job of saving a new course enrolment for a student is not finished, what we have so far works. It's worth stopping to commit before continuing.
 
-Now, in the screenshot above, note that on line 45, Mr. Gordon has defined a "to-do" – a bit of code that needs to be filled in. We need to add the enrolment for a given student.
+Now, in the screenshot above, note that on line 45, Mr. Gordon has defined a "to-do" – a bit of code that needs to be filled in. **We still need to actually add the enrolment for a given student.**
 
 To start on this, Mr. Gordon modified the view model to hold on to a reference to the student we are working with:
 
@@ -1040,40 +1040,106 @@ Then we can come back to the view and invoke this function when the user presses
 
 ![Screenshot 2024-06-10 at 12.02.29 PM.png](/img/user/Media/Screenshot%202024-06-10%20at%2012.02.29%E2%80%AFPM.png)
 
+Since Mr. Gordon set up the preview for `AddEnrolmentFromStudentView` as follows:
+
+![Screenshot 2024-06-11 at 6.16.01 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.16.01%E2%80%AFAM.png)
+
+... he can try it out. The preview is hard-coded to enrol the student with an ID of `1` – that's John Doe – into the selected course.
+
+Let's try it out – here is what that looks like:
+
+![Screen Recording 2024-06-11 at 6.17.12 AM.gif](/img/user/Media/Screen%20Recording%202024-06-11%20at%206.17.12%E2%80%AFAM.gif)
+
+Now, we can run a query to check what courses John Doe is enrolled in:
+
+![Screenshot 2024-06-11 at 6.19.16 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.19.16%E2%80%AFAM.png)
+
+... and we see that Travel and Tourism is now one of those courses.
+
+This is great progress, so [Mr. Gordon committed his work](https://github.com/lcs-rgordon/StudentsAndCourses/commit/5200feebfb184a4440377bbe78ba2f2c7ab806d8).
+
+The final step is to hook up this view, `AddEnrolmentFromStudentView`, to the view it needs to be accessed on...
+
+> [!NOTE]
+> It's at this moment that Mr. Gordon realized he had named `AddEnrolmentFromStudentView` incorrectly. When working with data in a many-to-many relationship, careful naming of views is *really* important to keep our code understandable. Although `EnrolmentsByCourseView` shows a student's name at the top after navigating to select a student:
+> 
+> ![Identifying Views - 01.gif](/img/user/Media/Identifying%20Views%20-%2001.gif)
+> 
+> ... it is showing the enrolments by course – showing what enrolments there are, in this case, for a given student.
+> 
+> `EnrolmentsByCourseView` is the view where it makes sense to hook up the view currently named `AddEnrolmentFromStudentView`.
+> 
+> So... here is where Mr. Gordon did some refactoring.
+> 
+> 1. `AddEnrolmentFromStudentView` was renamed to `AddEnrolmentFromEnrolmentsbyCourseView`.
+> 2. `AddEnrolmentFromStudentViewModel` was renamed to `AddEnrolmentFromEnrolmentsbyCourseViewModel`.
+> 
+> Are the names a bit long? Yes – but they are descriptive. Since the auto-complete feature in Xcode does most of the typing for us, it's better to type a long (but descriptive) name once, rather than read a short (but confusing) name many times.
+> 
+> Mr. Gordon refactored using this command in Xcode (after right clicking on the name where each structure is defined):
+> 
+> ![Screenshot 2024-06-11 at 6.38.34 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.38.34%E2%80%AFAM.png)
+> 
+> ... like this:
+> 
+> ![Screenshot 2024-06-11 at 6.39.50 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.39.50%E2%80%AFAM.png)
+> 
+> After refactoring to rename the view model as well, here is what the project looked like:
+> 
+> ![Screenshot 2024-06-11 at 6.42.15 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.42.15%E2%80%AFAM.png)
+> 
+> Mr. Gordon committed his work at this point.
+
+With the refactoring out of the way, Mr. Gordon made these edits to `EnrolmentsByCourseView` so that there is a toolbar button showing a + sign, which allows for an enrolment to be added – but only when we are displaying the courses for a given student:
+
+![Screenshot 2024-06-11 at 6.50.17 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%206.50.17%E2%80%AFAM.png)
+
+Here is what that looks like:
+
+![Untitled.gif](/img/user/Media/Untitled.gif)
+
+Notice there is no + sign at first, when all courses are being shown – once we navigate back to `EnrolmentsByCourseView` we see just the enrolments for a specific student – then the + sign shows up.
+
+Mr. Gordon [committed his work at this point](https://github.com/lcs-rgordon/StudentsAndCourses/commit/f0e123a3784d5969cb4dd3e4bb09d548600be5f1).
+
+There is (truly) one last final change that needs to be made.
+
+The view to add an enrolment has it's own view model – generally, each view in a project will have it's own view model.
+
+After we add an enrolment for a student, the view model for `EnrolmentsByCourseView` needs to refresh the list of courses that are shown for that student.
+
+Here is what happens right now:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.10.24.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.10.24.gif)
+
+The course *does* get added in the database, but the view does not see this.
+
+The solution is to add a *callback* – a small block of code that will be run only when the sheet has been dismissed:
+
+![Screenshot 2024-06-11 at 7.07.38 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%207.07.38%E2%80%AFAM.png)
+
+In this way, after the sheet that allows for a new course to be added is dismissed, we immediately see the new course show up. Here is what this now looks like:
+
+![RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.11.52.gif|350](/img/user/Media/RocketSim_Recording_iPhone_15_Pro_6.1_2024-06-11_07.11.52.gif)
+
 #### Add a student to a course
 
-We want to add a student, when viewing the list of students enrolled in a course:
+When viewing a course, and seeing the list of students enrolled, it should be possible to enrol a given student into that course.
 
-<< ADD ANIMATION >>
+That is just adding a new row to the `enrols_in` table, but from the other direction.
 
-To do this, we need to...
-
-<< FILL THIS IN >>
-
-### Summary
-
-Overall, the app now looks and functions like this:
-
-<< ADD SUMMARY ANIMATION SHOWING ALL FUNCTIONALITY >>
-
-We can see all courses that exist at the school, and add new courses.
-
-We can see all students that exist at the school, and add new students.
-
-We can see enrolments, starting with courses and seeing students enrolled in a selected course. If desired, we can enrol students in that course.
-
-We can see enrolments, starting with students and seeing courses that a selected student is enrolled in. If desired, we can add a course that the selected student will be enrolled in.
+This process is very similar to what was just done in the [[Concepts/Querying Multiple Tables, Part 2#Add a course for a student\|prior section]]. To avoid having this guide get any longer, Mr. Gordon is choosing to omit an explanation of this part of the app.
 
 ### Source code
 
-If you wish to review the source used in these examples, commit-by-commit, [you can do so here](ADD NEW LINK).
+If you wish to review the source used in these examples, commit-by-commit, [you can do so here](https://github.com/lcs-rgordon/StudentsAndCourses/commits/main/).
 
 If you click the link at right for any given commit:
 
-<< ADD SCREENSHOT >>
+![Screenshot 2024-06-11 at 7.18.00 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%207.18.00%E2%80%AFAM.png)
 
 ... you can then see the changes that were made in that commit:
 
-<< ADD SCREENSHOT >>
+![Screenshot 2024-06-11 at 7.19.31 AM.png](/img/user/Media/Screenshot%202024-06-11%20at%207.19.31%E2%80%AFAM.png)
 
 Lines shown in green were added; lines shown in red were removed.
