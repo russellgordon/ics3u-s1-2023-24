@@ -18,7 +18,7 @@
 		- Resources that may be useful:
 			- [[Media/SwiftUI Views Mastery\|SwiftUI Views Mastery]]
 			- For those students using databases
-				- [[Querying Multiple Tables, Part 1\|Querying Multiple Tables, Part 1]]
+				- [[Concepts/Querying Multiple Tables\|Querying Multiple Tables]]
 					- How to handle one-to-many and many-to-one relationships
 				- [[Concepts/Querying Multiple Tables, Part 2\|Querying Multiple Tables, Part 2]] (==new==)
 					- How to handle many-to-many relationships
