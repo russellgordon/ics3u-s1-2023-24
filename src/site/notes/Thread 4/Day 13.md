@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/thread-4/day-13/","dgHomeLink":true}
 ---
 
-### Thread 4, Day 12 - Wednesday, June 12, 2024
+### Thread 4, Day 13 - Thursday, June 13, 2024
 #### Agenda
 
 1. Culminating Task: Working Period
