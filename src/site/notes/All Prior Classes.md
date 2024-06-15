@@ -89,7 +89,9 @@
 			- Deadline for slides to be completed is this ==Sunday at 9 PM==
 		- We will now discuss the prompts in the slide deck, and how to prepare for Monday's interview
 	- Here is the order of interviews for Monday morning:
-		- ==(will be generated and added live in class)==
+		- ![Screenshot 2024-06-15 at 1.22.58 PM.png](/img/user/Media/Screenshot%202024-06-15%20at%201.22.58%E2%80%AFPM.png)
+		> [!TIP]
+		> I forgot to generate this in class on Friday, but if you the sort of person who likes to "trust but verify" [here is the 1 minute video I recorded](https://youtu.be/LnadQUMjUJ8) that shows this interview order being randomly generated... ☺️
 
 
 ###### Things to do before our next class
